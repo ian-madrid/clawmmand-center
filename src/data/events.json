@@ -1,0 +1,81 @@
+{
+  "_comment": "🎭 MOCK DATA - Sample events for clawmmand-center",
+  "_userLocation": "2nd Ave & 50th St, Manhattan, NYC (40.7565, -73.9670)",
+  "_autoFilter": "Events with datetime < now are automatically moved to Past Events section",
+  
+  "events": [
+    {
+      "id": "evt-001",
+      "emoji": "🤖",
+      "title": "AI Startup Networking Rooftop Happy Hour",
+      "venue": "230 Fifth Rooftop Bar",
+      "datetime": "2026-04-13T17:30:00-04:00",
+      "distance": 0.8,
+      "price": 25,
+      "type": "ai",
+      "description": "Network with AI startup founders and investors",
+      "eventbriteUrl": "https://eventbrite.com/e/ai-startup-networking"
+    },
+    {
+      "id": "evt-002",
+      "emoji": "🤖",
+      "title": "Fintech Startup Networking Rooftop Happy Hour",
+      "venue": "230 Fifth Rooftop Bar",
+      "datetime": "2026-03-26T17:30:00-04:00",
+      "distance": 0.8,
+      "price": 25,
+      "type": "fintech",
+      "description": "Connect with fintech entrepreneurs"
+    },
+    {
+      "id": "evt-003",
+      "emoji": "🤖",
+      "title": "Tech Networking Event by Startup Valley in NYC Manhattan",
+      "venue": "Whiskey Cellar NYC",
+      "datetime": "2026-03-27T18:00:00-04:00",
+      "distance": 1.2,
+      "price": 20,
+      "type": "tech"
+    },
+    {
+      "id": "evt-004",
+      "emoji": "🤖",
+      "title": "Women in Tech, Fintech, AI, Startups Networking Event & Elevator Pitch NYC",
+      "venue": "Off the Wagon",
+      "datetime": "2026-03-26T19:00:00-04:00",
+      "distance": 0.5,
+      "price": 15,
+      "type": "networking"
+    },
+    {
+      "id": "evt-005",
+      "emoji": "🤖",
+      "title": "Startup Tech & AI Networking | Startup Ascent NYC Manhattan",
+      "venue": "77 E 7th St",
+      "datetime": "2026-03-27T18:00:00-04:00",
+      "distance": 1.5,
+      "price": 30,
+      "type": "ai"
+    },
+    {
+      "id": "evt-006",
+      "emoji": "🤖",
+      "title": "NYC Tech Startups, Investors, Innovators Networking with Elevator Pitch",
+      "venue": "The Laurels",
+      "datetime": "2026-04-01T18:00:00-04:00",
+      "distance": 2.1,
+      "price": 25,
+      "type": "tech"
+    },
+    {
+      "id": "evt-007",
+      "emoji": "🤖",
+      "title": "NYC Tech Mixer 2026",
+      "venue": "Arlo Williamsburg",
+      "datetime": "2026-03-28T18:00:00-04:00",
+      "distance": 2.3,
+      "price": 0,
+      "type": "tech"
+    }
+  ]
+}
