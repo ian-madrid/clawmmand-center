@@ -1,7 +1,6 @@
 {
-  "_comment": "Transcript Log Data - Real + Mock transcripts",
-  "_lastUpdated": "2026-03-27T04:37:00Z",
-  
+  "_comment": "Transcript Log Data - Real transcripts with screenshots",
+  "_lastUpdated": "2026-03-27T17:56:00Z",
   "transcripts": [
     {
       "id": "t-005",
@@ -13,57 +12,54 @@
       "duration": "1:33",
       "savedAt": "2026-03-26",
       "status": "ready",
-      "transcript": "Este video trata sobre cómo evitar las trampas comunes de manipulación. Se discuten técnicas psicológicas que usan los manipuladores y cómo reconocerlas. Puntos clave: 1) Reconoce cuando te están presionando para decidir rápido, 2) No tengas miedo de decir no, 3) Confía en tu instinto cuando algo se siente mal, 4) Establece límites claros, 5) No te sientas responsable de las emociones de otros.",
-      "stats": {"likes": "310K", "comments": "1,946", "favorites": "169.5K"},
+      "thumbnail": "/thumbnails/t-005.jpg",
+      "transcript": "The first is never explain yourself under pressure. So that automatically means submission and you might want to fire back with, you know, I don't think you meant to but that question is designed to put me in a position of justifying myself and that's not a role I'm going to take right now.\n\nNumber two is never argue about your motives. So just don't do it. Just openly call it out like, well, the way you said that puts me into a place of defending what kind of person I am.\n\nThree is never take the bait on any character question, any character questions at all. Never argue about who you are.\n\nFour is never apologize just to deescalate ever. So if you're in with a manipulator, the apology that they're trying to force out of you is an admission of guilt, not saying that you're going to fix anything.\n\nAnd five is never match emotion to prove your point. So never match somebody's intensity.\n\nSix is never accept somebody else's language without precision. So words like disrespect or abuse or betrayal, they can totally hijack a narrative. So you might just say, you know, those words all carry some kind of frame and if I accept those words, what you just said, I'm not speaking for myself anymore. So that's a big one.\n\nAnd seven is never accept any binary traps like the either yes, no, the either or question. There's always nuance to it and always seek specificity, always get into specifics. When you said this, what specifically did you want to talk about? And always go back to their intention, like, what was your intention? What's the ideal outcome here for you?\n\nAnd eight is never try to win through just logic.",
+      "stats": {
+        "likes": "310K",
+        "comments": "1946",
+        "favorites": "169.5K",
+        "shares": "46.7K"
+      },
       "music": "dereal (Slowed) - FutureVille & .diedlonely"
     },
     {
-      "id": "t-001",
-      "type": "youtube",
-      "emoji": "📺",
-      "title": "The Ground Will Rewild Your Body - Natural Mobility",
-      "source": "YouTube",
-      "url": "https://youtube.com/watch?v=example1",
-      "duration": "N/A",
-      "savedAt": "2026-03-24",
-      "status": "ready",
-      "transcript": "This video explores natural movement patterns and how reconnecting with ground-based movements can restore your body's innate mobility. Topics covered: barefoot walking, natural squats, crawling patterns, and how modern life has disconnected us from natural movement. The ground itself provides sensory feedback that helps recalibrate your nervous system."
-    },
-    {
-      "id": "t-002",
+      "id": "t-008",
       "type": "tiktok",
       "emoji": "🎵",
-      "title": "Importante magkaroon ng mayaman na kaibigan",
-      "source": "@victoranastacio",
-      "url": "https://tiktok.com/@victoranastacio/video/example2",
-      "duration": "35s",
-      "savedAt": "2026-03-24",
-      "status": "ready",
-      "transcript": "Mahalagang magkaroon ng mayaman na kaibigan hindi para sa pera, kundi para matuto ka sa kanilang paraan ng pag-iisip. Ang mayayaman ay may ibang perspective sa pera, sa trabaho, at sa buhay. Makikita mo kung paano sila nagdedesisyon, kung paano sila namumuhunan, at kung paano nila tinutukoy ang value ng pera."
-    },
-    {
-      "id": "t-003",
-      "type": "tiktok",
-      "emoji": "🎵",
-      "title": "TikTok Video - Make the Right Decision",
+      "title": "A billionaires advice",
       "source": "TikTok",
-      "url": "https://tiktok.com/example3",
-      "duration": "24s",
-      "savedAt": "2026-03-24",
+      "url": "https://vt.tiktok.com/ZSuoKRBdr/",
+      "duration": "0:51",
+      "savedAt": "2026-03-27",
       "status": "ready",
-      "transcript": "When you're faced with a difficult decision, remember this: the right decision rarely feels comfortable in the moment. Growth happens outside your comfort zone. Ask yourself: which option will my future self thank me for? Choose that one."
+      "thumbnail": "/thumbnails/t-008.jpg",
+      "transcript": "Do me a favor, the next board meeting, shut your fucking mouth. Don't say a fucking word. Every time you open your mouth, you put your foot in it.\n\nMy first business was the meatball shop, and I opened up this restaurant in New York City in 2010, and it took off like wildfire, dude. Eventually, a big investor came in, the guy who founded Ruby Tuesdays, this guy, Sandy Beal. And after the board meeting, Sandy said, hey, Mike, can I take you out for a cup of coffee? I was like, yeah, of course. And I'm thinking he's gonna sit me down and be like, I'm so proud of you, you're killing it.\n\nAnd he sits down at the coffee table with me in this little coffee shop, and he goes, can I be frank with you? Learn to listen. You don't grow from hearing your own voice. You grow from listening. Shut your mouth. You talk too much. I was like, white in the face, mortified. You don't need to say everything you think. You don't need to react on everything you hear. Pause, pause. The power's in the pause."
     },
     {
-      "id": "t-004",
+      "id": "t-006",
       "type": "youtube",
       "emoji": "📺",
-      "title": "INDUSTRY ALERT: Apple co-founder drops BLUNT warning on the future of AI",
-      "source": "Liz Claman Interview",
-      "url": "https://youtube.com/watch?v=example4",
-      "duration": "12:30",
-      "savedAt": "2026-03-25",
+      "title": "The AI Job Market Split in Two. One Side Pays $400K and Can't Hire Fast Enough.",
+      "source": "YouTube",
+      "url": "https://youtu.be/4cuT-LKcmWs?si=JgQXfccmMegshstU",
+      "duration": "25:39",
+      "savedAt": "2026-03-27",
       "status": "ready",
-      "transcript": "Steve Wozniak warns that AI is advancing faster than we can control. Key points: 1) AI will replace many white-collar jobs in the next 5 years, 2) We need to prepare for massive workforce displacement, 3) Education system needs complete overhaul, 4) Universal basic income may become necessary, 5) The companies controlling AI have too much power without oversight."
+      "thumbnail": "/thumbnails/t-006.jpg",
+      "transcript": "So there are essentially infinite AI jobs right now, not growing demand, not a hot sector, none of that is true, it is functionally infinite. And that's true for businesses employing 10 to 20 people as much as it's true for businesses employing hundreds of 1000s. There is no functional upper limit to what employers would love to have as far as AI talent, and they cannot find them.\n\nAfter hundreds of interviews on particular roles, I'm hearing from employers, we can't fill the role. And I hear you saying, Nate, that must be a lie. I have applied for hundreds of AI positions. I am good at AI, it is not working. I get it. We have a K shaped job market right now. And there is a split in what employers want that is confusing this issue.\n\n**The AI labor market is actually two markets moving in opposite directions:**\n\n**Market 1:** Traditional knowledge work roles - generalist, product managers, standard software engineers, conventional business analysts. Job opening count is flat or falling.\n\n**Market 2:** Roles that design, build, operate and manage AI systems. Growing fast. The ratio of AI jobs to AI talent right now is 3.2 to 1 - three plus AI jobs for every single qualified candidate.\n\n**7 Critical AI Skills Employers Are Desperate For:**\n\n1. **Specification Quality** - Writing clear intent for agents\n2. **Evals** - Testing and measuring AI output quality\n3. **Multi-Agent Task Decomposition** - Breaking work into manageable segments for agents\n4. **Failure Pattern Recognition** - Diagnosing agent failures (context degradation, specification drift, sycophantic confirmation, tool selection errors, cascading failures, silent failures)\n5. **Trust and Security Design** - Building guardrails, understanding cost of error, reversibility, verifiability\n6. **Context Architecture** - Building the \"Dewey Decimal system for agents\" - organizing company data so agents can find and use it correctly\n7. **Cost and Token Economics** - Calculating ROI, choosing the right model for the task, understanding token costs\n\nThese skills are tied to how AI actually works. They're not going anywhere. Companies are betting careers on them and they're desperate for people who have them."
+    },
+    {
+      "id": "t-007",
+      "type": "youtube",
+      "emoji": "📺",
+      "title": "IT'S OVER: Trump and Iran Just Shut Out the UK and NATO",
+      "source": "Promethean Action",
+      "url": "https://youtu.be/rfZ7mCtexHo?si=ykY6s2DQ3HnC8k9-",
+      "duration": "11:20",
+      "savedAt": "2026-03-27",
+      "status": "ready",
+      "thumbnail": "/thumbnails/t-007.jpg",
+      "transcript": "Yesterday, President Trump made clear that the discussions with Iran are real, and asked why he trusted the process he dropped this bombshell: \"Because they're going to make a deal. They did something yesterday that was amazing, actually. They gave us a present, and the present arrived today. It was a very big present, worth a tremendous amount of money.\"\n\n**Who's at the Table (The New Diplomatic Architecture):**\n- Egypt, Turkey, Saudi Arabia, Pakistan gathered in Riyadh\n- Egyptian intelligence opened direct channel to Iran's Revolutionary Guard\n- Turkey worked phones between Iran and Egypt\n- Oman carried messages on maritime security\n- Pakistan offered to host comprehensive settlement talks\n- All members of Trump's \"Board of Peace\" - architecture from Abraham Accords\n\n**Who's NOT at the Table:**\n- No British Foreign Secretary\n- No European Commission representative  \n- No NATO quartet\n- UK, EU, NATO completely absent from Middle East diplomacy\n\n**Key Developments:**\n- Lebanese government banned Hezbollah, told it to turn over weapons\n- Palestinian Authority condemned Iran, sided with Saudi Arabia\n- Hamas considering disarmament proposal from Trump's Board of Peace\n- Iran's \"axis of resistance\" has crumbled - military capacity shattered, supply lines severed\n\n**Europe's Collapse:**\n- EU fast-tracked $750B LNG deal with US after months of delays\n- Brussels pulled scheduled vote to ban Russian oil imports - \"can no longer afford the ideology\"\n- Kirill Dmitriev (Russia's Sovereign Wealth Fund): \"Green agenda, Russophobia, no oil, no gas, no seat at the table\"\n- Europe facing fuel shortage within days (Shell boss warning)\n\n**Ukraine's Predicament:**\n- Zelensky on \"Don't Forget About Me Tour\" - met King Charles 5x, addressed British parliament 2x\n- But Britain has no energy cards left to play\n- \"The war in Iran is not a distraction from Ukraine - it's a clarifying lens of new strategic geometry\"\n- Europe can't fund it, Britain can't underwrite it, US has moved on to bigger stage\n\n**Conclusion:** \"This is a new world, being shaped by the principles of economic and political sovereignty and led by Donald Trump.\""
     }
   ]
 }
