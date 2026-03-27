@@ -6,6 +6,8 @@ export default function TranscriptLog() {
   const [transcripts, setTranscripts] = useState([])
   const [loading, setLoading] = useState(true)
 
+  const [filter, setFilter] = useState('all')
+
   useEffect(() => {
     // Load transcripts from data file
     fetch('/data/transcripts.json?t=' + Date.now())
@@ -19,7 +21,6 @@ export default function TranscriptLog() {
         setLoading(false)
       })
   }, [])
-  const [filter, setFilter] = useState('all')
 
   const filtered = transcripts.filter(t => {
     if (filter === 'all') return true
