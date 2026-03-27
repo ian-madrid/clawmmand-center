@@ -1,55 +1,7 @@
 {
-  "_comment": "Transcript Log Data - Real + Mock transcripts",
-  "_lastUpdated": "2026-03-27T17:00:00Z",
+  "_comment": "Transcript Log Data - Real transcripts with screenshots",
+  "_lastUpdated": "2026-03-27T17:35:00Z",
   "transcripts": [
-    {
-      "id": "t-001",
-      "type": "youtube",
-      "emoji": "📺",
-      "title": "The Ground Will Rewild Your Body - Natural Mobility",
-      "source": "YouTube",
-      "url": "https://youtube.com/watch?v=example1",
-      "duration": "N/A",
-      "savedAt": "2026-03-24",
-      "status": "ready",
-      "transcript": null
-    },
-    {
-      "id": "t-002",
-      "type": "tiktok",
-      "emoji": "🎵",
-      "title": "Importante magkaroon ng mayaman na kaibigan",
-      "source": "@victoranastacio",
-      "url": "https://tiktok.com/@victoranastacio/video/example2",
-      "duration": "35s",
-      "savedAt": "2026-03-24",
-      "status": "ready",
-      "transcript": null
-    },
-    {
-      "id": "t-003",
-      "type": "tiktok",
-      "emoji": "🎵",
-      "title": "TikTok Video - Make the Right Decision",
-      "source": "TikTok",
-      "url": "https://tiktok.com/example3",
-      "duration": "24s",
-      "savedAt": "2026-03-24",
-      "status": "ready",
-      "transcript": null
-    },
-    {
-      "id": "t-004",
-      "type": "youtube",
-      "emoji": "📺",
-      "title": "INDUSTRY ALERT: Apple co-founder drops BLUNT warning on the future of AI",
-      "source": "Liz Claman Interview",
-      "url": "https://youtube.com/watch?v=example4",
-      "duration": "12:30",
-      "savedAt": "2026-03-25",
-      "status": "processing",
-      "transcript": null
-    },
     {
       "id": "t-005",
       "type": "tiktok",
@@ -94,7 +46,7 @@
       "savedAt": "2026-03-27",
       "status": "ready",
       "thumbnail": "/thumbnails/t-007.jpg",
-      "transcript": "Yesterday, President Trump made clear that the discussions with Iran are real, and asked why he trusted the process he dropped this bombshell: \"Because they're going to make a deal. They did something yesterday that was amazing, actually. They gave us a present, and the present arrived today. It was a very big present, worth a tremendous amount of money.\"\n\n**Who's at the Table (The New Diplomatic Architecture):**\n- Egypt, Turkey, Saudi Arabia, Pakistan gathered in Riyadh\n- Egyptian intelligence opened direct channel to Iran's Revolutionary Guard\n- Turkey worked phones between Iran and Egypt\n- Oman carried messages on maritime security\n- Pakistan offered to host comprehensive settlement talks\n- All members of Trump's \"Board of Peace\" - architecture from Abraham Accords\n\n**Who's NOT at the Table:**\n- No British Foreign Secretary\n- No European Commission representative  \n- No NATO quartet\n- UK, EU, NATO completely absent from Middle East diplomacy\n\n**Key Developments:**\n- Lebanese government banned Hezbollah, told it to turn over weapons\n- Palestinian Authority condemned Iran, sided with Saudi Arabia\n- Hamas considering disarmament proposal from Trump's Board of Peace\n- Iran's \"axis of resistance\" has crumbled - military capacity shattered, supply lines severed\n\n**Europe's Collapse:**\n- EU fast-tracked $750B LNG deal with US after months of delays\n- Brussels pulled scheduled vote to ban Russian oil imports - \"can no longer afford the ideology\"\n- Kirill Dmitriev (Russia's Sovereign Wealth Fund): \"Green agenda, Russophobia, no oil, no gas, no seat at the table\"\n- Europe facing fuel shortage within days (Shell boss warning)\n\n**Ukraine's predicament:**\n- Zelensky on \"Don't Forget About Me Tour\" - met King Charles 5th time, addressed British parliament 2nd time\n- But Britain has no energy cards left to play\n- \"The war in Iran is not a distraction from Ukraine's situation, it's a clarifying lens of a new strategic geometry\"\n- Europe can't fund it, Britain can't underwrite it, US has moved on to bigger stage\n\n**Conclusion:** \"This is a new world, being shaped by the principles of economic and political sovereignty and led by Donald Trump.\""
+      "transcript": "Yesterday, President Trump made clear that the discussions with Iran are real, and asked why he trusted the process he dropped this bombshell: \"Because they're going to make a deal. They did something yesterday that was amazing, actually. They gave us a present, and the present arrived today. It was a very big present, worth a tremendous amount of money.\"\n\n**Who's at the Table (The New Diplomatic Architecture):**\n- Egypt, Turkey, Saudi Arabia, Pakistan gathered in Riyadh\n- Egyptian intelligence opened direct channel to Iran's Revolutionary Guard\n- Turkey worked phones between Iran and Egypt\n- Oman carried messages on maritime security\n- Pakistan offered to host comprehensive settlement talks\n- All members of Trump's \"Board of Peace\" - architecture from Abraham Accords\n\n**Who's NOT at the Table:**\n- No British Foreign Secretary\n- No European Commission representative  \n- No NATO quartet\n- UK, EU, NATO completely absent from Middle East diplomacy\n\n**Key Developments:**\n- Lebanese government banned Hezbollah, told it to turn over weapons\n- Palestinian Authority condemned Iran, sided with Saudi Arabia\n- Hamas considering disarmament proposal from Trump's Board of Peace\n- Iran's \"axis of resistance\" has crumbled - military capacity shattered, supply lines severed\n\n**Europe's Collapse:**\n- EU fast-tracked $750B LNG deal with US after months of delays\n- Brussels pulled scheduled vote to ban Russian oil imports - \"can no longer afford the ideology\"\n- Kirill Dmitriev (Russia's Sovereign Wealth Fund): \"Green agenda, Russophobia, no oil, no gas, no seat at the table\"\n- Europe facing fuel shortage within days (Shell boss warning)\n\n**Ukraine's Predicament:**\n- Zelensky on \"Don't Forget About Me Tour\" - met King Charles 5x, addressed British parliament 2x\n- But Britain has no energy cards left to play\n- \"The war in Iran is not a distraction from Ukraine - it's a clarifying lens of new strategic geometry\"\n- Europe can't fund it, Britain can't underwrite it, US has moved on to bigger stage\n\n**Conclusion:** \"This is a new world, being shaped by the principles of economic and political sovereignty and led by Donald Trump.\""
     }
   ]
 }
