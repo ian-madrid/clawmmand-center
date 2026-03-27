@@ -1,9 +1,18 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-03-27T04:29:00Z",
+  "_lastUpdated": "2026-03-27T18:55:00Z",
   
   "developments": [
+    {
+      "id": "dev-021",
+      "section": "transcript",
+      "title": "Mobile-optimized transcript view - clean, scrollable, readable",
+      "description": "Removed clutter (likes, comments, music, duration). Now shows only title + transcript. Scrollable transcript box (300px max height). Smaller thumbnails (100px), compact layout for mobile. Click thumbnail to watch video.",
+      "status": "Complete",
+      "timestamp": "2026-03-27T18:55:00Z",
+      "expectedImprovement": "Better mobile reading experience, cleaner UI"
+    },
     {
       "id": "dev-020",
       "section": "system",
