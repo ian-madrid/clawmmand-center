@@ -1,52 +1,24 @@
 'use client'
 
-import { useState } from 'react'
-
-const mockTranscripts = [
-  {
-    id: 't-001',
-    type: 'youtube',
-    emoji: '📺',
-    title: 'The Ground Will Rewild Your Body - Natural Mobility',
-    source: 'YouTube',
-    duration: 'N/A',
-    savedAt: '2026-03-24',
-    status: 'ready'
-  },
-  {
-    id: 't-002',
-    type: 'tiktok',
-    emoji: '🎵',
-    title: 'Importante magkaroon ng mayaman na kaibigan',
-    source: '@victoranastacio',
-    duration: '35s',
-    savedAt: '2026-03-24',
-    status: 'ready'
-  },
-  {
-    id: 't-003',
-    type: 'tiktok',
-    emoji: '🎵',
-    title: 'TikTok Video - Make the Right Decision',
-    source: 'TikTok',
-    duration: '24s',
-    savedAt: '2026-03-24',
-    status: 'ready'
-  },
-  {
-    id: 't-004',
-    type: 'youtube',
-    emoji: '📺',
-    title: 'INDUSTRY ALERT: Apple co-founder drops BLUNT warning on the future of AI',
-    source: 'Liz Claman Interview',
-    duration: '12:30',
-    savedAt: '2026-03-25',
-    status: 'processing'
-  }
-]
+import { useState, useEffect } from 'react'
 
 export default function TranscriptLog() {
-  const [transcripts] = useState(mockTranscripts)
+  const [transcripts, setTranscripts] = useState([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    // Load transcripts from data file
+    fetch('/src/data/transcripts.json')
+      .then(res => res.json())
+      .then(data => {
+        setTranscripts(data.transcripts || [])
+        setLoading(false)
+      })
+      .catch(err => {
+        console.error('Failed to load transcripts:', err)
+        setLoading(false)
+      })
+  }, [])
   const [filter, setFilter] = useState('all')
 
   const filtered = transcripts.filter(t => {
@@ -80,22 +52,38 @@ export default function TranscriptLog() {
         </div>
       </div>
 
-      <div style={styles.list}>
-        {filtered.map(t => (
-          <div key={t.id} style={styles.item}>
-            <span style={styles.emoji}>{t.emoji}</span>
-            <div style={styles.content}>
-              <h3 style={styles.itemTitle}>{t.title}</h3>
-              <p style={styles.meta}>
-                {t.source} • {t.duration} • {t.savedAt}
-              </p>
-            </div>
-            <span style={t.status === 'ready' ? styles.badgeReady : styles.badgeProcessing}>
-              {t.status === 'ready' ? '✓ Ready' : '⏳ Processing'}
-            </span>
-          </div>
-        ))}
-      </div>
+      {loading ? (
+        <p style={styles.loading}>Loading transcripts...</p>
+      ) : (
+        <div style={styles.list}>
+          {filtered.length === 0 ? (
+            <p style={styles.empty}>No transcripts yet</p>
+          ) : (
+            filtered.map(t => (
+              <div key={t.id} style={styles.item}>
+                <span style={styles.emoji}>{t.emoji}</span>
+                <div style={styles.content}>
+                  <h3 style={styles.itemTitle}>{t.title}</h3>
+                  <p style={styles.meta}>
+                    {t.source} • {t.duration} • {t.savedAt}
+                    {t.stats && (
+                      <span style={styles.stats}>
+                        • 👍 {t.stats.likes} • 💬 {t.stats.comments}
+                      </span>
+                    )}
+                  </p>
+                  {t.music && (
+                    <p style={styles.music}>🎵 {t.music}</p>
+                  )}
+                </div>
+                <span style={t.status === 'ready' ? styles.badgeReady : styles.badgeProcessing}>
+                  {t.status === 'ready' ? '✓ Ready' : '⏳ Processing'}
+                </span>
+              </div>
+            ))
+          )}
+        </div>
+      )}
     </section>
   )
 }
@@ -108,6 +96,16 @@ const styles = {
     boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
     border: '1px solid #30363d',
     color: '#c9d1d9',
+  },
+  loading: {
+    textAlign: 'center',
+    padding: '20px',
+    color: '#8b949e',
+  },
+  empty: {
+    textAlign: 'center',
+    padding: '20px',
+    color: '#8b949e',
   },
   header: {
     display: 'flex',
@@ -173,7 +171,15 @@ const styles = {
   meta: {
     fontSize: '12px',
     color: '#8b949e',
-    margin: 0,
+    margin: '0 0 4px 0',
+  },
+  stats: {
+    color: '#58a6ff',
+  },
+  music: {
+    fontSize: '11px',
+    color: '#58a6ff',
+    margin: '2px 0 0 0',
   },
   badgeReady: {
     padding: '4px 8px',
