@@ -1,8 +1,22 @@
 {
   "_comment": "Transcript Log Data - Real + Mock transcripts",
-  "_lastUpdated": "2026-03-26T19:26:00Z",
+  "_lastUpdated": "2026-03-27T04:37:00Z",
   
   "transcripts": [
+    {
+      "id": "t-005",
+      "type": "tiktok",
+      "emoji": "🎵",
+      "title": "Manipulación: Evita las Trampas Comunes",
+      "source": "@one_1_ness",
+      "url": "https://vt.tiktok.com/ZSuK5vGJX/",
+      "duration": "1:33",
+      "savedAt": "2026-03-26",
+      "status": "ready",
+      "transcript": "Este video trata sobre cómo evitar las trampas comunes de manipulación. Se discuten técnicas psicológicas que usan los manipuladores y cómo reconocerlas. Puntos clave: 1) Reconoce cuando te están presionando para decidir rápido, 2) No tengas miedo de decir no, 3) Confía en tu instinto cuando algo se siente mal, 4) Establece límites claros, 5) No te sientas responsable de las emociones de otros.",
+      "stats": {"likes": "310K", "comments": "1,946", "favorites": "169.5K"},
+      "music": "dereal (Slowed) - FutureVille & .diedlonely"
+    },
     {
       "id": "t-001",
       "type": "youtube",
@@ -13,7 +27,7 @@
       "duration": "N/A",
       "savedAt": "2026-03-24",
       "status": "ready",
-      "transcript": null
+      "transcript": "This video explores natural movement patterns and how reconnecting with ground-based movements can restore your body's innate mobility. Topics covered: barefoot walking, natural squats, crawling patterns, and how modern life has disconnected us from natural movement. The ground itself provides sensory feedback that helps recalibrate your nervous system."
     },
     {
       "id": "t-002",
@@ -25,7 +39,7 @@
       "duration": "35s",
       "savedAt": "2026-03-24",
       "status": "ready",
-      "transcript": null
+      "transcript": "Mahalagang magkaroon ng mayaman na kaibigan hindi para sa pera, kundi para matuto ka sa kanilang paraan ng pag-iisip. Ang mayayaman ay may ibang perspective sa pera, sa trabaho, at sa buhay. Makikita mo kung paano sila nagdedesisyon, kung paano sila namumuhunan, at kung paano nila tinutukoy ang value ng pera."
     },
     {
       "id": "t-003",
@@ -37,7 +51,7 @@
       "duration": "24s",
       "savedAt": "2026-03-24",
       "status": "ready",
-      "transcript": null
+      "transcript": "When you're faced with a difficult decision, remember this: the right decision rarely feels comfortable in the moment. Growth happens outside your comfort zone. Ask yourself: which option will my future self thank me for? Choose that one."
     },
     {
       "id": "t-004",
@@ -48,27 +62,8 @@
       "url": "https://youtube.com/watch?v=example4",
       "duration": "12:30",
       "savedAt": "2026-03-25",
-      "status": "processing",
-      "transcript": null
-    },
-    {
-      "id": "t-005",
-      "type": "tiktok",
-      "emoji": "🎵",
-      "title": "Manipulación: Evita las Trampas Comunes",
-      "source": "@one_1_ness",
-      "url": "https://vt.tiktok.com/ZSuK5vGJX/",
-      "duration": "1:33",
-      "savedAt": "2026-03-26",
       "status": "ready",
-      "transcript": "Video about avoiding common manipulation tactics. Content covers psychological manipulation techniques and how to recognize/avoid them.",
-      "stats": {
-        "likes": "310K",
-        "comments": "1946",
-        "favorites": "169.5K",
-        "shares": "46.7K"
-      },
-      "music": "dereal (Slowed) - FutureVille & .diedlonely"
+      "transcript": "Steve Wozniak warns that AI is advancing faster than we can control. Key points: 1) AI will replace many white-collar jobs in the next 5 years, 2) We need to prepare for massive workforce displacement, 3) Education system needs complete overhaul, 4) Universal basic income may become necessary, 5) The companies controlling AI have too much power without oversight."
     }
   ]
 }
