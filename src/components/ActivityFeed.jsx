@@ -165,6 +165,15 @@ const initialDevelopments = [
   }
 ]
 
+const sectionEmojis = {
+  eventbrite: '🎫',
+  transcript: '📋',
+  tasks: '✅',
+  schedule: '📅',
+  dashboard: '🧠',
+  system: '⚙️'
+}
+
 const styles = {
   section: {
     backgroundColor: '#0d1117',
