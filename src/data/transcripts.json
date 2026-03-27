@@ -1,6 +1,6 @@
 {
   "_comment": "Transcript Log Data - Real + Mock transcripts",
-  "_lastUpdated": "2026-03-27T16:50:00Z",
+  "_lastUpdated": "2026-03-27T17:00:00Z",
   "transcripts": [
     {
       "id": "t-001",
@@ -80,6 +80,18 @@
       "savedAt": "2026-03-27",
       "status": "ready",
       "transcript": "So there are essentially infinite AI jobs right now, not growing demand, not a hot sector, none of that is true, it is functionally infinite. And that's true for businesses employing 10 to 20 people as much as it's true for businesses employing hundreds of 1000s. There is no functional upper limit to what employers would love to have as far as AI talent, and they cannot find them.\n\nAfter hundreds of interviews on particular roles, I'm hearing from employers, we can't fill the role. And I hear you saying, Nate, that must be a lie. I have applied for hundreds of AI positions. I am good at AI, it is not working. I get it. We have a K shaped job market right now. And there is a split in what employers want that is confusing this issue.\n\n**The AI labor market is actually two markets moving in opposite directions:**\n\n**Market 1:** Traditional knowledge work roles - generalist, product managers, standard software engineers, conventional business analysts. Job opening count is flat or falling.\n\n**Market 2:** Roles that design, build, operate and manage AI systems. Growing fast. The ratio of AI jobs to AI talent right now is 3.2 to 1 - three plus AI jobs for every single qualified candidate.\n\n**7 Critical AI Skills Employers Are Desperate For:**\n\n1. **Specification Quality** - Writing clear intent for agents\n2. **Evals** - Testing and measuring AI output quality\n3. **Multi-Agent Task Decomposition** - Breaking work into manageable segments for agents\n4. **Failure Pattern Recognition** - Diagnosing agent failures (context degradation, specification drift, sycophantic confirmation, tool selection errors, cascading failures, silent failures)\n5. **Trust and Security Design** - Building guardrails, understanding cost of error, reversibility, verifiability\n6. **Context Architecture** - Building the \"Dewey Decimal system for agents\" - organizing company data so agents can find and use it correctly\n7. **Cost and Token Economics** - Calculating ROI, choosing the right model for the task, understanding token costs\n\nThese skills are tied to how AI actually works. They're not going anywhere. Companies are betting careers on them and they're desperate for people who have them."
+    },
+    {
+      "id": "t-007",
+      "type": "youtube",
+      "emoji": "📺",
+      "title": "IT'S OVER: Trump and Iran Just Shut Out the UK and NATO",
+      "source": "Promethean Action",
+      "url": "https://youtu.be/rfZ7mCtexHo?si=ykY6s2DQ3HnC8k9-",
+      "duration": "11:20",
+      "savedAt": "2026-03-27",
+      "status": "ready",
+      "transcript": "Yesterday, President Trump made clear that the discussions with Iran are real, and asked why he trusted the process he dropped this bombshell: \"Because they're going to make a deal. They did something yesterday that was amazing, actually. They gave us a present, and the present arrived today. It was a very big present, worth a tremendous amount of money.\"\n\n**Who's at the Table (The New Diplomatic Architecture):**\n- Egypt, Turkey, Saudi Arabia, Pakistan gathered in Riyadh\n- Egyptian intelligence opened direct channel to Iran's Revolutionary Guard\n- Turkey worked phones between Iran and Egypt\n- Oman carried messages on maritime security\n- Pakistan offered to host comprehensive settlement talks\n- All members of Trump's \"Board of Peace\" - architecture from Abraham Accords\n\n**Who's NOT at the Table:**\n- No British Foreign Secretary\n- No European Commission representative  \n- No NATO quartet\n- UK, EU, NATO completely absent from Middle East diplomacy\n\n**Key Developments:**\n- Lebanese government banned Hezbollah, told it to turn over weapons\n- Palestinian Authority condemned Iran, sided with Saudi Arabia\n- Hamas considering disarmament proposal from Trump's Board of Peace\n- Iran's \"axis of resistance\" has crumbled - military capacity shattered, supply lines severed\n\n**Europe's Collapse:**\n- EU fast-tracked $750B LNG deal with US after months of delays\n- Brussels pulled scheduled vote to ban Russian oil imports - \"can no longer afford the ideology\"\n- Kirill Dmitriev (Russia's Sovereign Wealth Fund): \"Green agenda, Russophobia, no oil, no gas, no seat at the table\"\n- Europe facing fuel shortage within days (Shell boss warning)\n\n**Ukraine's predicament:**\n- Zelensky on \"Don't Forget About Me Tour\" - met King Charles 5th time, addressed British parliament 2nd time\n- But Britain has no energy cards left to play\n- \"The war in Iran is not a distraction from Ukraine's situation, it's a clarifying lens of a new strategic geometry\"\n- Europe can't fund it, Britain can't underwrite it, US has moved on to bigger stage\n\n**Conclusion:** \"This is a new world, being shaped by the principles of economic and political sovereignty and led by Donald Trump.\""
     }
   ]
 }
