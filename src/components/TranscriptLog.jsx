@@ -8,7 +8,7 @@ export default function TranscriptLog() {
 
   useEffect(() => {
     // Load transcripts from data file
-    fetch('/src/data/transcripts.json')
+    fetch('/data/transcripts.json')
       .then(res => res.json())
       .then(data => {
         setTranscripts(data.transcripts || [])

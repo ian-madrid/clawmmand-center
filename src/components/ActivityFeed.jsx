@@ -9,7 +9,7 @@ export default function ActivityFeed() {
 
   useEffect(() => {
     // Load from developments.json
-    fetch('/src/data/developments.json')
+    fetch('/data/developments.json')
       .then(res => res.json())
       .then(data => {
         setDevelopments(data.developments || [])

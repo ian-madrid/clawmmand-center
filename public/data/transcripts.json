@@ -1,0 +1,74 @@
+{
+  "_comment": "Transcript Log Data - Real + Mock transcripts",
+  "_lastUpdated": "2026-03-26T19:26:00Z",
+  
+  "transcripts": [
+    {
+      "id": "t-001",
+      "type": "youtube",
+      "emoji": "📺",
+      "title": "The Ground Will Rewild Your Body - Natural Mobility",
+      "source": "YouTube",
+      "url": "https://youtube.com/watch?v=example1",
+      "duration": "N/A",
+      "savedAt": "2026-03-24",
+      "status": "ready",
+      "transcript": null
+    },
+    {
+      "id": "t-002",
+      "type": "tiktok",
+      "emoji": "🎵",
+      "title": "Importante magkaroon ng mayaman na kaibigan",
+      "source": "@victoranastacio",
+      "url": "https://tiktok.com/@victoranastacio/video/example2",
+      "duration": "35s",
+      "savedAt": "2026-03-24",
+      "status": "ready",
+      "transcript": null
+    },
+    {
+      "id": "t-003",
+      "type": "tiktok",
+      "emoji": "🎵",
+      "title": "TikTok Video - Make the Right Decision",
+      "source": "TikTok",
+      "url": "https://tiktok.com/example3",
+      "duration": "24s",
+      "savedAt": "2026-03-24",
+      "status": "ready",
+      "transcript": null
+    },
+    {
+      "id": "t-004",
+      "type": "youtube",
+      "emoji": "📺",
+      "title": "INDUSTRY ALERT: Apple co-founder drops BLUNT warning on the future of AI",
+      "source": "Liz Claman Interview",
+      "url": "https://youtube.com/watch?v=example4",
+      "duration": "12:30",
+      "savedAt": "2026-03-25",
+      "status": "processing",
+      "transcript": null
+    },
+    {
+      "id": "t-005",
+      "type": "tiktok",
+      "emoji": "🎵",
+      "title": "Manipulación: Evita las Trampas Comunes",
+      "source": "@one_1_ness",
+      "url": "https://vt.tiktok.com/ZSuK5vGJX/",
+      "duration": "1:33",
+      "savedAt": "2026-03-26",
+      "status": "ready",
+      "transcript": "Video about avoiding common manipulation tactics. Content covers psychological manipulation techniques and how to recognize/avoid them.",
+      "stats": {
+        "likes": "310K",
+        "comments": "1946",
+        "favorites": "169.5K",
+        "shares": "46.7K"
+      },
+      "music": "dereal (Slowed) - FutureVille & .diedlonely"
+    }
+  ]
+}
