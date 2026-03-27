@@ -429,7 +429,7 @@ export default function EventbriteSection() {
 
           {/* Past Events (Collapsible) */}
           {pastEvents.length > 0 && (
-            <PastEvents events={pastEvents} />
+            <PastEventsSection events={pastEvents} />
           )}
         </>
       )}
@@ -543,7 +543,7 @@ function TicketCard({ ticket, onCheckStatus }) {
   )
 }
 
-function PastEvents({ events }) {
+function PastEventsSection({ events }) {
   const [expanded, setExpanded] = useState(false)
 
   return (
