@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
-// Build: 2026-03-26 21:50 PM
+// Build: 2026-03-27 07:45 AM
 export default function TranscriptLog() {
   const [transcripts, setTranscripts] = useState([])
   const [loading, setLoading] = useState(true)
@@ -86,23 +86,31 @@ export default function TranscriptLog() {
             <p style={styles.empty}>No transcripts yet</p>
           ) : (
             filtered.map(t => {
-              const thumbnailUrl = getThumbnailUrl(t)
+              const thumbnailInfo = getThumbnailInfo(t)
               
               return (
                 <div key={t.id} style={styles.item}>
-                  {thumbnailUrl && (
-                    <div style={styles.thumbnailContainer}>
+                  <div style={styles.thumbnailContainer}>
+                    {thumbnailInfo.type === 'image' ? (
                       <img 
-                        src={thumbnailUrl} 
+                        src={thumbnailInfo.url} 
                         alt={t.title}
                         style={styles.thumbnail}
                         onError={(e) => {
-                          e.target.src = 'https://via.placeholder.com/320x180/0d1117/58a6ff?text=No+Thumbnail'
+                          e.target.style.display = 'none'
+                          e.target.nextElementSibling.style.display = 'flex'
                         }}
                       />
-                      <div style={styles.typeBadge}>{t.type === 'youtube' ? '📺' : '🎵'}</div>
+                    ) : null}
+                    <div style={{
+                      ...styles.thumbnailFallback,
+                      ...(thumbnailInfo.type === 'image' ? {display: 'none'} : {}),
+                      background: thumbnailInfo.gradient
+                    }}>
+                      <span style={styles.fallbackEmoji}>{t.type === 'youtube' ? '📺' : '🎵'}</span>
                     </div>
-                  )}
+                    <div style={styles.typeBadge}>{t.type === 'youtube' ? '📺' : '🎵'}</div>
+                  </div>
                   <div style={styles.content}>
                     <h3 style={styles.itemTitle}>{t.title}</h3>
                     <p style={styles.meta}>
@@ -158,12 +166,13 @@ export default function TranscriptLog() {
                       )}
                     </div>
                   )}
+                  </div>
+                  <span style={t.status === 'ready' ? styles.badgeReady : styles.badgeProcessing}>
+                    {t.status === 'ready' ? '✓ Ready' : '⏳ Processing'}
+                  </span>
                 </div>
-                <span style={t.status === 'ready' ? styles.badgeReady : styles.badgeProcessing}>
-                  {t.status === 'ready' ? '✓ Ready' : '⏳ Processing'}
-                </span>
-              </div>
-            )})
+              )
+            })
           )}
         </div>
       )}
@@ -186,29 +195,41 @@ function formatTranscript(text) {
   }).filter(p => p.length > 0)
 }
 
-// Generate thumbnail URL from transcript data
-function getThumbnailUrl(transcript) {
-  if (!transcript) return null
+// Generate thumbnail info from transcript data
+function getThumbnailInfo(transcript) {
+  if (!transcript) return { type: 'fallback', gradient: 'linear-gradient(135deg, #161b22 0%, #0d1117 100%)' }
   
   // YouTube thumbnails
   if (transcript.type === 'youtube' && transcript.url) {
     // Extract video ID from YouTube URL
     const videoIdMatch = transcript.url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/)
     if (videoIdMatch && videoIdMatch[1]) {
-      return `https://img.youtube.com/vi/${videoIdMatch[1]}/hqdefault.jpg`
+      return {
+        type: 'image',
+        url: `https://img.youtube.com/vi/${videoIdMatch[1]}/hqdefault.jpg`,
+        gradient: 'linear-gradient(135deg, #ff0000 0%, #cc0000 100%)'
+      }
     }
   }
   
-  // TikTok thumbnails (placeholder with gradient)
+  // TikTok thumbnails - use gradient fallbacks
   if (transcript.type === 'tiktok') {
-    // Use a colored placeholder based on transcript ID
-    const colors = ['ff0050', '00f2ea', 'ff0050', '00f2ea']
-    const colorIndex = transcript.id.charCodeAt(transcript.id.length - 1) % colors.length
-    return `https://via.placeholder.com/320x180/${colors[colorIndex]}/ffffff?text=TikTok+Video`
+    // Generate consistent gradient based on transcript ID
+    const gradients = [
+      'linear-gradient(135deg, #ff0050 0%, #00f2ea 100%)',
+      'linear-gradient(135deg, #00f2ea 0%, #ff0050 100%)',
+      'linear-gradient(135deg, #ff0050 0%, #ff0050 50%, #00f2ea 100%)',
+      'linear-gradient(135deg, #00f2ea 0%, #ff0050 50%, #00f2ea 100%)'
+    ]
+    const colorIndex = transcript.id.charCodeAt(transcript.id.length - 1) % gradients.length
+    return {
+      type: 'fallback',
+      gradient: gradients[colorIndex]
+    }
   }
   
-  // Default placeholder
-  return 'https://via.placeholder.com/320x180/0d1117/58a6ff?text=Video'
+  // Default fallback
+  return { type: 'fallback', gradient: 'linear-gradient(135deg, #161b22 0%, #0d1117 100%)' }
 }
 
 const styles = {
@@ -296,6 +317,18 @@ const styles = {
     display: 'block',
     borderRadius: '6px',
   },
+  thumbnailFallback: {
+    width: '100%',
+    height: '90px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '6px',
+  },
+  fallbackEmoji: {
+    fontSize: '32px',
+    opacity: 0.8,
+  },
   typeBadge: {
     position: 'absolute',
     top: '6px',
@@ -305,9 +338,6 @@ const styles = {
     padding: '4px 8px',
     fontSize: '16px',
     lineHeight: 1,
-  },
-  emoji: {
-    fontSize: '24px',
   },
   content: {
     flex: 1,
@@ -403,6 +433,7 @@ const styles = {
     borderRadius: '12px',
     fontSize: '12px',
     fontWeight: '500',
+    alignSelf: 'flex-start',
   },
   badgeProcessing: {
     padding: '4px 8px',
@@ -411,5 +442,6 @@ const styles = {
     borderRadius: '12px',
     fontSize: '12px',
     fontWeight: '500',
+    alignSelf: 'flex-start',
   },
 }
