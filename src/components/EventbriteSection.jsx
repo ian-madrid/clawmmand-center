@@ -135,11 +135,22 @@ function EventCard({ event, onReserve }) {
     const now = new Date()
     const diffMs = date - now
     const diffDays = Math.ceil(diffMs / (1000 * 60 * 60 * 24))
+    const diffHours = Math.floor(diffMs / (1000 * 60 * 60))
     
-    if (diffDays === 0) return `Today ${date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`
-    if (diffDays === 1) return `Tomorrow ${date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`
-    if (diffDays < 7) return `In ${diffDays} days`
-    return date.toLocaleDateString([], {month: 'short', day: 'numeric', hour: '2-digit', minute:'2-digit'})
+    // Show relative date (no calendar tracking needed)
+    if (diffDays === 0) {
+      if (diffHours < 1) return `Today (starting soon!)`
+      return `Today • ${diffHours}h from now`
+    }
+    if (diffDays === 1) return `Tomorrow`
+    if (diffDays <= 7) return `In ${diffDays} days`
+    return `In ${Math.floor(diffDays / 7)} weeks`
+  }
+
+  const formatDistance = (miles) => {
+    // Convert to kilometers for visitors
+    const km = (miles * 1.60934).toFixed(1)
+    return `${km} km away`
   }
 
   return (
@@ -153,7 +164,7 @@ function EventCard({ event, onReserve }) {
         <p style={styles.venue}>{event.venue}</p>
         <p style={styles.datetime}>📅 {formatDateTime(event.datetime)}</p>
         {event.distance && (
-          <p style={styles.distance}>📍 {event.distance} miles</p>
+          <p style={styles.distance}>📍 {formatDistance(event.distance)}</p>
         )}
         <p style={styles.price}>
           {event.price === 0 ? (
