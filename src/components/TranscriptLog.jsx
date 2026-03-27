@@ -10,6 +10,14 @@ export default function TranscriptLog() {
   const [expandedTranscript, setExpandedTranscript] = useState(null)
   const [copiedId, setCopiedId] = useState(null)
 
+  // Auto-expand most recent transcript when loaded
+  useEffect(() => {
+    if (transcripts.length > 0 && expandedTranscript === null) {
+      // Expand the first (most recent) transcript
+      setExpandedTranscript(transcripts[0].id)
+    }
+  }, [transcripts])
+
   useEffect(() => {
     fetch('/data/transcripts.json?t=' + Date.now())
       .then(res => res.json())
