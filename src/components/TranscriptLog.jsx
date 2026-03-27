@@ -11,7 +11,8 @@ export default function TranscriptLog() {
   const [copiedId, setCopiedId] = useState(null)
 
   useEffect(() => {
-    // Load transcripts from data file
+    // Load transcripts from public/data/transcripts.json (served at /data/)
+    // NOTE: Only edit public/data/*.json files - src/data/ doesn't exist
     fetch('/data/transcripts.json?t=' + Date.now())
       .then(res => res.json())
       .then(data => {
