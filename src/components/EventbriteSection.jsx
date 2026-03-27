@@ -1,7 +1,40 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import eventsData from '../data/events.json'
+
+// Inline events data (avoiding JSON import issues)
+const eventsData = [
+  {
+    "id": "evt-001",
+    "emoji": "🤖",
+    "title": "AI Startup Networking Rooftop Happy Hour",
+    "venue": "230 Fifth Rooftop Bar",
+    "datetime": "2026-04-13T17:30:00-04:00",
+    "distance": 0.8,
+    "price": 25,
+    "type": "ai"
+  },
+  {
+    "id": "evt-002",
+    "emoji": "🤖",
+    "title": "Fintech Startup Networking Rooftop Happy Hour",
+    "venue": "230 Fifth Rooftop Bar",
+    "datetime": "2026-03-26T17:30:00-04:00",
+    "distance": 0.8,
+    "price": 25,
+    "type": "fintech"
+  },
+  {
+    "id": "evt-007",
+    "emoji": "🤖",
+    "title": "NYC Tech Mixer 2026",
+    "venue": "Arlo Williamsburg",
+    "datetime": "2026-03-27T18:00:00-04:00",
+    "distance": 3.2,
+    "price": 0,
+    "type": "tech"
+  }
+]
 
 // Styles defined FIRST so all components can use them
 const styles = {
