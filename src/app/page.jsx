@@ -18,6 +18,7 @@ export default function Dashboard() {
       <div style={styles.grid}>
         <div style={styles.column}>
           <LifeGoals />
+          <EventbriteSection />
         </div>
       </div>
 
