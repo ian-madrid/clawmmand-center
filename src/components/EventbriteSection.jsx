@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 
 // Inline events data (avoiding JSON import issues)
+// FREE events (price: 0) will auto-grab QR codes
 const eventsData = [
   {
     "id": "evt-001",
@@ -32,7 +33,8 @@ const eventsData = [
     "datetime": "2026-03-27T18:00:00-04:00",
     "distance": 3.2,
     "price": 0,
-    "type": "tech"
+    "type": "tech",
+    "autoGrab": true  // FREE - Auto-grab QR!
   }
 ]
 
@@ -240,6 +242,17 @@ const styles = {
     width: '100%',
     border: '2px solid #30363d',
     borderRadius: '8px',
+    display: 'block',
+    margin: '0 auto',
+  },
+  autoGrabBadge: {
+    backgroundColor: '#238636',
+    color: '#ffffff',
+    padding: '2px 8px',
+    borderRadius: '12px',
+    fontSize: '11px',
+    fontWeight: '600',
+    marginLeft: '8px',
   },
   qrNote: {
     fontSize: '12px',
@@ -340,8 +353,6 @@ export default function EventbriteSection() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // In production, this would fetch from Gmail API
-    // For now, load from mock data + localStorage
     const now = new Date()
     
     // Filter events into upcoming and past
@@ -366,15 +377,34 @@ export default function EventbriteSection() {
       try {
         const parsed = JSON.parse(saved)
         setMyTickets(parsed)
+        
+        // AUTO-GRAB: Check for new free events not yet reserved
+        const reservedIds = parsed.map((t: any) => t.eventId)
+        upcoming.forEach(event => {
+          if (event.price === 0 && !reservedIds.includes(event.id) && event.autoGrab) {
+            // FREE event! Auto-grab the ticket
+            handleReserve(event, true)
+          }
+        })
       } catch (e) {
         console.error('Failed to parse saved tickets')
       }
+    } else {
+      // First time! Auto-grab all free events
+      upcoming.forEach(event => {
+        if (event.price === 0 && event.autoGrab) {
+          handleReserve(event, true)
+        }
+      })
     }
     
     setLoading(false)
   }, [])
 
-  const handleReserve = (event) => {
+  const handleReserve = (event, autoGrab = false) => {
+    // Generate QR code (in production, this would come from Eventbrite API)
+    const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(event.id + '-' + event.title)}`
+    
     const newTicket = {
       eventId: event.id,
       title: event.title,
@@ -383,7 +413,8 @@ export default function EventbriteSection() {
       reservedAt: new Date().toISOString(),
       ticketCount: 1,
       status: 'reserved',
-      qrCode: null // Will be populated from Gmail
+      qrCode: qrCodeUrl,
+      autoGrabbed: autoGrab
     }
     
     const updated = [...myTickets, newTicket]
@@ -394,6 +425,11 @@ export default function EventbriteSection() {
     setEvents(prev => prev.map(e => 
       e.id === event.id ? { ...e, reserved: true } : e
     ))
+    
+    // Log auto-grab
+    if (autoGrab) {
+      console.log('🎫 AUTO-GRABBED FREE TICKET:', event.title)
+    }
   }
 
   const checkEventbriteStatus = async (ticket) => {
@@ -538,7 +574,10 @@ function TicketCard({ ticket, onCheckStatus }) {
       <div style={styles.ticketHeader}>
         <h4 style={styles.ticketTitle}>{ticket.title}</h4>
         {ticket.qrCode ? (
-          <span style={styles.qrBadge}>🎁 QR Ready</span>
+          <span style={styles.qrBadge}>
+            🎁 QR Ready
+            {ticket.autoGrabbed && <span style={styles.autoGrabBadge}>🤖 Auto-Grabbed</span>}
+          </span>
         ) : (
           <span style={styles.pendingBadge}>⏳ Awaiting QR</span>
         )}
@@ -553,7 +592,9 @@ function TicketCard({ ticket, onCheckStatus }) {
         {ticket.qrCode ? (
           <div style={styles.qrSection}>
             <img src={ticket.qrCode} alt="QR Code" style={styles.qrCode} />
-            <p style={styles.qrNote}>Show this at the event</p>
+            <p style={styles.qrNote}>
+              🎫 {ticket.autoGrabbed ? 'Auto-grabbed (FREE event)' : 'Reserved'} - Show at event
+            </p>
           </div>
         ) : (
           <div style={styles.noQr}>
