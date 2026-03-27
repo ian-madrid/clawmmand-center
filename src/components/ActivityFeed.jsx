@@ -165,64 +165,6 @@ const initialDevelopments = [
   }
 ]
 
-const sectionEmojis = {
-  eventbrite: '🎫',
-  transcript: '📋',
-  tasks: '✅',
-  schedule: '📅',
-  dashboard: '🧠',
-  system: '⚙️'
-}
-
-export default function ActivityFeed() {
-  const [developments, setDevelopments] = useState([])
-
-  useEffect(() => {
-    setDevelopments(mockDevelopments)
-  }, [])
-
-  const timeAgo = (isoString) => {
-    const date = new Date(isoString)
-    const now = new Date()
-    const diffMs = now - date
-    const diffMins = Math.floor(diffMs / (1000 * 60))
-    const diffHours = Math.floor(diffMs / (1000 * 60 * 60))
-    const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24))
-    
-    if (diffMins < 1) return 'just now'
-    if (diffMins < 60) return `${diffMins}m ago`
-    if (diffHours < 24) return `${diffHours}h ago`
-    return `${diffDays}d ago`
-  }
-
-  return (
-    <section style={styles.section}>
-      <div style={styles.header}>
-        <h2 style={styles.title}>📊 Activity Logs</h2>
-        <a href="#" style={styles.viewAll}>View all →</a>
-      </div>
-
-      <div style={styles.feed}>
-        {developments.map(dev => (
-          <div key={dev.id} style={styles.item}>
-            <span style={styles.emoji}>
-              {sectionEmojis[dev.section] || '📝'}
-            </span>
-            <div style={styles.content}>
-              <p style={styles.action}>{dev.action}</p>
-              <p style={styles.time}>{timeAgo(dev.timestamp)}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {developments.length === 0 && (
-        <p style={styles.empty}>No recent activity</p>
-      )}
-    </section>
-  )
-}
-
 const styles = {
   section: {
     backgroundColor: '#0d1117',
