@@ -5,10 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node -e \"require('fs').writeFileSync('public/version.txt', new Date().toISOString() + '-deploy-' + require('crypto').randomBytes(4).toString('hex'))\"",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "update-version": "node -e \"require('fs').writeFileSync('public/version.txt', new Date().toISOString() + '-deploy-' + require('crypto').randomBytes(4).toString('hex'))\""
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "14.1.0",
