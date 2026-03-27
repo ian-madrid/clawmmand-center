@@ -104,9 +104,20 @@ export default function EventbriteSection() {
           {/* My Tickets with QR Codes */}
           {upcomingTickets.length > 0 && (
             <div style={styles.myTickets}>
-              <h3 style={styles.myTicketsTitle}>
-                🎫 My Tickets ({upcomingTickets.length} tickets)
-              </h3>
+              <div style={styles.myTicketsHeader}>
+                <h3 style={styles.myTicketsTitle}>
+                  🎫 My Tickets ({upcomingTickets.length} tickets)
+                </h3>
+                <button 
+                  style={styles.checkGmailButton}
+                  onClick={async () => {
+                    alert('🔍 Checking Gmail for QR codes...\n\nEmail: openclawian@gmail.com\nSearch: from:eventbrite.com')
+                    // In production: call checkGmailForQRCodes()
+                  }}
+                >
+                  📧 Check Gmail
+                </button>
+              </div>
               <div style={styles.ticketsList}>
                 {upcomingTickets.map(ticket => (
                   <TicketCard 
@@ -395,11 +406,27 @@ const styles = {
     marginTop: '16px',
     border: '1px solid #30363d',
   },
+  myTicketsHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: '12px',
+  },
   myTicketsTitle: {
     fontSize: '16px',
     fontWeight: '600',
-    margin: '0 0 12px 0',
+    margin: 0,
     color: '#f0f6fc',
+  },
+  checkGmailButton: {
+    padding: '6px 12px',
+    backgroundColor: '#1f6feb',
+    color: '#ffffff',
+    border: 'none',
+    borderRadius: '6px',
+    fontSize: '13px',
+    fontWeight: '600',
+    cursor: 'pointer',
   },
   ticketsList: {
     display: 'flex',
