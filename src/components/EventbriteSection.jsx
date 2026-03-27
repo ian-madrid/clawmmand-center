@@ -379,7 +379,7 @@ export default function EventbriteSection() {
         setMyTickets(parsed)
         
         // AUTO-GRAB: Check for new free events not yet reserved
-        const reservedIds = parsed.map((t: any) => t.eventId)
+        const reservedIds = parsed.map(t => t.eventId)
         upcoming.forEach(event => {
           if (event.price === 0 && !reservedIds.includes(event.id) && event.autoGrab) {
             // FREE event! Auto-grab the ticket
