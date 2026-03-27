@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react'
 export default function TranscriptLog() {
   const [transcripts, setTranscripts] = useState([])
   const [loading, setLoading] = useState(true)
-
   const [filter, setFilter] = useState('all')
 
   useEffect(() => {
