@@ -55,6 +55,9 @@ export default function TranscriptLog() {
 
   return (
     <section style={styles.section}>
+      {/* Inject hover styles */}
+      <style>{styles.hoverStyles}</style>
+      
       <div style={styles.header}>
         <h2 style={styles.title}>📋 Transcript Log</h2>
         <div style={styles.filters}>
@@ -91,27 +94,37 @@ export default function TranscriptLog() {
               
               return (
                 <div key={t.id} style={styles.item}>
-                  <div style={styles.thumbnailContainer}>
-                    {thumbnailInfo.type === 'image' ? (
-                      <img 
-                        src={thumbnailInfo.url} 
-                        alt={t.title}
-                        style={styles.thumbnail}
-                        onError={(e) => {
-                          e.target.style.display = 'none'
-                          e.target.nextElementSibling.style.display = 'flex'
-                        }}
-                      />
-                    ) : null}
-                    <div style={{
-                      ...styles.thumbnailFallback,
-                      ...(thumbnailInfo.type === 'image' ? {display: 'none'} : {}),
-                      background: thumbnailInfo.gradient
-                    }}>
-                      <span style={styles.fallbackEmoji}>{t.type === 'youtube' ? '📺' : '🎵'}</span>
+                  <a 
+                    href={t.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="thumbnail-link"
+                    style={styles.thumbnailLink}
+                    title={`Watch on ${t.type === 'youtube' ? 'YouTube' : 'TikTok'}`}
+                  >
+                    <div className="thumbnail-container" style={styles.thumbnailContainer}>
+                      {thumbnailInfo.type === 'image' ? (
+                        <img 
+                          src={thumbnailInfo.url} 
+                          alt={t.title}
+                          style={styles.thumbnail}
+                          onError={(e) => {
+                            e.target.style.display = 'none'
+                            e.target.nextElementSibling.style.display = 'flex'
+                          }}
+                        />
+                      ) : null}
+                      <div style={{
+                        ...styles.thumbnailFallback,
+                        ...(thumbnailInfo.type === 'image' ? {display: 'none'} : {}),
+                        background: thumbnailInfo.gradient
+                      }}>
+                        <span style={styles.fallbackEmoji}>{t.type === 'youtube' ? '📺' : '🎵'}</span>
+                      </div>
+                      <div style={styles.typeBadge}>{t.type === 'youtube' ? '📺' : '🎵'}</div>
+                      <div className="play-overlay" style={styles.playOverlay}>▶</div>
                     </div>
-                    <div style={styles.typeBadge}>{t.type === 'youtube' ? '📺' : '🎵'}</div>
-                  </div>
+                  </a>
                   <div style={styles.content}>
                     <h3 style={styles.itemTitle}>{t.title}</h3>
                     <p style={styles.meta}>
@@ -312,6 +325,14 @@ const styles = {
     transition: 'all 0.2s',
     border: '1px solid #30363d',
   },
+  thumbnailLink: {
+    textDecoration: 'none',
+    color: 'inherit',
+    display: 'block',
+    '&:hover': {
+      textDecoration: 'none',
+    },
+  },
   thumbnailContainer: {
     position: 'relative',
     flexShrink: 0,
@@ -323,6 +344,11 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#0d1117',
+    transition: 'all 0.2s ease',
+    '&:hover': {
+      borderColor: '#1f6feb',
+      boxShadow: '0 0 0 3px rgba(31,111,235,0.3)',
+    },
   },
   thumbnail: {
     width: '100%',
@@ -331,6 +357,19 @@ const styles = {
     objectFit: 'contain',
     display: 'block',
     borderRadius: '6px',
+  },
+  playOverlay: {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    fontSize: '32px',
+    color: '#ffffff',
+    textShadow: '0 2px 8px rgba(0,0,0,0.8)',
+    opacity: 0,
+    transition: 'opacity 0.2s ease',
+    pointerEvents: 'none',
+    // Note: hover is handled via CSS in JSX
   },
   thumbnailFallback: {
     width: '100%',
@@ -353,7 +392,18 @@ const styles = {
     padding: '4px 8px',
     fontSize: '16px',
     lineHeight: 1,
+    zIndex: 2,
   },
+  // CSS for hover effects (injected via style tag)
+  hoverStyles: `
+    .thumbnail-link:hover .play-overlay {
+      opacity: 0.9;
+    }
+    .thumbnail-link:hover .thumbnail-container {
+      border-color: #1f6feb;
+      box-shadow: 0 0 0 3px rgba(31,111,235,0.3);
+    }
+  `,
   content: {
     flex: 1,
   },
