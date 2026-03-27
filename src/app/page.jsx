@@ -41,46 +41,61 @@ const styles = {
   container: {
     minHeight: '100vh',
     backgroundColor: '#010409',
-    padding: '20px',
+    padding: '16px',
     fontFamily: 'system-ui, -apple-system, sans-serif',
   },
   header: {
     textAlign: 'center',
-    marginBottom: '30px',
-    padding: '20px',
+    marginBottom: '24px',
+    padding: '16px',
     backgroundColor: '#0d1117',
     borderRadius: '12px',
     boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
     border: '1px solid #30363d',
   },
   title: {
-    fontSize: '32px',
+    fontSize: '24px',
     fontWeight: '700',
     margin: '0 0 8px 0',
     color: '#f0f6fc',
   },
   subtitle: {
-    fontSize: '16px',
+    fontSize: '14px',
     color: '#8b949e',
     margin: 0,
   },
   grid: {
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    gap: '20px',
+    gridTemplateColumns: '1fr',
+    gap: '16px',
     maxWidth: '1400px',
     margin: '0 auto',
   },
   column: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '20px',
+    gap: '16px',
   },
   footer: {
     textAlign: 'center',
-    marginTop: '40px',
-    padding: '20px',
+    marginTop: '32px',
+    padding: '16px',
     color: '#8b949e',
-    fontSize: '14px',
+    fontSize: '13px',
   },
+}
+
+// Mobile-responsive styles
+const mediaQuery = typeof window !== 'undefined' ? window.matchMedia('(min-width: 768px)') : null
+if (mediaQuery && mediaQuery.matches) {
+  styles.grid.gridTemplateColumns = '1fr 1fr'
+  styles.grid.gap = '20px'
+  styles.column.gap = '20px'
+  styles.title.fontSize = '32px'
+  styles.subtitle.fontSize = '16px'
+  styles.container.padding = '20px'
+  styles.header.padding = '20px'
+  styles.header.marginBottom = '30px'
+  styles.footer.marginTop = '40px'
+  styles.footer.fontSize = '14px'
 }

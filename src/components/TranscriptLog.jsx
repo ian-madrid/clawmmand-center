@@ -133,7 +133,7 @@ const styles = {
   section: {
     backgroundColor: '#0d1117',
     borderRadius: '12px',
-    padding: '20px',
+    padding: '16px',
     boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
     border: '1px solid #30363d',
     color: '#c9d1d9',
@@ -150,12 +150,12 @@ const styles = {
   },
   header: {
     display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: 'column',
+    gap: '12px',
     marginBottom: '16px',
   },
   title: {
-    fontSize: '20px',
+    fontSize: '18px',
     fontWeight: '600',
     margin: 0,
     color: '#f0f6fc',
@@ -163,6 +163,7 @@ const styles = {
   filters: {
     display: 'flex',
     gap: '8px',
+    flexWrap: 'wrap',
   },
   filter: {
     padding: '6px 12px',

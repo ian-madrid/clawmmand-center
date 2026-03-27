@@ -41,18 +41,18 @@ const styles = {
   section: {
     backgroundColor: '#0d1117',
     borderRadius: '12px',
-    padding: '20px',
+    padding: '16px',
     boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
     color: '#c9d1d9',
   },
   header: {
     display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flexDirection: 'column',
+    gap: '8px',
     marginBottom: '16px',
   },
   title: {
-    fontSize: '20px',
+    fontSize: '18px',
     fontWeight: '600',
     margin: 0,
     color: '#f0f6fc',
