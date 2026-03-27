@@ -7,6 +7,7 @@ export default function TranscriptLog() {
   const [transcripts, setTranscripts] = useState([])
   const [loading, setLoading] = useState(true)
   const [filter, setFilter] = useState('all')
+  const [expandedTranscript, setExpandedTranscript] = useState(null)
 
   useEffect(() => {
     // Load transcripts from data file
@@ -76,9 +77,30 @@ export default function TranscriptLog() {
                   {t.music && (
                     <p style={styles.music}>🎵 {t.music}</p>
                   )}
-                  <div style={styles.transcript}>
-                    <p style={styles.transcriptText}>{t.transcript || 'No transcript available'}</p>
-                  </div>
+                  
+                  {/* Transcript Section - Collapsible */}
+                  {t.transcript && (
+                    <div style={styles.transcriptContainer}>
+                      <button 
+                        style={styles.transcriptToggle}
+                        onClick={() => setExpandedTranscript(expandedTranscript === t.id ? null : t.id)}
+                      >
+                        {expandedTranscript === t.id ? '▼ Hide Transcript' : '▶ Show Transcript'}
+                      </button>
+                      
+                      {expandedTranscript === t.id && (
+                        <div style={styles.transcript}>
+                          <div style={styles.transcriptScroll}>
+                            {formatTranscript(t.transcript).map((paragraph, idx) => (
+                              <p key={idx} style={styles.transcriptParagraph}>
+                                {paragraph}
+                              </p>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
                 <span style={t.status === 'ready' ? styles.badgeReady : styles.badgeProcessing}>
                   {t.status === 'ready' ? '✓ Ready' : '⏳ Processing'}
@@ -90,6 +112,21 @@ export default function TranscriptLog() {
       )}
     </section>
   )
+}
+
+// Format transcript text into readable paragraphs
+function formatTranscript(text) {
+  if (!text) return []
+  
+  // Split by common paragraph breaks
+  const paragraphs = text.split(/\n\n+|\.\s+(?=[A-Z])|\.\s*$/).filter(p => p.trim())
+  
+  return paragraphs.map(p => {
+    // Clean up and format
+    return p.trim()
+      .replace(/\s+/g, ' ')
+      .replace(/([.!?])\s*([A-Z])/g, '$1\n\n$2')
+  }).filter(p => p.length > 0)
 }
 
 const styles = {
@@ -185,18 +222,41 @@ const styles = {
     color: '#58a6ff',
     margin: '2px 0 0 0',
   },
-  transcript: {
+  transcriptContainer: {
     marginTop: '12px',
-    padding: '12px',
-    backgroundColor: '#0d1117',
+  },
+  transcriptToggle: {
+    backgroundColor: 'transparent',
+    border: '1px solid #30363d',
+    borderRadius: '6px',
+    padding: '8px 12px',
+    color: '#58a6ff',
+    fontSize: '13px',
+    cursor: 'pointer',
+    width: '100%',
+    textAlign: 'left',
+    transition: 'all 0.2s',
+  },
+  transcript: {
+    marginTop: '8px',
+    padding: '16px',
+    backgroundColor: '#010409',
     borderRadius: '6px',
     border: '1px solid #30363d',
+    maxHeight: '200px',
+    overflowY: 'auto',
   },
-  transcriptText: {
+  transcriptScroll: {
+    maxHeight: '180px',
+    overflowY: 'auto',
+    paddingRight: '8px',
+  },
+  transcriptParagraph: {
     fontSize: '13px',
     color: '#c9d1d9',
-    lineHeight: 1.6,
-    margin: 0,
+    lineHeight: 1.8,
+    marginBottom: '16px',
+    textAlign: 'left',
   },
   badgeReady: {
     padding: '4px 8px',
