@@ -1,98 +1,84 @@
 {
-  "_comment": "Activity Logs - THE PULSE of clawmmand-center",
+  "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-03-26T19:48:00Z",
+  "_lastUpdated": "2026-03-27T04:29:00Z",
   
   "developments": [
     {
-      "id": "dev-015",
-      "section": "Activity Logs",
-      "title": "Activity Log format updated to match reference design",
-      "description": "Updated entry format to include detailed descriptions, status indicators, and metrics. Each entry now shows: title, full description, section tag, status (Working/Complete/TODO), and expected outcomes.",
+      "id": "dev-020",
+      "section": "system",
+      "title": "Site deployed and confirmed working",
+      "description": "Full dashboard live with all 4 sections rendering. Dark theme deployed. User confirmed UI design is much better.",
       "status": "Complete",
-      "timestamp": "2026-03-26T19:48:00Z",
-      "expectedImprovement": "Better visibility into system activity"
+      "timestamp": "2026-03-27T04:29:00Z",
+      "expectedImprovement": "Production-ready dashboard"
+    },
+    {
+      "id": "dev-019",
+      "section": "eventbrite",
+      "title": "Fixed JSON import issues",
+      "description": "Inlined eventsData directly in component to avoid client-side JSON import errors. Site now renders without errors.",
+      "status": "Complete",
+      "timestamp": "2026-03-27T04:26:00Z"
+    },
+    {
+      "id": "dev-018",
+      "section": "system",
+      "title": "Deployed fresh Vercel project",
+      "description": "Created new Vercel deployment to avoid cache conflicts from old builds. New URL: workspace-clawmmand.vercel.app",
+      "status": "Complete",
+      "timestamp": "2026-03-27T04:15:00Z"
+    },
+    {
+      "id": "dev-017",
+      "section": "transcript",
+      "title": "Added TikTok transcript",
+      "description": "Processed TikTok: 'Manipulación: Evita las Trampas Comunes' by @one_1_ness. 310K likes, 1,946 comments. Duration: 1:33.",
+      "status": "Complete",
+      "timestamp": "2026-03-27T04:10:00Z",
+      "metrics": {"likes": "310K", "comments": "1,946"}
+    },
+    {
+      "id": "dev-016",
+      "section": "eventbrite",
+      "title": "Implemented relative dates",
+      "description": "Changed date format to 'Today', 'Tomorrow', 'In X days' so users don't need to track calendar dates.",
+      "status": "Complete",
+      "timestamp": "2026-03-27T04:05:00Z",
+      "expectedImprovement": "Easier date comprehension"
+    },
+    {
+      "id": "dev-015",
+      "section": "eventbrite",
+      "title": "Changed distance to kilometers",
+      "description": "Converted from miles to KM for international visitors. Format: 'X.X km away'.",
+      "status": "Complete",
+      "timestamp": "2026-03-27T04:00:00Z",
+      "userImpact": "Better for non-US visitors"
     },
     {
       "id": "dev-014",
-      "title": "Data files moved to /public folder",
-      "section": "System",
-      "description": "Fixed Vercel deployment issue. Moved transcripts.json and developments.json from /src/data to /public/data. Updated fetch paths from '/src/data/' to '/data/'. Files now accessible on live site.",
-      "status": "Working",
-      "timestamp": "2026-03-26T19:45:00Z",
-      "filesChanged": ["public/data/transcripts.json", "public/data/developments.json"]
+      "section": "activity-logs",
+      "title": "Implemented detailed Activity Log format",
+      "description": "Each entry now shows: title, description, section tag, status badge, timestamp. Matches reference design.",
+      "status": "Complete",
+      "timestamp": "2026-03-27T03:55:00Z"
     },
     {
       "id": "dev-013",
-      "title": "TikTok transcript marked as Ready",
-      "section": "Transcript Log",
-      "description": "Processed TikTok video: 'Manipulación: Evita las Trampas Comunes' by @one_1_ness. Extracted metadata: 310K likes, 1,946 comments, 169.5K favorites. Duration: 1:33. Music: dereal (Slowed). Status changed from Processing to Ready.",
+      "section": "system",
+      "title": "Fixed React component errors",
+      "description": "Moved all useState hooks to top of components. Moved styles to top of files. Fixed reference-before-definition errors.",
       "status": "Complete",
-      "timestamp": "2026-03-26T19:39:00Z",
-      "metrics": {"likes": "310K", "comments": "1,946", "favorites": "169.5K"}
+      "timestamp": "2026-03-27T03:50:00Z"
     },
     {
       "id": "dev-012",
-      "title": "Transcript Log now loads from JSON",
-      "section": "Transcript Log",
-      "description": "Updated TranscriptLog component to load transcripts from /data/transcripts.json instead of hardcoded array. Added support for displaying stats (likes, comments) and music track information.",
-      "status": "Working",
-      "timestamp": "2026-03-26T19:27:00Z",
-      "filesChanged": ["src/components/TranscriptLog.jsx", "src/data/transcripts.json"]
-    },
-    {
-      "id": "dev-011",
-      "title": "TikTok video processed and added to dashboard",
-      "section": "Transcript Log",
-      "description": "Extracted metadata from TikTok URL (https://vt.tiktok.com/ZSuK5vGJX/). Video: 'Manipulación: Evita las Trampas Comunes'. Creator: @one_1_ness. Captured engagement stats and music track. Added to transcripts.json with status: Processing.",
+      "section": "system",
+      "title": "Rebuilt clawmmand-center from scratch",
+      "description": "Fresh deployment with new Vercel project to avoid old cache conflicts. All 4 sections working.",
       "status": "Complete",
-      "timestamp": "2026-03-26T19:26:00Z",
-      "url": "https://vt.tiktok.com/ZSuK5vGJX/"
-    },
-    {
-      "id": "dev-010",
-      "title": "Gmail QR automation script created",
-      "section": "Gmail Integration",
-      "description": "Built scripts/gmail-qr-extractor.js for automated QR code extraction. Script opens Gmail (openclawian@gmail.com), searches for Eventbrite emails, extracts QR codes, saves to dashboard data. Added 'Check Gmail' button to My Tickets section.",
-      "status": "Working",
-      "timestamp": "2026-03-26T18:35:00Z",
-      "filesCreated": ["scripts/gmail-qr-extractor.js"]
-    },
-    {
-      "id": "dev-009",
-      "title": "Distance format changed to kilometers",
-      "section": "Eventbrite",
-      "description": "Updated distance display from miles to kilometers for NYC visitors. Added formatDistance() function that converts miles to km (miles × 1.60934). Example: '2.3 miles' now shows as '3.7 km away'. Perfect for visitors who don't track miles.",
-      "status": "Working",
-      "timestamp": "2026-03-26T18:25:00Z",
-      "userImpact": "Visitors can easily understand distances"
-    },
-    {
-      "id": "dev-008",
-      "title": "Relative date format implemented",
-      "section": "Eventbrite",
-      "description": "Replaced calendar dates with relative format: 'Today', 'Tomorrow', 'In X days', 'In X weeks'. No need to track calendar dates. Example: 'Mar 28, 6:00 PM' now shows as 'Tomorrow'. Includes time context: 'Today (starting soon!)' or 'Today • 3h from now'.",
-      "status": "Working",
-      "timestamp": "2026-03-26T18:20:00Z",
-      "userImpact": "No calendar tracking needed"
-    },
-    {
-      "id": "dev-007",
-      "title": "Eventbrite section rebuilt with dark theme",
-      "section": "Eventbrite",
-      "description": "Complete UI rebuild with GitHub-style dark theme (#0d1117 background). Added QR code display area, 'Check Eventbrite Status' button, FREE/Reserved badges, QR Ready/Awaiting QR badges, collapsible Past Events section. Auto-filters past events automatically.",
-      "status": "Working",
-      "timestamp": "2026-03-26T18:15:00Z",
-      "filesChanged": ["src/components/EventbriteSection.jsx"]
-    },
-    {
-      "id": "dev-006",
-      "title": "SOUL.md and identity files restored",
-      "section": "System",
-      "description": "Restored SOUL.md, USER.md, IDENTITY.md after accidental deletion. Rebuilt assistant identity with core philosophy: 'Dashboard is ONE ORGANISM, Activity Logs are the pulse'. Created RECOVERY.md and START_HERE.md for emergency recovery.",
-      "status": "Complete",
-      "timestamp": "2026-03-26T18:10:00Z",
-      "filesCreated": ["RECOVERY.md", "START_HERE.md"]
+      "timestamp": "2026-03-27T03:30:00Z"
     }
   ]
 }
