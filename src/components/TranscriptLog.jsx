@@ -8,6 +8,7 @@ export default function TranscriptLog() {
   const [loading, setLoading] = useState(true)
   const [filter, setFilter] = useState('all')
   const [expandedTranscript, setExpandedTranscript] = useState(null)
+  const [copiedId, setCopiedId] = useState(null)
 
   useEffect(() => {
     // Load transcripts from data file
@@ -27,6 +28,29 @@ export default function TranscriptLog() {
     if (filter === 'all') return true
     return t.type === filter
   })
+
+  const handleCopy = async (text, id) => {
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopiedId(id)
+      setTimeout(() => setCopiedId(null), 2000)
+    } catch (err) {
+      console.error('Failed to copy:', err)
+    }
+  }
+
+  const handleDelete = (id) => {
+    if (confirm('Delete this transcript?')) {
+      const updated = transcripts.filter(t => t.id !== id)
+      setTranscripts(updated)
+      // Update localStorage
+      localStorage.setItem('transcripts', JSON.stringify(updated))
+      // Also update the main data file reference if needed
+      if (expandedTranscript === id) {
+        setExpandedTranscript(null)
+      }
+    }
+  }
 
   return (
     <section style={styles.section}>
@@ -81,12 +105,30 @@ export default function TranscriptLog() {
                   {/* Transcript Section - Collapsible */}
                   {t.transcript && (
                     <div style={styles.transcriptContainer}>
-                      <button 
-                        style={styles.transcriptToggle}
-                        onClick={() => setExpandedTranscript(expandedTranscript === t.id ? null : t.id)}
-                      >
-                        {expandedTranscript === t.id ? '▼ Hide Transcript' : '▶ Show Transcript'}
-                      </button>
+                      <div style={styles.transcriptActions}>
+                        <button 
+                          style={styles.transcriptToggle}
+                          onClick={() => setExpandedTranscript(expandedTranscript === t.id ? null : t.id)}
+                        >
+                          {expandedTranscript === t.id ? '▼ Hide' : '▶ Show Transcript'}
+                        </button>
+                        
+                        <button 
+                          style={styles.copyButton}
+                          onClick={() => handleCopy(t.transcript, t.id)}
+                          title="Copy transcript"
+                        >
+                          {copiedId === t.id ? '✓ Copied!' : '📋 Copy'}
+                        </button>
+                        
+                        <button 
+                          style={styles.deleteButton}
+                          onClick={() => handleDelete(t.id)}
+                          title="Delete transcript"
+                        >
+                          🗑️ Delete
+                        </button>
+                      </div>
                       
                       {expandedTranscript === t.id && (
                         <div style={styles.transcript}>
@@ -226,16 +268,45 @@ const styles = {
   transcriptContainer: {
     marginTop: '12px',
   },
+  transcriptActions: {
+    display: 'flex',
+    gap: '8px',
+    marginBottom: '8px',
+    flexWrap: 'wrap',
+  },
   transcriptToggle: {
     backgroundColor: 'transparent',
     border: '1px solid #30363d',
     borderRadius: '6px',
-    padding: '8px 12px',
+    padding: '6px 12px',
     color: '#58a6ff',
-    fontSize: '13px',
+    fontSize: '12px',
     cursor: 'pointer',
-    width: '100%',
-    textAlign: 'left',
+    flex: '1',
+    minWidth: '100px',
+    textAlign: 'center',
+    transition: 'all 0.2s',
+  },
+  copyButton: {
+    backgroundColor: '#238636',
+    border: 'none',
+    borderRadius: '6px',
+    padding: '6px 12px',
+    color: '#ffffff',
+    fontSize: '12px',
+    cursor: 'pointer',
+    fontWeight: '600',
+    transition: 'all 0.2s',
+  },
+  deleteButton: {
+    backgroundColor: '#da3633',
+    border: 'none',
+    borderRadius: '6px',
+    padding: '6px 12px',
+    color: '#ffffff',
+    fontSize: '12px',
+    cursor: 'pointer',
+    fontWeight: '600',
     transition: 'all 0.2s',
   },
   transcript: {
@@ -244,11 +315,11 @@ const styles = {
     backgroundColor: '#010409',
     borderRadius: '6px',
     border: '1px solid #30363d',
-    maxHeight: '200px',
+    maxHeight: '300px',
     overflowY: 'auto',
   },
   transcriptScroll: {
-    maxHeight: '180px',
+    maxHeight: '260px',
     overflowY: 'auto',
     paddingRight: '8px',
   },
