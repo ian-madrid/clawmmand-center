@@ -85,22 +85,37 @@ export default function TranscriptLog() {
           {filtered.length === 0 ? (
             <p style={styles.empty}>No transcripts yet</p>
           ) : (
-            filtered.map(t => (
-              <div key={t.id} style={styles.item}>
-                <span style={styles.emoji}>{t.emoji}</span>
-                <div style={styles.content}>
-                  <h3 style={styles.itemTitle}>{t.title}</h3>
-                  <p style={styles.meta}>
-                    {t.source} • {t.duration} • {t.savedAt}
-                    {t.stats && (
-                      <span style={styles.stats}>
-                        • 👍 {t.stats.likes} • 💬 {t.stats.comments}
-                      </span>
-                    )}
-                  </p>
-                  {t.music && (
-                    <p style={styles.music}>🎵 {t.music}</p>
+            filtered.map(t => {
+              const thumbnailUrl = getThumbnailUrl(t)
+              
+              return (
+                <div key={t.id} style={styles.item}>
+                  {thumbnailUrl && (
+                    <div style={styles.thumbnailContainer}>
+                      <img 
+                        src={thumbnailUrl} 
+                        alt={t.title}
+                        style={styles.thumbnail}
+                        onError={(e) => {
+                          e.target.src = 'https://via.placeholder.com/320x180/0d1117/58a6ff?text=No+Thumbnail'
+                        }}
+                      />
+                      <div style={styles.typeBadge}>{t.type === 'youtube' ? '📺' : '🎵'}</div>
+                    </div>
                   )}
+                  <div style={styles.content}>
+                    <h3 style={styles.itemTitle}>{t.title}</h3>
+                    <p style={styles.meta}>
+                      {t.source} • {t.duration} • {t.savedAt}
+                      {t.stats && (
+                        <span style={styles.stats}>
+                          • 👍 {t.stats.likes} • 💬 {t.stats.comments}
+                        </span>
+                      )}
+                    </p>
+                    {t.music && (
+                      <p style={styles.music}>🎵 {t.music}</p>
+                    )}
                   
                   {/* Transcript Section - Collapsible */}
                   {t.transcript && (
@@ -148,7 +163,7 @@ export default function TranscriptLog() {
                   {t.status === 'ready' ? '✓ Ready' : '⏳ Processing'}
                 </span>
               </div>
-            ))
+            )})
           )}
         </div>
       )}
@@ -169,6 +184,31 @@ function formatTranscript(text) {
       .replace(/\s+/g, ' ')
       .replace(/([.!?])\s*([A-Z])/g, '$1\n\n$2')
   }).filter(p => p.length > 0)
+}
+
+// Generate thumbnail URL from transcript data
+function getThumbnailUrl(transcript) {
+  if (!transcript) return null
+  
+  // YouTube thumbnails
+  if (transcript.type === 'youtube' && transcript.url) {
+    // Extract video ID from YouTube URL
+    const videoIdMatch = transcript.url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/)
+    if (videoIdMatch && videoIdMatch[1]) {
+      return `https://img.youtube.com/vi/${videoIdMatch[1]}/hqdefault.jpg`
+    }
+  }
+  
+  // TikTok thumbnails (placeholder with gradient)
+  if (transcript.type === 'tiktok') {
+    // Use a colored placeholder based on transcript ID
+    const colors = ['ff0050', '00f2ea', 'ff0050', '00f2ea']
+    const colorIndex = transcript.id.charCodeAt(transcript.id.length - 1) % colors.length
+    return `https://via.placeholder.com/320x180/${colors[colorIndex]}/ffffff?text=TikTok+Video`
+  }
+  
+  // Default placeholder
+  return 'https://via.placeholder.com/320x180/0d1117/58a6ff?text=Video'
 }
 
 const styles = {
@@ -228,17 +268,43 @@ const styles = {
   list: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '12px',
+    gap: '16px',
   },
   item: {
     display: 'flex',
     alignItems: 'flex-start',
-    gap: '12px',
-    padding: '12px',
+    gap: '16px',
+    padding: '16px',
     backgroundColor: '#161b22',
-    borderRadius: '8px',
+    borderRadius: '12px',
     cursor: 'pointer',
-    transition: 'background-color 0.2s',
+    transition: 'all 0.2s',
+    border: '1px solid #30363d',
+  },
+  thumbnailContainer: {
+    position: 'relative',
+    flexShrink: 0,
+    width: '160px',
+    borderRadius: '8px',
+    overflow: 'hidden',
+    border: '2px solid #30363d',
+  },
+  thumbnail: {
+    width: '100%',
+    height: '90px',
+    objectFit: 'cover',
+    display: 'block',
+    borderRadius: '6px',
+  },
+  typeBadge: {
+    position: 'absolute',
+    top: '6px',
+    right: '6px',
+    backgroundColor: 'rgba(0,0,0,0.8)',
+    borderRadius: '6px',
+    padding: '4px 8px',
+    fontSize: '16px',
+    lineHeight: 1,
   },
   emoji: {
     fontSize: '24px',
