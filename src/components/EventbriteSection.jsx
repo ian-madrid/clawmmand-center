@@ -460,11 +460,10 @@ export default function EventbriteSection() {
             </div>
           )}
 
-          {/* Past Events (Collapsible) - DISABLED FOR TESTING
+          {/* Past Events (Collapsible) */}
           {pastEvents.length > 0 && (
             <PastEventsSection events={pastEvents} />
           )}
-          */}
         </>
       )}
     </section>

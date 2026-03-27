@@ -14,11 +14,18 @@ export default function Dashboard() {
         <p style={styles.subtitle}>One Organism - Living System</p>
       </header>
 
-      {/* Main Grid - Testing components one by one */}
+      {/* Main Grid */}
       <div style={styles.grid}>
+        {/* Left Column */}
         <div style={styles.column}>
           <LifeGoals />
           <EventbriteSection />
+        </div>
+
+        {/* Right Column */}
+        <div style={styles.column}>
+          <TranscriptLog />
+          <ActivityFeed />
         </div>
       </div>
 
