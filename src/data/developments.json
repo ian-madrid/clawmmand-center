@@ -5,6 +5,13 @@
   
   "developments": [
     {
+      "id": "dev-018",
+      "section": "transcript",
+      "action": "Generated screenshot thumbnails for ALL videos - TikTok + YouTube (no more gradients!)",
+      "timestamp": "2026-03-27T17:22:00Z",
+      "status": "completed"
+    },
+    {
       "id": "dev-017",
       "section": "transcript",
       "action": "Implemented custom video thumbnails - ffmpeg screenshots stored in /public/thumbnails/",
