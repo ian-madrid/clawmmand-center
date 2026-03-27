@@ -1,7 +1,24 @@
 {
   "_comment": "Transcript Log Data - Real transcripts with screenshots",
-  "_lastUpdated": "2026-03-27T17:56:00Z",
+  "_lastUpdated": "2026-03-27T22:54:00Z",
   "transcripts": [
+    {
+      "id": "t-009",
+      "type": "tiktok",
+      "emoji": "🎵",
+      "title": "Bezos wants to be right again",
+      "source": "@elenanisonoff",
+      "url": "https://vt.tiktok.com/ZSH1hnsgT/",
+      "duration": "3:04",
+      "savedAt": "2026-03-27",
+      "status": "ready",
+      "thumbnail": "/thumbnails/t-009.jpg",
+      "transcript": "Jeff Bezos just raised **$100 billion** to prove that every major AI company is focused on the wrong thing. And many of the smartest people in the world agree with him.\n\nFor three years, every AI story has been about screens, writing, coding, designing. The entire revolution has been digital. But Jeff Bezos doesn't care about your laptop.\n\nThe Wall Street Journal and New York Times both reported this week that the Amazon founder is raising **$100 billion** to buy manufacturing companies, chip makers, defense contractors, aerospace firms, and automate them with physics simulating AI.\n\nInvestor documents call it a \"manufacturing transformation vehicle\" - same size as Softbank's Vision Fund, the largest tech investment vehicle ever, except Softbank bet on apps and Bezos is betting on factories.\n\nThe brain is Project Prometheus, which is co-founded with Vic Bajaj, a physicist who built Google X, the lab behind Waymo and Wing. Some decent brains there.\n\nPrometheus is building AI that doesn't understand language, it understands physics: how air flows around a wing, where metal cracks under pressure, how to simulate an entire production line before a single machine turns on.\n\nBezos is co-CEO for the first time since Amazon, getting back in the game, hiring from OpenAI and DeepMind. So the people who built the language models are now building the physics models.\n\nAnd he is not alone in this thesis. Two weeks ago, Yann LeCun, the Turing Award winner who literally invented neural networks behind modern AI, left Meta after 12 years and raised just over **$1 billion** to build world models. **$1.03 billion** just to flex on us.\n\nSo AI trained on cameras and sensors instead of text, AI that predicts the next state of a physical system rather than the next sentence that you have in mind. Backed by NVIDIA, Bezos Expedition, Samsung, Toyota.\n\nTwo weeks before that, Stanford's Fei-Fei Li, who basically launched the modern deep learning revolution, raised a billion dollars for the same idea.\n\nTwo Turing class researchers and the richest man alive are all making the same bet. That many billions means it might be time to pay attention.\n\nThe **$100 billion** fund buys the companies, Prometheus installs the brain: one acquires, the other transforms. This is a full conveyor belt of futuristic transformation.\n\nBezos is meeting sovereign wealth funds in Abu Dhabi and Singapore, the same ones that are watching their energy infrastructure get destroyed right now. Qatar just lost **17%** of its LNG capacity for five years.\n\nThese funds are all looking for a post-oil industrial thesis and Bezos handily walked in with one.\n\nIf you look at the other end of the same economy, DoorDash is now paying gig workers a few dollars to film themselves washing dishes so that robots can learn how and take their place.\n\nSo the full vision is that Bezos is buying the factory, DoorDash is paying the workers three dollars to train the machine that replaces the next worker. Similar thesis, different tax brackets.\n\nSo the physical AI era is coming. If Bezos is as right as he seems to think he is and as early, he's gonna have a lot more money for bottle service.",
+      "stats": {
+        "likes": "N/A",
+        "comments": "N/A"
+      }
+    },
     {
       "id": "t-005",
       "type": "tiktok",
