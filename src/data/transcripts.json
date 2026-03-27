@@ -1,6 +1,6 @@
 {
   "_comment": "Transcript Log Data - Real transcripts with screenshots",
-  "_lastUpdated": "2026-03-27T17:45:00Z",
+  "_lastUpdated": "2026-03-27T17:56:00Z",
   "transcripts": [
     {
       "id": "t-005",
@@ -21,6 +21,19 @@
         "shares": "46.7K"
       },
       "music": "dereal (Slowed) - FutureVille & .diedlonely"
+    },
+    {
+      "id": "t-008",
+      "type": "tiktok",
+      "emoji": "🎵",
+      "title": "A billionaires advice",
+      "source": "TikTok",
+      "url": "https://vt.tiktok.com/ZSuoKRBdr/",
+      "duration": "0:51",
+      "savedAt": "2026-03-27",
+      "status": "ready",
+      "thumbnail": "/thumbnails/t-008.jpg",
+      "transcript": "Do me a favor, the next board meeting, shut your fucking mouth. Don't say a fucking word. Every time you open your mouth, you put your foot in it.\n\nMy first business was the meatball shop, and I opened up this restaurant in New York City in 2010, and it took off like wildfire, dude. Eventually, a big investor came in, the guy who founded Ruby Tuesdays, this guy, Sandy Beal. And after the board meeting, Sandy said, hey, Mike, can I take you out for a cup of coffee? I was like, yeah, of course. And I'm thinking he's gonna sit me down and be like, I'm so proud of you, you're killing it.\n\nAnd he sits down at the coffee table with me in this little coffee shop, and he goes, can I be frank with you? Learn to listen. You don't grow from hearing your own voice. You grow from listening. Shut your mouth. You talk too much. I was like, white in the face, mortified. You don't need to say everything you think. You don't need to react on everything you hear. Pause, pause. The power's in the pause."
     },
     {
       "id": "t-006",
