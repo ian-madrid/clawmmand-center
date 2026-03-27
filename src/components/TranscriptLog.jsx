@@ -75,6 +75,11 @@ export default function TranscriptLog() {
                   {t.music && (
                     <p style={styles.music}>🎵 {t.music}</p>
                   )}
+                  {t.transcript && (
+                    <div style={styles.transcript}>
+                      <p style={styles.transcriptText}>{t.transcript}</p>
+                    </div>
+                  )}
                 </div>
                 <span style={t.status === 'ready' ? styles.badgeReady : styles.badgeProcessing}>
                   {t.status === 'ready' ? '✓ Ready' : '⏳ Processing'}
@@ -180,6 +185,19 @@ const styles = {
     fontSize: '11px',
     color: '#58a6ff',
     margin: '2px 0 0 0',
+  },
+  transcript: {
+    marginTop: '12px',
+    padding: '12px',
+    backgroundColor: '#0d1117',
+    borderRadius: '6px',
+    border: '1px solid #30363d',
+  },
+  transcriptText: {
+    fontSize: '13px',
+    color: '#c9d1d9',
+    lineHeight: 1.6,
+    margin: 0,
   },
   badgeReady: {
     padding: '4px 8px',
