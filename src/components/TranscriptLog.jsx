@@ -9,14 +9,7 @@ export default function TranscriptLog() {
   const [filter, setFilter] = useState('all')
   const [expandedTranscript, setExpandedTranscript] = useState(null)
   const [copiedId, setCopiedId] = useState(null)
-
-  // Auto-expand most recent transcript when loaded
-  useEffect(() => {
-    if (transcripts.length > 0 && expandedTranscript === null) {
-      // Expand the first (most recent) transcript
-      setExpandedTranscript(transcripts[0].id)
-    }
-  }, [transcripts])
+  const [showPrevious, setShowPrevious] = useState(false)
 
   useEffect(() => {
     fetch('/data/transcripts.json?t=' + Date.now())
@@ -92,73 +85,161 @@ export default function TranscriptLog() {
           {filtered.length === 0 ? (
             <p style={styles.empty}>No transcripts yet</p>
           ) : (
-            filtered.map(t => (
-              <div key={t.id} style={styles.item}>
-                {/* Header: Thumbnail + Title + Status */}
-                <div style={styles.headerRow}>
-                  <a 
-                    href={t.url} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="thumbnail-link"
-                    style={styles.thumbnailLink}
-                    title="Watch video"
-                  >
-                    <div className="thumbnail-container" style={styles.thumbnailContainer}>
-                      <Thumbnail thumbnailInfo={getThumbnailInfo(t)} type={t.type} />
-                      <div className="play-overlay" style={styles.playOverlay}>▶</div>
-                    </div>
-                  </a>
-                  
-                  <div style={styles.titleSection}>
-                    <h3 style={styles.itemTitle}>{t.title}</h3>
-                    <span style={t.status === 'ready' ? styles.badgeReady : styles.badgeProcessing}>
-                      {t.status === 'ready' ? '✓ Ready' : '⏳ Processing'}
-                    </span>
+            <>
+              {/* Most Recent Transcript - Visible, transcript collapsed by default */}
+              {filtered.slice(0, 1).map(t => (
+                <div key={t.id} style={styles.item}>
+                  <div style={styles.recentHeader}>
+                    <span style={styles.recentBadge}>🔥 Most Recent</span>
                   </div>
-                </div>
-
-                {/* Transcript Section */}
-                {t.transcript && (
-                  <div style={styles.transcriptSection}>
-                    <div style={styles.transcriptActions}>
-                      <button 
-                        style={styles.transcriptToggle}
-                        onClick={() => setExpandedTranscript(expandedTranscript === t.id ? null : t.id)}
-                      >
-                        {expandedTranscript === t.id ? '▼ Hide' : '▶ Show Transcript'}
-                      </button>
-                      
-                      <button 
-                        style={styles.copyButton}
-                        onClick={() => handleCopy(t.transcript, t.id)}
-                      >
-                        {copiedId === t.id ? '✓ Copied!' : '📋 Copy'}
-                      </button>
-                      
-                      <button 
-                        style={styles.deleteButton}
-                        onClick={() => handleDelete(t.id)}
-                      >
-                        🗑️
-                      </button>
-                    </div>
-                    
-                    {expandedTranscript === t.id && (
-                      <div style={styles.transcript}>
-                        <div style={styles.transcriptScroll}>
-                          {formatTranscript(t.transcript).map((paragraph, idx) => (
-                            <p key={idx} style={styles.transcriptParagraph}>
-                              {paragraph}
-                            </p>
-                          ))}
-                        </div>
+                  <div style={styles.headerRow}>
+                    <a 
+                      href={t.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="thumbnail-link"
+                      style={styles.thumbnailLink}
+                      title="Watch video"
+                    >
+                      <div className="thumbnail-container" style={styles.thumbnailContainer}>
+                        <Thumbnail thumbnailInfo={getThumbnailInfo(t)} type={t.type} />
+                        <div className="play-overlay" style={styles.playOverlay}>▶</div>
                       </div>
-                    )}
+                    </a>
+                    
+                    <div style={styles.titleSection}>
+                      <h3 style={styles.itemTitle}>{t.title}</h3>
+                      <span style={t.status === 'ready' ? styles.badgeReady : styles.badgeProcessing}>
+                        {t.status === 'ready' ? '✓ Ready' : '⏳ Processing'}
+                      </span>
+                    </div>
                   </div>
-                )}
-              </div>
-            ))
+
+                  {/* Transcript Section - Collapsed by default */}
+                  {t.transcript && (
+                    <div style={styles.transcriptSection}>
+                      <div style={styles.transcriptActions}>
+                        <button 
+                          style={styles.transcriptToggle}
+                          onClick={() => setExpandedTranscript(expandedTranscript === t.id ? null : t.id)}
+                        >
+                          {expandedTranscript === t.id ? '▼ Hide Transcript' : '▶ Show Transcript'}
+                        </button>
+                        
+                        <button 
+                          style={styles.copyButton}
+                          onClick={() => handleCopy(t.transcript, t.id)}
+                        >
+                          {copiedId === t.id ? '✓ Copied!' : '📋 Copy'}
+                        </button>
+                        
+                        <button 
+                          style={styles.deleteButton}
+                          onClick={() => handleDelete(t.id)}
+                        >
+                          🗑️
+                        </button>
+                      </div>
+                      
+                      {expandedTranscript === t.id && (
+                        <div style={styles.transcript}>
+                          <div style={styles.transcriptScroll}>
+                            {formatTranscript(t.transcript).map((paragraph, idx) => (
+                              <p key={idx} style={styles.transcriptParagraph}>
+                                {paragraph}
+                              </p>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              ))}
+
+              {/* Previous Transcripts - Collapsed in a section */}
+              {filtered.length > 1 && (
+                <div style={styles.previousSection}>
+                  <button 
+                    style={styles.previousToggle}
+                    onClick={() => setShowPrevious(!showPrevious)}
+                  >
+                    {showPrevious ? '▼ Hide Previous Transcripts' : `▶ Show Previous Transcripts (${filtered.length - 1})`}
+                  </button>
+                  
+                  {showPrevious && (
+                    <div style={styles.previousList}>
+                      {filtered.slice(1).map(t => (
+                        <div key={t.id} style={styles.previousItem}>
+                          <div style={styles.headerRow}>
+                            <a 
+                              href={t.url} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="thumbnail-link"
+                              style={styles.thumbnailLink}
+                              title="Watch video"
+                            >
+                              <div className="thumbnail-container" style={styles.thumbnailContainer}>
+                                <Thumbnail thumbnailInfo={getThumbnailInfo(t)} type={t.type} />
+                                <div className="play-overlay" style={styles.playOverlay}>▶</div>
+                              </div>
+                            </a>
+                            
+                            <div style={styles.titleSection}>
+                              <h3 style={styles.itemTitle}>{t.title}</h3>
+                              <span style={t.status === 'ready' ? styles.badgeReady : styles.badgeProcessing}>
+                                {t.status === 'ready' ? '✓ Ready' : '⏳ Processing'}
+                              </span>
+                            </div>
+                          </div>
+
+                          {/* Transcript Section */}
+                          {t.transcript && (
+                            <div style={styles.transcriptSection}>
+                              <div style={styles.transcriptActions}>
+                                <button 
+                                  style={styles.transcriptToggle}
+                                  onClick={() => setExpandedTranscript(expandedTranscript === t.id ? null : t.id)}
+                                >
+                                  {expandedTranscript === t.id ? '▼ Hide' : '▶ Show Transcript'}
+                                </button>
+                                
+                                <button 
+                                  style={styles.copyButton}
+                                  onClick={() => handleCopy(t.transcript, t.id)}
+                                >
+                                  {copiedId === t.id ? '✓ Copied!' : '📋 Copy'}
+                                </button>
+                                
+                                <button 
+                                  style={styles.deleteButton}
+                                  onClick={() => handleDelete(t.id)}
+                                >
+                                  🗑️
+                                </button>
+                              </div>
+                              
+                              {expandedTranscript === t.id && (
+                                <div style={styles.transcript}>
+                                  <div style={styles.transcriptScroll}>
+                                    {formatTranscript(t.transcript).map((paragraph, idx) => (
+                                      <p key={idx} style={styles.transcriptParagraph}>
+                                        {paragraph}
+                                      </p>
+                                    ))}
+                                  </div>
+                                </div>
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
+            </>
           )}
         </div>
       )}
@@ -468,4 +549,46 @@ const styles = {
       box-shadow: 0 0 0 3px rgba(31,111,235,0.3);
     }
   `,
+  recentHeader: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    marginBottom: '4px',
+  },
+  recentBadge: {
+    fontSize: '11px',
+    color: '#ff7b72',
+    backgroundColor: 'rgba(255,123,114,0.1)',
+    padding: '2px 6px',
+    borderRadius: '4px',
+    fontWeight: '600',
+  },
+  previousSection: {
+    marginTop: '8px',
+    paddingTop: '8px',
+    borderTop: '1px solid #30363d',
+  },
+  previousToggle: {
+    width: '100%',
+    backgroundColor: 'transparent',
+    border: '1px dashed #30363d',
+    borderRadius: '6px',
+    padding: '8px 12px',
+    color: '#8b949e',
+    fontSize: '13px',
+    cursor: 'pointer',
+    textAlign: 'center',
+    transition: 'all 0.2s',
+  },
+  previousList: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '8px',
+    marginTop: '8px',
+  },
+  previousItem: {
+    padding: '10px',
+    backgroundColor: '#0d1117',
+    borderRadius: '8px',
+    border: '1px solid #21262d',
+  },
 }

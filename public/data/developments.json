@@ -1,9 +1,18 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-03-27T19:05:00Z",
+  "_lastUpdated": "2026-03-27T19:20:00Z",
   
   "developments": [
+    {
+      "id": "dev-023",
+      "section": "transcript",
+      "title": "Split view: Recent (visible) + Previous (collapsible section)",
+      "description": "Most recent transcript shown at top with '🔥 Most Recent' badge, transcript collapsed by default. All older transcripts grouped in collapsible 'Previous Transcripts' section. Click to expand section when needed. Saves massive space on mobile.",
+      "status": "Complete",
+      "timestamp": "2026-03-27T19:20:00Z",
+      "expectedImprovement": "Minimal scrolling, focus on latest content, older transcripts out of the way"
+    },
     {
       "id": "dev-022",
       "section": "transcript",
