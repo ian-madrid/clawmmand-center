@@ -76,11 +76,9 @@ export default function TranscriptLog() {
                   {t.music && (
                     <p style={styles.music}>🎵 {t.music}</p>
                   )}
-                  {t.transcript && (
-                    <div style={styles.transcript}>
-                      <p style={styles.transcriptText}>{t.transcript}</p>
-                    </div>
-                  )}
+                  <div style={styles.transcript}>
+                    <p style={styles.transcriptText}>{t.transcript || 'No transcript available'}</p>
+                  </div>
                 </div>
                 <span style={t.status === 'ready' ? styles.badgeReady : styles.badgeProcessing}>
                   {t.status === 'ready' ? '✓ Ready' : '⏳ Processing'}
