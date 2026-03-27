@@ -1,9 +1,18 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-03-27T19:20:00Z",
+  "_lastUpdated": "2026-03-27T19:54:00Z",
   
   "developments": [
+    {
+      "id": "dev-024",
+      "section": "transcript",
+      "title": "Article-style transcript formatting - bold quotes, stats, lists",
+      "description": "Transcripts now formatted like articles: quoted text bolded, numbers/stats highlighted ($400K, 3.2 to 1), list items in blue. Better typography (14px, 1.7 line height). Reads like a proper article, not plain text dump.",
+      "status": "Complete",
+      "timestamp": "2026-03-27T19:54:00Z",
+      "expectedImprovement": "More engaging reading experience, key points stand out"
+    },
     {
       "id": "dev-023",
       "section": "transcript",

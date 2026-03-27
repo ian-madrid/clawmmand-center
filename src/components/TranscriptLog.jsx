@@ -145,9 +145,11 @@ export default function TranscriptLog() {
                         <div style={styles.transcript}>
                           <div style={styles.transcriptScroll}>
                             {formatTranscript(t.transcript).map((paragraph, idx) => (
-                              <p key={idx} style={styles.transcriptParagraph}>
-                                {paragraph}
-                              </p>
+                              <p 
+                                key={idx} 
+                                style={styles.transcriptParagraph}
+                                dangerouslySetInnerHTML={{ __html: paragraph }}
+                              />
                             ))}
                           </div>
                         </div>
@@ -224,9 +226,11 @@ export default function TranscriptLog() {
                                 <div style={styles.transcript}>
                                   <div style={styles.transcriptScroll}>
                                     {formatTranscript(t.transcript).map((paragraph, idx) => (
-                                      <p key={idx} style={styles.transcriptParagraph}>
-                                        {paragraph}
-                                      </p>
+                                      <p 
+                                        key={idx} 
+                                        style={styles.transcriptParagraph}
+                                        dangerouslySetInnerHTML={{ __html: paragraph }}
+                                      />
                                     ))}
                                   </div>
                                 </div>
@@ -282,11 +286,33 @@ function Thumbnail({ thumbnailInfo, type }) {
   )
 }
 
-// Format transcript into readable paragraphs
+// Format transcript into readable article-style content
 function formatTranscript(text) {
   if (!text) return []
+  
+  // Split into paragraphs
   const paragraphs = text.split(/\n\n+/).filter(p => p.trim())
-  return paragraphs.map(p => p.trim().replace(/\s+/g, ' ')).filter(p => p.length > 0)
+  
+  return paragraphs.map(p => {
+    let formatted = p.trim()
+    
+    // Clean up extra spaces
+    formatted = formatted.replace(/\s+/g, ' ')
+    
+    // Bold key phrases (quoted text, important statements)
+    formatted = formatted.replace(/"([^"]+)"/g, '<strong>"$1"</strong>')
+    
+    // Highlight numbers/stats
+    formatted = formatted.replace(/(\d+(?:\.\d+)?%)/g, '<strong>$1</strong>')
+    formatted = formatted.replace(/(\$[\d,]+(?:\.\d+)?)/g, '<strong>$1</strong>')
+    
+    // Emphasize list items (lines starting with numbers)
+    if (/^\d+\./.test(formatted)) {
+      formatted = `<span style="color: #58a6ff">${formatted}</span>`
+    }
+    
+    return formatted
+  }).filter(p => p.length > 0)
 }
 
 // Generate thumbnail URL
@@ -534,10 +560,10 @@ const styles = {
     paddingRight: '4px',
   },
   transcriptParagraph: {
-    fontSize: '13px',
+    fontSize: '14px',
     color: '#c9d1d9',
-    lineHeight: 1.6,
-    marginBottom: '12px',
+    lineHeight: 1.7,
+    marginBottom: '14px',
     textAlign: 'left',
   },
   hoverStyles: `
