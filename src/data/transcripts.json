@@ -1,6 +1,6 @@
 {
   "_comment": "Transcript Log Data - Real + Mock transcripts",
-  "_lastUpdated": "2026-03-27T14:55:15.216Z",
+  "_lastUpdated": "2026-03-27T16:50:00Z",
   "transcripts": [
     {
       "id": "t-001",
@@ -68,6 +68,18 @@
         "shares": "46.7K"
       },
       "music": "dereal (Slowed) - FutureVille & .diedlonely"
+    },
+    {
+      "id": "t-006",
+      "type": "youtube",
+      "emoji": "📺",
+      "title": "The AI Job Market Split in Two. One Side Pays $400K and Can't Hire Fast Enough.",
+      "source": "YouTube",
+      "url": "https://youtu.be/4cuT-LKcmWs?si=JgQXfccmMegshstU",
+      "duration": "25:39",
+      "savedAt": "2026-03-27",
+      "status": "ready",
+      "transcript": "So there are essentially infinite AI jobs right now, not growing demand, not a hot sector, none of that is true, it is functionally infinite. And that's true for businesses employing 10 to 20 people as much as it's true for businesses employing hundreds of 1000s. There is no functional upper limit to what employers would love to have as far as AI talent, and they cannot find them.\n\nAfter hundreds of interviews on particular roles, I'm hearing from employers, we can't fill the role. And I hear you saying, Nate, that must be a lie. I have applied for hundreds of AI positions. I am good at AI, it is not working. I get it. We have a K shaped job market right now. And there is a split in what employers want that is confusing this issue.\n\n**The AI labor market is actually two markets moving in opposite directions:**\n\n**Market 1:** Traditional knowledge work roles - generalist, product managers, standard software engineers, conventional business analysts. Job opening count is flat or falling.\n\n**Market 2:** Roles that design, build, operate and manage AI systems. Growing fast. The ratio of AI jobs to AI talent right now is 3.2 to 1 - three plus AI jobs for every single qualified candidate.\n\n**7 Critical AI Skills Employers Are Desperate For:**\n\n1. **Specification Quality** - Writing clear intent for agents\n2. **Evals** - Testing and measuring AI output quality\n3. **Multi-Agent Task Decomposition** - Breaking work into manageable segments for agents\n4. **Failure Pattern Recognition** - Diagnosing agent failures (context degradation, specification drift, sycophantic confirmation, tool selection errors, cascading failures, silent failures)\n5. **Trust and Security Design** - Building guardrails, understanding cost of error, reversibility, verifiability\n6. **Context Architecture** - Building the \"Dewey Decimal system for agents\" - organizing company data so agents can find and use it correctly\n7. **Cost and Token Economics** - Calculating ROI, choosing the right model for the task, understanding token costs\n\nThese skills are tied to how AI actually works. They're not going anywhere. Companies are betting careers on them and they're desperate for people who have them."
     }
   ]
 }
