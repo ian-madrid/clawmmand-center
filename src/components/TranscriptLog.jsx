@@ -199,6 +199,15 @@ function formatTranscript(text) {
 function getThumbnailInfo(transcript) {
   if (!transcript) return { type: 'fallback', gradient: 'linear-gradient(135deg, #161b22 0%, #0d1117 100%)' }
   
+  // Custom thumbnail (if provided)
+  if (transcript.thumbnail) {
+    return {
+      type: 'image',
+      url: transcript.thumbnail,
+      gradient: 'linear-gradient(135deg, #161b22 0%, #0d1117 100%)'
+    }
+  }
+  
   // YouTube thumbnails
   if (transcript.type === 'youtube' && transcript.url) {
     // Extract video ID from YouTube URL
