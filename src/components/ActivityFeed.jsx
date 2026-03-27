@@ -63,12 +63,26 @@ export default function ActivityFeed() {
         ) : (
           developments.map(dev => (
             <div key={dev.id} style={styles.item}>
-              <span style={styles.emoji}>
-                {sectionEmojis[dev.section] || '📝'}
-              </span>
-              <div style={styles.content}>
-                <p style={styles.action}>{dev.action}</p>
-                <p style={styles.time}>{timeAgo(dev.timestamp)}</p>
+              <div style={styles.itemLeft}>
+                <span style={styles.infoIcon}>ℹ️</span>
+              </div>
+              <div style={styles.itemContent}>
+                <p style={styles.title}>{dev.title}</p>
+                <p style={styles.description}>{dev.description}</p>
+                <div style={styles.meta}>
+                  <span style={styles.sectionTag}>
+                    {sectionEmojis[dev.section] || '📝'} {dev.section}
+                  </span>
+                  {dev.status && (
+                    <span style={dev.status === 'Complete' ? styles.statusComplete : styles.statusWorking}>
+                      {dev.status}
+                    </span>
+                  )}
+                  <span style={styles.time}>{timeAgo(dev.timestamp)}</span>
+                </div>
+                {dev.expectedImprovement && (
+                  <p style={styles.expected}>Expected: {dev.expectedImprovement}</p>
+                )}
               </div>
             </div>
           ))
@@ -244,25 +258,73 @@ const styles = {
     display: 'flex',
     alignItems: 'flex-start',
     gap: '12px',
-    padding: '12px',
+    padding: '16px',
     backgroundColor: '#161b22',
     borderRadius: '8px',
+    marginBottom: '12px',
+    borderBottom: '1px solid #30363d',
   },
-  emoji: {
-    fontSize: '20px',
+  itemLeft: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '8px',
   },
-  content: {
+  infoIcon: {
+    fontSize: '16px',
+    opacity: 0.8,
+  },
+  itemContent: {
     flex: 1,
   },
-  action: {
+  title: {
     fontSize: '14px',
+    fontWeight: '600',
     color: '#f0f6fc',
-    margin: '0 0 4px 0',
+    margin: '0 0 8px 0',
+    lineHeight: 1.5,
+  },
+  description: {
+    fontSize: '13px',
+    color: '#8b949e',
+    margin: '0 0 12px 0',
+    lineHeight: 1.6,
+  },
+  meta: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+    flexWrap: 'wrap',
+  },
+  sectionTag: {
+    fontSize: '12px',
+    color: '#58a6ff',
+    backgroundColor: '#161b22',
+    padding: '2px 8px',
+    borderRadius: '12px',
+  },
+  statusComplete: {
+    fontSize: '12px',
+    color: '#3fb950',
+    backgroundColor: '#161b22',
+    padding: '2px 8px',
+    borderRadius: '12px',
+  },
+  statusWorking: {
+    fontSize: '12px',
+    color: '#d29922',
+    backgroundColor: '#161b22',
+    padding: '2px 8px',
+    borderRadius: '12px',
   },
   time: {
     fontSize: '12px',
     color: '#8b949e',
-    margin: 0,
+  },
+  expected: {
+    fontSize: '12px',
+    color: '#58a6ff',
+    margin: '8px 0 0 0',
+    fontStyle: 'italic',
   },
   empty: {
     textAlign: 'center',
