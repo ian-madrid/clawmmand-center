@@ -2,6 +2,16 @@
 
 import { useState, useEffect } from 'react'
 
+// Section emojis for Activity Feed
+const sectionEmojis = {
+  eventbrite: '🎫',
+  transcript: '📋',
+  tasks: '✅',
+  schedule: '📅',
+  dashboard: '🧠',
+  system: '⚙️'
+}
+
 // Activity Log - THE PULSE of the system
 // Following sacred workflow: Every action logged immediately
 export default function ActivityFeed() {
@@ -164,15 +174,6 @@ const initialDevelopments = [
     status: 'deploying'
   }
 ]
-
-const sectionEmojis = {
-  eventbrite: '🎫',
-  transcript: '📋',
-  tasks: '✅',
-  schedule: '📅',
-  dashboard: '🧠',
-  system: '⚙️'
-}
 
 const styles = {
   section: {
