@@ -7,15 +7,15 @@ const mockDevelopments = [
   {
     id: 'dev-001',
     section: 'eventbrite',
-    action: 'Added auto-filter for past events',
-    timestamp: new Date(Date.now() - 2 * 60 * 1000).toISOString(), // 2 min ago
+    action: 'Rebuilt with dark theme + QR code support',
+    timestamp: new Date(Date.now() - 2 * 60 * 1000).toISOString(),
     status: 'completed'
   },
   {
     id: 'dev-002',
     section: 'eventbrite',
-    action: 'Updated Eventbrite prompts with NYC location',
-    timestamp: new Date(Date.now() - 5 * 60 * 1000).toISOString(), // 5 min ago
+    action: 'Added "Check Eventbrite Status" button',
+    timestamp: new Date(Date.now() - 5 * 60 * 1000).toISOString(),
     status: 'completed'
   },
   {
@@ -28,7 +28,7 @@ const mockDevelopments = [
   {
     id: 'dev-004',
     section: 'transcript',
-    action: 'Added transcript filter buttons',
+    action: 'Updated with dark theme styling',
     timestamp: new Date(Date.now() - 30 * 60 * 1000).toISOString(),
     status: 'completed'
   }
@@ -94,10 +94,12 @@ export default function ActivityFeed() {
 
 const styles = {
   section: {
-    backgroundColor: '#fff',
+    backgroundColor: '#0d1117',
     borderRadius: '12px',
     padding: '20px',
-    boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+    boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+    border: '1px solid #30363d',
+    color: '#c9d1d9',
   },
   header: {
     display: 'flex',
@@ -109,9 +111,10 @@ const styles = {
     fontSize: '20px',
     fontWeight: '600',
     margin: 0,
+    color: '#f0f6fc',
   },
   viewAll: {
-    color: '#0066cc',
+    color: '#58a6ff',
     textDecoration: 'none',
     fontSize: '14px',
   },
@@ -125,7 +128,7 @@ const styles = {
     alignItems: 'flex-start',
     gap: '12px',
     padding: '12px',
-    backgroundColor: '#f6f8fa',
+    backgroundColor: '#161b22',
     borderRadius: '8px',
   },
   emoji: {
@@ -136,17 +139,17 @@ const styles = {
   },
   action: {
     fontSize: '14px',
-    color: '#24292e',
+    color: '#f0f6fc',
     margin: '0 0 4px 0',
   },
   time: {
     fontSize: '12px',
-    color: '#586069',
+    color: '#8b949e',
     margin: 0,
   },
   empty: {
     textAlign: 'center',
-    color: '#586069',
+    color: '#8b949e',
     padding: '20px',
   },
 }

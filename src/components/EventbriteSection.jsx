@@ -7,8 +7,11 @@ export default function EventbriteSection() {
   const [events, setEvents] = useState([])
   const [myTickets, setMyTickets] = useState([])
   const [pastEvents, setPastEvents] = useState([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    // In production, this would fetch from Gmail API
+    // For now, load from mock data + localStorage
     const now = new Date()
     
     // Filter events into upcoming and past
@@ -30,8 +33,15 @@ export default function EventbriteSection() {
     // Load saved tickets from localStorage
     const saved = localStorage.getItem('myTickets')
     if (saved) {
-      setMyTickets(JSON.parse(saved))
+      try {
+        const parsed = JSON.parse(saved)
+        setMyTickets(parsed)
+      } catch (e) {
+        console.error('Failed to parse saved tickets')
+      }
     }
+    
+    setLoading(false)
   }, [])
 
   const handleReserve = (event) => {
@@ -42,7 +52,8 @@ export default function EventbriteSection() {
       datetime: event.datetime,
       reservedAt: new Date().toISOString(),
       ticketCount: 1,
-      status: 'reserved'
+      status: 'reserved',
+      qrCode: null // Will be populated from Gmail
     }
     
     const updated = [...myTickets, newTicket]
@@ -53,9 +64,11 @@ export default function EventbriteSection() {
     setEvents(prev => prev.map(e => 
       e.id === event.id ? { ...e, reserved: true } : e
     ))
-    
-    // Log to Activity Feed (in real app, this would update global state)
-    console.log('🎫 Reserved:', event.title)
+  }
+
+  const checkEventbriteStatus = async (ticket) => {
+    // TODO: Connect to Eventbrite API to verify ticket status
+    alert(`Checking status for: ${ticket.title}\n\n(In production: This will verify your ticket via Eventbrite API)`)
   }
 
   const upcomingTickets = myTickets.filter(t => new Date(t.datetime) > new Date())
@@ -69,39 +82,48 @@ export default function EventbriteSection() {
         </a>
       </div>
 
-      {/* Events Grid */}
-      <div style={styles.eventsGrid}>
-        {events.map(event => (
-          <EventCard 
-            key={event.id} 
-            event={event} 
-            onReserve={handleReserve}
-          />
-        ))}
-      </div>
-
-      {/* My Tickets */}
-      {upcomingTickets.length > 0 && (
-        <div style={styles.myTickets}>
-          <h3 style={styles.myTicketsTitle}>
-            🎫 My Tickets ({upcomingTickets.length} tickets)
-          </h3>
-          <div style={styles.ticketsList}>
-            {upcomingTickets.slice(0, 3).map(ticket => (
-              <div key={ticket.eventId} style={styles.ticketItem}>
-                <span style={styles.ticketTitle}>{ticket.title}</span>
-                <span style={styles.ticketDate}>
-                  {new Date(ticket.datetime).toLocaleDateString()}
-                </span>
-              </div>
-            ))}
+      {loading ? (
+        <p style={styles.loading}>Loading events...</p>
+      ) : (
+        <>
+          {/* Events Grid */}
+          <div style={styles.eventsGrid}>
+            {events.length === 0 ? (
+              <p style={styles.empty}>No upcoming events</p>
+            ) : (
+              events.map(event => (
+                <EventCard 
+                  key={event.id} 
+                  event={event} 
+                  onReserve={handleReserve}
+                />
+              ))
+            )}
           </div>
-        </div>
-      )}
 
-      {/* Past Events (Collapsible) */}
-      {pastEvents.length > 0 && (
-        <PastEvents events={pastEvents} />
+          {/* My Tickets with QR Codes */}
+          {upcomingTickets.length > 0 && (
+            <div style={styles.myTickets}>
+              <h3 style={styles.myTicketsTitle}>
+                🎫 My Tickets ({upcomingTickets.length} tickets)
+              </h3>
+              <div style={styles.ticketsList}>
+                {upcomingTickets.map(ticket => (
+                  <TicketCard 
+                    key={ticket.eventId} 
+                    ticket={ticket}
+                    onCheckStatus={() => checkEventbriteStatus(ticket)}
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Past Events (Collapsible) */}
+          {pastEvents.length > 0 && (
+            <PastEvents events={pastEvents} />
+          )}
+        </>
       )}
     </section>
   )
@@ -134,7 +156,11 @@ function EventCard({ event, onReserve }) {
           <p style={styles.distance}>📍 {event.distance} miles</p>
         )}
         <p style={styles.price}>
-          {event.price === 0 ? '🆓 Free' : '💰 Paid'}
+          {event.price === 0 ? (
+            <span style={styles.freeBadge}>🆓 FREE</span>
+          ) : (
+            <span style={styles.paidBadge}>💰 Paid</span>
+          )}
         </p>
       </div>
 
@@ -147,9 +173,53 @@ function EventCard({ event, onReserve }) {
         </button>
       ) : (
         <button style={styles.reservedButton} disabled>
-          ✓ Reserved
+          ⏳ Reserved
         </button>
       )}
+    </div>
+  )
+}
+
+function TicketCard({ ticket, onCheckStatus }) {
+  return (
+    <div style={styles.ticketCard}>
+      <div style={styles.ticketHeader}>
+        <h4 style={styles.ticketTitle}>{ticket.title}</h4>
+        {ticket.qrCode ? (
+          <span style={styles.qrBadge}>🎁 QR Ready</span>
+        ) : (
+          <span style={styles.pendingBadge}>⏳ Awaiting QR</span>
+        )}
+      </div>
+      
+      <div style={styles.ticketBody}>
+        <p style={styles.ticketVenue}>{ticket.venue}</p>
+        <p style={styles.ticketDate}>
+          📅 {new Date(ticket.datetime).toLocaleDateString()}
+        </p>
+        
+        {ticket.qrCode ? (
+          <div style={styles.qrSection}>
+            <img src={ticket.qrCode} alt="QR Code" style={styles.qrCode} />
+            <p style={styles.qrNote}>Show this at the event</p>
+          </div>
+        ) : (
+          <div style={styles.noQr}>
+            <p style={styles.noQrText}>
+              📧 QR code will appear here after Eventbrite confirmation email is received
+            </p>
+          </div>
+        )}
+      </div>
+
+      <div style={styles.ticketActions}>
+        <button 
+          style={styles.checkStatusButton}
+          onClick={onCheckStatus}
+        >
+          ✓ Check Eventbrite Status
+        </button>
+      </div>
     </div>
   )
 }
@@ -184,10 +254,11 @@ function PastEvents({ events }) {
 
 const styles = {
   section: {
-    backgroundColor: '#fff',
+    backgroundColor: '#0d1117',
     borderRadius: '12px',
     padding: '20px',
-    boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+    boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+    color: '#c9d1d9',
   },
   header: {
     display: 'flex',
@@ -199,11 +270,22 @@ const styles = {
     fontSize: '20px',
     fontWeight: '600',
     margin: 0,
+    color: '#f0f6fc',
   },
   browseLink: {
-    color: '#0066cc',
+    color: '#58a6ff',
     textDecoration: 'none',
     fontSize: '14px',
+  },
+  loading: {
+    textAlign: 'center',
+    padding: '20px',
+    color: '#8b949e',
+  },
+  empty: {
+    textAlign: 'center',
+    padding: '20px',
+    color: '#8b949e',
   },
   eventsGrid: {
     display: 'flex',
@@ -212,10 +294,10 @@ const styles = {
     marginBottom: '20px',
   },
   card: {
-    border: '1px solid #e1e4e8',
+    border: '1px solid #30363d',
     borderRadius: '8px',
     padding: '16px',
-    backgroundColor: '#fff',
+    backgroundColor: '#161b22',
     transition: 'box-shadow 0.2s',
   },
   cardHeader: {
@@ -232,23 +314,24 @@ const styles = {
     fontWeight: '600',
     margin: 0,
     flex: 1,
+    color: '#f0f6fc',
   },
   cardBody: {
     marginBottom: '12px',
   },
   venue: {
     fontSize: '14px',
-    color: '#586069',
+    color: '#8b949e',
     margin: '4px 0',
   },
   datetime: {
     fontSize: '14px',
-    color: '#586069',
+    color: '#8b949e',
     margin: '4px 0',
   },
   distance: {
     fontSize: '14px',
-    color: '#586069',
+    color: '#8b949e',
     margin: '4px 0',
   },
   price: {
@@ -256,11 +339,27 @@ const styles = {
     fontWeight: '500',
     margin: '4px 0',
   },
+  freeBadge: {
+    backgroundColor: '#238636',
+    color: '#ffffff',
+    padding: '2px 8px',
+    borderRadius: '12px',
+    fontSize: '12px',
+    fontWeight: '600',
+  },
+  paidBadge: {
+    backgroundColor: '#1f6feb',
+    color: '#ffffff',
+    padding: '2px 8px',
+    borderRadius: '12px',
+    fontSize: '12px',
+    fontWeight: '600',
+  },
   reserveButton: {
     width: '100%',
     padding: '10px',
-    backgroundColor: '#2ea44f',
-    color: '#fff',
+    backgroundColor: '#238636',
+    color: '#ffffff',
     border: 'none',
     borderRadius: '6px',
     fontSize: '14px',
@@ -270,8 +369,8 @@ const styles = {
   reservedButton: {
     width: '100%',
     padding: '10px',
-    backgroundColor: '#6a737d',
-    color: '#fff',
+    backgroundColor: '#6e7681',
+    color: '#ffffff',
     border: 'none',
     borderRadius: '6px',
     fontSize: '14px',
@@ -279,35 +378,118 @@ const styles = {
     cursor: 'not-allowed',
   },
   myTickets: {
-    backgroundColor: '#f6f8fa',
+    backgroundColor: '#161b22',
     borderRadius: '8px',
     padding: '16px',
     marginTop: '16px',
+    border: '1px solid #30363d',
   },
   myTicketsTitle: {
     fontSize: '16px',
     fontWeight: '600',
     margin: '0 0 12px 0',
+    color: '#f0f6fc',
   },
   ticketsList: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '8px',
+    gap: '12px',
   },
-  ticketItem: {
+  ticketCard: {
+    border: '1px solid #30363d',
+    borderRadius: '8px',
+    padding: '16px',
+    backgroundColor: '#0d1117',
+  },
+  ticketHeader: {
     display: 'flex',
     justifyContent: 'space-between',
-    fontSize: '14px',
+    alignItems: 'center',
+    marginBottom: '12px',
   },
   ticketTitle: {
-    color: '#24292e',
+    fontSize: '16px',
+    fontWeight: '600',
+    margin: 0,
+    color: '#f0f6fc',
+    flex: 1,
+  },
+  ticketBody: {
+    marginBottom: '12px',
+  },
+  ticketVenue: {
+    fontSize: '14px',
+    color: '#8b949e',
+    margin: '4px 0',
   },
   ticketDate: {
-    color: '#586069',
+    fontSize: '14px',
+    color: '#8b949e',
+    margin: '4px 0',
+  },
+  qrSection: {
+    marginTop: '12px',
+    padding: '12px',
+    backgroundColor: '#161b22',
+    borderRadius: '8px',
+    textAlign: 'center',
+  },
+  qrCode: {
+    maxWidth: '200px',
+    width: '100%',
+    border: '2px solid #30363d',
+    borderRadius: '8px',
+  },
+  qrNote: {
+    fontSize: '12px',
+    color: '#8b949e',
+    marginTop: '8px',
+  },
+  noQr: {
+    padding: '12px',
+    backgroundColor: '#161b22',
+    borderRadius: '8px',
+    textAlign: 'center',
+  },
+  noQrText: {
+    fontSize: '13px',
+    color: '#8b949e',
+    margin: 0,
+  },
+  ticketActions: {
+    display: 'flex',
+    gap: '8px',
+  },
+  checkStatusButton: {
+    flex: 1,
+    padding: '10px',
+    backgroundColor: '#1f6feb',
+    color: '#ffffff',
+    border: 'none',
+    borderRadius: '6px',
+    fontSize: '14px',
+    fontWeight: '600',
+    cursor: 'pointer',
+  },
+  qrBadge: {
+    backgroundColor: '#238636',
+    color: '#ffffff',
+    padding: '4px 12px',
+    borderRadius: '12px',
+    fontSize: '12px',
+    fontWeight: '600',
+  },
+  pendingBadge: {
+    backgroundColor: '#9e6a03',
+    color: '#ffffff',
+    padding: '4px 12px',
+    borderRadius: '12px',
+    fontSize: '12px',
+    fontWeight: '600',
   },
   pastEvents: {
     marginTop: '16px',
-    borderTop: '1px solid #e1e4e8',
+    borderTop: '1px solid #30363d',
     paddingTop: '16px',
   },
   pastEventsHeader: {
@@ -320,7 +502,7 @@ const styles = {
     border: 'none',
     cursor: 'pointer',
     fontSize: '14px',
-    color: '#586069',
+    color: '#8b949e',
   },
   pastEventsList: {
     display: 'flex',
@@ -333,7 +515,7 @@ const styles = {
     alignItems: 'center',
     gap: '8px',
     fontSize: '14px',
-    color: '#586069',
+    color: '#8b949e',
   },
   pastEventEmoji: {
     fontSize: '16px',
@@ -342,8 +524,8 @@ const styles = {
     flex: 1,
   },
   pastEventBadge: {
-    backgroundColor: '#2ea44f',
-    color: '#fff',
+    backgroundColor: '#238636',
+    color: '#ffffff',
     padding: '2px 8px',
     borderRadius: '12px',
     fontSize: '12px',

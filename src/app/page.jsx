@@ -40,7 +40,7 @@ export default function Dashboard() {
 const styles = {
   container: {
     minHeight: '100vh',
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#010409',
     padding: '20px',
     fontFamily: 'system-ui, -apple-system, sans-serif',
   },
@@ -48,19 +48,20 @@ const styles = {
     textAlign: 'center',
     marginBottom: '30px',
     padding: '20px',
-    backgroundColor: '#fff',
+    backgroundColor: '#0d1117',
     borderRadius: '12px',
-    boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+    boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+    border: '1px solid #30363d',
   },
   title: {
     fontSize: '32px',
     fontWeight: '700',
     margin: '0 0 8px 0',
-    color: '#1a1a1a',
+    color: '#f0f6fc',
   },
   subtitle: {
     fontSize: '16px',
-    color: '#666',
+    color: '#8b949e',
     margin: 0,
   },
   grid: {
@@ -79,7 +80,7 @@ const styles = {
     textAlign: 'center',
     marginTop: '40px',
     padding: '20px',
-    color: '#666',
+    color: '#8b949e',
     fontSize: '14px',
   },
 }
