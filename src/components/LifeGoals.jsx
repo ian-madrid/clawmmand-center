@@ -10,6 +10,19 @@ export default function LifeGoals() {
   const [activeTab, setActiveTab] = useState('overview')
 
   useEffect(() => {
+    // First try localStorage (for saved changes)
+    const saved = localStorage.getItem('life-goals')
+    if (saved) {
+      try {
+        setProjects(JSON.parse(saved))
+        setLoading(false)
+        return
+      } catch (e) {
+        console.error('Failed to parse saved life goals:', e)
+      }
+    }
+    
+    // Fall back to fetching from server
     fetch('/data/life-goals.json?t=' + Date.now())
       .then(res => res.json())
       .then(data => {
@@ -45,6 +58,34 @@ export default function LifeGoals() {
     if (days <= 7) return { text: `${days}d left`, color: '#d29922' }
     return { text: `${days}d`, color: '#8b949e' }
   }
+
+  // Update task status and save to localStorage
+  const updateTaskStatus = (projectId, taskType, taskId, updates) => {
+    setProjects(prevProjects => {
+      const newProjects = prevProjects.map(project => {
+        if (project.id !== projectId) return project
+        
+        const newProject = { ...project }
+        if (taskType === 'deadline') {
+          newProject.deadlines = project.deadlines.map(d => 
+            d.id === taskId ? { ...d, ...updates } : d
+          )
+        } else if (taskType === 'action') {
+          newProject.actions = project.actions.map(a => 
+            a.id === taskId ? { ...a, ...updates } : a
+          )
+        }
+        
+        // Save to localStorage
+        localStorage.setItem('life-goals', JSON.stringify(newProjects))
+        return newProject
+      })
+      return newProjects
+    })
+  }
+
+  const updateDeadline = (projectId, taskId, updates) => updateTaskStatus(projectId, 'deadline', taskId, updates)
+  const updateAction = (projectId, taskId, updates) => updateTaskStatus(projectId, 'action', taskId, updates)
 
   if (loading) {
     return (
@@ -127,10 +168,19 @@ export default function LifeGoals() {
                       <OverviewTab project={project} getDaysUntil={getDaysUntil} />
                     )}
                     {activeTab === 'deadlines' && (
-                      <DeadlinesTab deadlines={project.deadlines} getDaysUntil={getDaysUntil} />
+                      <DeadlinesTab 
+                        projectId={project.id}
+                        deadlines={project.deadlines} 
+                        getDaysUntil={getDaysUntil}
+                        onUpdateDeadline={(taskId, updates) => updateDeadline(project.id, taskId, updates)}
+                      />
                     )}
                     {activeTab === 'actions' && (
-                      <ActionsTab actions={project.actions} />
+                      <ActionsTab 
+                        projectId={project.id}
+                        actions={project.actions}
+                        onUpdateAction={(taskId, updates) => updateAction(project.id, taskId, updates)}
+                      />
                     )}
                     {activeTab === 'contacts' && (
                       <ContactsTab contacts={project.contacts} />
@@ -224,7 +274,7 @@ function OverviewTab({ project, getDaysUntil }) {
   )
 }
 
-function DeadlinesTab({ deadlines, getDaysUntil, onUpdateDeadline }) {
+function DeadlinesTab({ projectId, deadlines, getDaysUntil, onUpdateDeadline }) {
   if (!deadlines || deadlines.length === 0) {
     return <p style={styles.emptyText}>No deadlines yet</p>
   }
@@ -293,7 +343,7 @@ function DeadlinesTab({ deadlines, getDaysUntil, onUpdateDeadline }) {
   )
 }
 
-function ActionsTab({ actions, onUpdateAction }) {
+function ActionsTab({ projectId, actions, onUpdateAction }) {
   const [copiedId, setCopiedId] = useState(null)
   const [showTemplate, setShowTemplate] = useState(null)
 

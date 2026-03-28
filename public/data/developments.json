@@ -1,9 +1,18 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-03-28T04:00:00Z",
+  "_lastUpdated": "2026-03-28T04:15:00Z",
   
   "developments": [
+    {
+      "id": "dev-032",
+      "section": "life-goals",
+      "title": "Fixed task status dropdowns - now working with localStorage",
+      "description": "Status dropdowns now actually work! Changes save to localStorage immediately. Refresh browser and changes persist. Tell assistant in chat to commit permanent changes to GitHub.",
+      "status": "Complete",
+      "timestamp": "2026-03-28T04:15:00Z",
+      "expectedImprovement": "Interactive task management actually works now."
+    },
     {
       "id": "dev-031",
       "section": "life-goals",
