@@ -1,0 +1,234 @@
+{
+  "_comment": "Life Goals - Research to Action Pipeline",
+  "_lastUpdated": "2026-03-27T17:21:00Z",
+  "projects": [
+    {
+      "id": "cornell-tech-2026",
+      "title": "Cornell Tech MBA/MS",
+      "category": "education",
+      "status": "researching",
+      "progress": 15,
+      "description": "Dual degree MBA/MS at Cornell Tech NYC - combining business with technology",
+      
+      "deadlines": [
+        {
+          "id": "d-001",
+          "title": "Research programs and requirements",
+          "date": "2026-04-15",
+          "status": "pending",
+          "priority": "high"
+        },
+        {
+          "id": "d-002",
+          "title": "GMAT/GRE test date",
+          "date": "2026-05-30",
+          "status": "pending",
+          "priority": "high"
+        },
+        {
+          "id": "d-003",
+          "title": "Request transcripts from undergraduate university",
+          "date": "2026-06-15",
+          "status": "pending",
+          "priority": "medium"
+        },
+        {
+          "id": "d-004",
+          "title": "Round 1 application deadline",
+          "date": "2026-10-01",
+          "status": "pending",
+          "priority": "critical"
+        },
+        {
+          "id": "d-005",
+          "title": "Forté Fellowship application",
+          "date": "2026-09-15",
+          "status": "pending",
+          "priority": "high"
+        },
+        {
+          "id": "d-006",
+          "title": "Interview window opens",
+          "date": "2026-11-01",
+          "status": "pending",
+          "priority": "medium"
+        },
+        {
+          "id": "d-007",
+          "title": "Decision notification",
+          "date": "2026-12-15",
+          "status": "pending",
+          "priority": "low"
+        }
+      ],
+      
+      "actions": [
+        {
+          "id": "a-001",
+          "title": "Email admissions office with questions",
+          "status": "pending",
+          "dueDate": "2026-04-01",
+          "template": "inquiry-email"
+        },
+        {
+          "id": "a-002",
+          "title": "Schedule GMAT/GRE test date",
+          "status": "pending",
+          "dueDate": "2026-04-10"
+        },
+        {
+          "id": "a-003",
+          "title": "Request recommendation letter from Prof. Smith",
+          "status": "pending",
+          "dueDate": "2026-05-01",
+          "template": "recommendation-request"
+        },
+        {
+          "id": "a-004",
+          "title": "Request recommendation letter from current employer",
+          "status": "pending",
+          "dueDate": "2026-05-01",
+          "template": "recommendation-request"
+        },
+        {
+          "id": "a-005",
+          "title": "Draft statement of purpose",
+          "status": "pending",
+          "dueDate": "2026-08-01",
+          "template": "sop-draft"
+        },
+        {
+          "id": "a-006",
+          "title": "Update resume/CV",
+          "status": "pending",
+          "dueDate": "2026-07-15"
+        },
+        {
+          "id": "a-007",
+          "title": "Complete FAFSA application",
+          "status": "pending",
+          "dueDate": "2026-06-30"
+        },
+        {
+          "id": "a-008",
+          "title": "Research housing options near Roosevelt Island",
+          "status": "pending",
+          "dueDate": "2026-08-15"
+        }
+      ],
+      
+      "contacts": [
+        {
+          "id": "c-001",
+          "name": "Cornell Tech Admissions",
+          "role": "Admissions Office",
+          "email": "admissions@cornell.edu",
+          "phone": "212-555-0100",
+          "lastContact": null,
+          "followUp": null
+        },
+        {
+          "id": "c-002",
+          "name": "Sarah Chen",
+          "role": "Admissions Counselor",
+          "email": "s.chen@cornell.edu",
+          "phone": null,
+          "lastContact": null,
+          "followUp": "2026-04-05"
+        }
+      ],
+      
+      "costs": [
+        {
+          "id": "cost-001",
+          "category": "Tuition",
+          "description": "2-year MBA/MS program",
+          "amount": 120000
+        },
+        {
+          "id": "cost-002",
+          "category": "Living Expenses",
+          "description": "NYC housing, food, transportation (2 years)",
+          "amount": 60000
+        },
+        {
+          "id": "cost-003",
+          "category": "Books & Materials",
+          "description": "Textbooks, laptop, software",
+          "amount": 5000
+        },
+        {
+          "id": "cost-004",
+          "category": "Application Fee",
+          "description": "Cornell application",
+          "amount": 250
+        },
+        {
+          "id": "cost-005",
+          "category": "GMAT/GRE",
+          "description": "Test fee",
+          "amount": 275
+        }
+      ],
+      
+      "scholarships": [
+        {
+          "id": "sch-001",
+          "name": "Forté Fellowship",
+          "amount": 60000,
+          "status": "researching",
+          "deadline": "2026-09-15",
+          "requirements": "Women in business, leadership potential"
+        },
+        {
+          "id": "sch-002",
+          "name": "Cornell Merit Scholarship",
+          "amount": 30000,
+          "status": "researching",
+          "deadline": "2026-10-01",
+          "requirements": "Automatic consideration with application"
+        },
+        {
+          "id": "sch-003",
+          "name": "NSF Graduate Research Fellowship",
+          "amount": 34000,
+          "status": "researching",
+          "deadline": "2026-04-15",
+          "requirements": "STEM focus, research proposal"
+        },
+        {
+          "id": "sch-004",
+          "name": "External Private Scholarships",
+          "amount": 10000,
+          "status": "researching",
+          "deadline": "2026-08-01",
+          "requirements": "Various - research needed"
+        }
+      ],
+      
+      "research": [
+        {
+          "id": "r-001",
+          "title": "Program Overview",
+          "content": "2-year dual degree combining MBA with MS in a tech focus area (CS, ORIE, Health Tech, etc.)",
+          "source": "cornell.edu",
+          "dateAdded": "2026-03-27"
+        },
+        {
+          "id": "r-002",
+          "title": "Location",
+          "content": "Roosevelt Island, NYC - new campus with industry partnerships",
+          "source": "cornell.edu",
+          "dateAdded": "2026-03-27"
+        },
+        {
+          "id": "r-003",
+          "title": "Application Rounds",
+          "content": "Round 1: Oct 1 | Round 2: Jan 5 | Round 3: Mar 15",
+          "source": "cornell.edu",
+          "dateAdded": "2026-03-27"
+        }
+      ]
+    }
+  ]
+}
