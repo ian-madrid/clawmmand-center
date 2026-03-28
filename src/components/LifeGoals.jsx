@@ -266,6 +266,19 @@ function DeadlinesTab({ deadlines, getDaysUntil }) {
 }
 
 function ActionsTab({ actions }) {
+  const [copiedId, setCopiedId] = useState(null)
+  const [showTemplate, setShowTemplate] = useState(null)
+
+  const handleCopy = async (text, id) => {
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopiedId(id)
+      setTimeout(() => setCopiedId(null), 2000)
+    } catch (err) {
+      console.error('Failed to copy:', err)
+    }
+  }
+
   if (!actions || actions.length === 0) {
     return <p style={styles.emptyText}>No action items yet</p>
   }
@@ -273,23 +286,44 @@ function ActionsTab({ actions }) {
   return (
     <div style={styles.actionsList}>
       {actions.map(a => (
-        <div key={a.id} style={styles.actionRow}>
-          <input
-            type="checkbox"
-            checked={a.status === 'completed'}
-            readOnly
-            style={styles.checkbox}
-          />
-          <span style={{
-            ...styles.actionText,
-            textDecoration: a.status === 'completed' ? 'line-through' : 'none'
-          }}>
-            {a.title}
-          </span>
-          {a.template && (
-            <button style={styles.templateButton}>
-              📝 {a.template}
-            </button>
+        <div key={a.id} style={styles.actionItem}>
+          <div style={styles.actionRow}>
+            <input
+              type="checkbox"
+              checked={a.status === 'completed'}
+              readOnly
+              style={styles.checkbox}
+            />
+            <span style={{
+              ...styles.actionText,
+              textDecoration: a.status === 'completed' ? 'line-through' : 'none'
+            }}>
+              {a.title}
+            </span>
+            {a.template && (
+              <button 
+                style={styles.templateButton}
+                onClick={() => setShowTemplate(showTemplate === a.id ? null : a.id)}
+              >
+                📝 {a.template}
+              </button>
+            )}
+          </div>
+          
+          {/* Template Preview with Copy */}
+          {showTemplate === a.id && a.templateContent && (
+            <div style={styles.templatePreview}>
+              <div style={styles.templateHeader}>
+                <span style={styles.templateLabel}>{a.template} Template</span>
+                <button
+                  style={copiedId === a.id ? styles.copyButtonSuccess : styles.copyButton}
+                  onClick={() => handleCopy(a.templateContent, a.id)}
+                >
+                  {copiedId === a.id ? '✓ Copied!' : '📋 Copy'}
+                </button>
+              </div>
+              <pre style={styles.templateContent}>{a.templateContent}</pre>
+            </div>
           )}
         </div>
       ))}
@@ -665,6 +699,11 @@ const styles = {
     flexDirection: 'column',
     gap: '8px',
   },
+  actionItem: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '6px',
+  },
   actionRow: {
     display: 'flex',
     alignItems: 'center',
@@ -687,6 +726,58 @@ const styles = {
     color: '#ffffff',
     fontSize: '11px',
     cursor: 'pointer',
+    fontWeight: '600',
+  },
+  templatePreview: {
+    backgroundColor: '#0d1117',
+    borderRadius: '6px',
+    border: '1px solid #30363d',
+    overflow: 'hidden',
+  },
+  templateHeader: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '8px 10px',
+    backgroundColor: '#161b22',
+    borderBottom: '1px solid #30363d',
+  },
+  templateLabel: {
+    fontSize: '12px',
+    color: '#8b949e',
+    fontWeight: '600',
+  },
+  copyButton: {
+    backgroundColor: '#238636',
+    border: 'none',
+    borderRadius: '4px',
+    padding: '4px 10px',
+    color: '#ffffff',
+    fontSize: '11px',
+    cursor: 'pointer',
+    fontWeight: '600',
+    transition: 'all 0.2s',
+  },
+  copyButtonSuccess: {
+    backgroundColor: '#3fb950',
+    border: 'none',
+    borderRadius: '4px',
+    padding: '4px 10px',
+    color: '#ffffff',
+    fontSize: '11px',
+    cursor: 'default',
+    fontWeight: '600',
+  },
+  templateContent: {
+    padding: '10px',
+    margin: 0,
+    fontSize: '12px',
+    color: '#c9d1d9',
+    lineHeight: 1.6,
+    whiteSpace: 'pre-wrap',
+    fontFamily: 'ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace',
+    maxHeight: '300px',
+    overflowY: 'auto',
   },
   contactsList: {
     display: 'flex',

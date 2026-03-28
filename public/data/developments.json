@@ -1,9 +1,18 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-03-28T00:21:00Z",
+  "_lastUpdated": "2026-03-28T00:31:00Z",
   
   "developments": [
+    {
+      "id": "dev-027",
+      "section": "life-goals",
+      "title": "Added copy buttons to all email/letter templates",
+      "description": "Every template (inquiry emails, recommendation requests, SOP outlines) now has one-click copy button. Click '📝 Template' → see full text → click '📋 Copy' → paste anywhere. No more manual copying from chat. Templates stored in Life Goals system, ready when you need them.",
+      "status": "Complete",
+      "timestamp": "2026-03-28T00:31:00Z",
+      "expectedImprovement": "Faster execution - one click to copy professional emails and letters, no switching between chat and email client"
+    },
     {
       "id": "dev-026",
       "section": "life-goals",
