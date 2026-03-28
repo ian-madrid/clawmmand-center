@@ -1,31 +1,39 @@
 {
   "_comment": "Life Goals - Research to Action Pipeline",
-  "_lastUpdated": "2026-03-28T01:10:00Z",
+  "_lastUpdated": "2026-03-28T03:45:00Z",
   "projects": [
     {
-      "id": "us-llc-setup-2026",
-      "title": "US LLC Setup (Delaware)",
+      "id": "us-okpo-llc-2026",
+      "title": "US OkPo LLC (Delaware)",
       "category": "business",
-      "status": "planning",
-      "progress": 0,
-      "description": "Register Delaware LLC for AI startup, get EIN from IRS, open US bank account. Requires in-person visit to Delaware for bank account.",
+      "status": "executing",
+      "progress": 35,
+      "description": "Delaware LLC for OkPo AI startup. LLC registered ✅, formation date set ✅. EIN form to be faxed Monday. Need to confirm bank account requirements for foreign owners.",
       
       "deadlines": [
         {
           "id": "d-001",
-          "title": "File Delaware LLC Certificate of Formation",
-          "date": "2026-04-30",
-          "status": "pending",
-          "priority": "high",
-          "note": "$90 filing fee, can be done online"
+          "title": "LLC Certificate of Formation",
+          "date": "2026-03-27",
+          "status": "completed",
+          "priority": "critical",
+          "note": "✅ DONE - LLC registered"
         },
         {
           "id": "d-002",
-          "title": "Apply for EIN (IRS Form SS-4)",
-          "date": "2026-05-15",
+          "title": "Fax EIN Form SS-4 to IRS",
+          "date": "2026-03-30",
+          "status": "pending",
+          "priority": "critical",
+          "note": "This Monday - fax to 267-941-1012, expect 4-6 weeks"
+        },
+        {
+          "id": "d-003",
+          "title": "Contact Delaware banks for foreign owner requirements",
+          "date": "2026-04-05",
           "status": "pending",
           "priority": "high",
-          "note": "4-6 weeks processing for foreign owners, fax or mail"
+          "note": "Confirm if in-person appearance required for foreign LLC owners"
         },
         {
           "id": "d-003",
