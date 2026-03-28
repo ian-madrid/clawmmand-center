@@ -1,9 +1,18 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-03-28T03:45:00Z",
+  "_lastUpdated": "2026-03-28T04:00:00Z",
   
   "developments": [
+    {
+      "id": "dev-031",
+      "section": "life-goals",
+      "title": "Added interactive task status management",
+      "description": "Each deadline and action now has a dropdown: ⏳ Pending, 🔄 Processing, ✅ Done, ⏸️ Deferred, ❌ Cancelled. Visual feedback: green for done, strikethrough for cancelled/deferred, color-coded borders. Can also tell assistant in chat to update tasks.",
+      "status": "Complete",
+      "timestamp": "2026-03-28T04:00:00Z",
+      "expectedImprovement": "Better task tracking - see what's in progress vs done vs deferred at a glance."
+    },
     {
       "id": "dev-030",
       "section": "life-goals",

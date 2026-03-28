@@ -149,6 +149,18 @@ export default function LifeGoals() {
   )
 }
 
+// Helper functions
+function getStatusColor(status) {
+  const colors = {
+    pending: '#8b949e',
+    processing: '#1f6feb',
+    completed: '#3fb950',
+    deferred: '#d29922',
+    cancelled: '#6e7681'
+  }
+  return colors[status] || '#8b949e'
+}
+
 // Tab Components
 function OverviewTab({ project, getDaysUntil }) {
   const upcomingDeadlines = (project.deadlines || [])
@@ -212,30 +224,46 @@ function OverviewTab({ project, getDaysUntil }) {
   )
 }
 
-function DeadlinesTab({ deadlines, getDaysUntil }) {
+function DeadlinesTab({ deadlines, getDaysUntil, onUpdateDeadline }) {
   if (!deadlines || deadlines.length === 0) {
     return <p style={styles.emptyText}>No deadlines yet</p>
   }
 
   const sorted = [...deadlines].sort((a, b) => new Date(a.date) - new Date(b.date))
 
+  const handleStatusChange = (id, newStatus) => {
+    if (onUpdateDeadline) onUpdateDeadline(id, { status: newStatus })
+  }
+
   return (
     <div style={styles.deadlinesList}>
       {sorted.map(d => {
         const days = getDaysUntil(d.date)
         return (
-          <div key={d.id} style={styles.deadlineRow}>
+          <div key={d.id} style={{
+            ...styles.deadlineRow,
+            opacity: d.status === 'cancelled' ? 0.5 : 1,
+            backgroundColor: d.status === 'completed' ? '#0d1117' : '#0d1117'
+          }}>
             <div style={styles.deadlineInfo}>
-              <input
-                type="checkbox"
-                checked={d.status === 'completed'}
-                readOnly
-                style={styles.checkbox}
-              />
+              <select
+                value={d.status || 'pending'}
+                onChange={(e) => handleStatusChange(d.id, e.target.value)}
+                style={{
+                  ...styles.statusSelect,
+                  borderColor: getStatusColor(d.status)
+                }}
+              >
+                <option value="pending">⏳ Pending</option>
+                <option value="processing">🔄 Processing</option>
+                <option value="completed">✅ Done</option>
+                <option value="deferred">⏸️ Deferred</option>
+                <option value="cancelled">❌ Cancelled</option>
+              </select>
               <span style={{
                 ...styles.deadlineText,
-                textDecoration: d.status === 'completed' ? 'line-through' : 'none',
-                color: d.status === 'completed' ? '#8b949e' : '#c9d1d9'
+                textDecoration: d.status === 'completed' || d.status === 'cancelled' ? 'line-through' : 'none',
+                color: d.status === 'completed' ? '#3fb950' : d.status === 'cancelled' ? '#8b949e' : '#c9d1d9'
               }}>
                 {d.title}
               </span>
@@ -244,7 +272,7 @@ function DeadlinesTab({ deadlines, getDaysUntil }) {
               <span style={styles.deadlineDate}>
                 {new Date(d.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
               </span>
-              {d.status !== 'completed' && (
+              {d.status !== 'completed' && d.status !== 'cancelled' && (
                 <span style={{...styles.daysBadge, backgroundColor: days.color}}>
                   {days.text}
                 </span>
@@ -265,7 +293,7 @@ function DeadlinesTab({ deadlines, getDaysUntil }) {
   )
 }
 
-function ActionsTab({ actions }) {
+function ActionsTab({ actions, onUpdateAction }) {
   const [copiedId, setCopiedId] = useState(null)
   const [showTemplate, setShowTemplate] = useState(null)
 
@@ -279,6 +307,10 @@ function ActionsTab({ actions }) {
     }
   }
 
+  const handleStatusChange = (id, newStatus) => {
+    if (onUpdateAction) onUpdateAction(id, { status: newStatus })
+  }
+
   if (!actions || actions.length === 0) {
     return <p style={styles.emptyText}>No action items yet</p>
   }
@@ -288,15 +320,26 @@ function ActionsTab({ actions }) {
       {actions.map(a => (
         <div key={a.id} style={styles.actionItem}>
           <div style={styles.actionRow}>
-            <input
-              type="checkbox"
-              checked={a.status === 'completed'}
-              readOnly
-              style={styles.checkbox}
-            />
+            <select
+              value={a.status || 'pending'}
+              onChange={(e) => handleStatusChange(a.id, e.target.value)}
+              style={{
+                ...styles.statusSelect,
+                borderColor: getStatusColor(a.status),
+                minWidth: '120px'
+              }}
+            >
+              <option value="pending">⏳ Pending</option>
+              <option value="processing">🔄 Processing</option>
+              <option value="completed">✅ Done</option>
+              <option value="deferred">⏸️ Deferred</option>
+              <option value="cancelled">❌ Cancelled</option>
+            </select>
             <span style={{
               ...styles.actionText,
-              textDecoration: a.status === 'completed' ? 'line-through' : 'none'
+              textDecoration: a.status === 'completed' || a.status === 'cancelled' ? 'line-through' : 'none',
+              color: a.status === 'completed' ? '#3fb950' : a.status === 'cancelled' ? '#8b949e' : '#c9d1d9',
+              flex: 1
             }}>
               {a.title}
             </span>
@@ -665,6 +708,16 @@ const styles = {
     width: '16px',
     height: '16px',
     cursor: 'pointer',
+  },
+  statusSelect: {
+    padding: '4px 8px',
+    backgroundColor: '#0d1117',
+    border: '1px solid',
+    borderRadius: '4px',
+    color: '#c9d1d9',
+    fontSize: '12px',
+    cursor: 'pointer',
+    outline: 'none',
   },
   deadlineText: {
     fontSize: '13px',
