@@ -7,58 +7,73 @@
       "title": "Cornell Tech MBA/MS",
       "category": "education",
       "status": "researching",
-      "progress": 15,
+      "progress": 35,
       "description": "Dual degree MBA/MS at Cornell Tech NYC - combining business with technology",
       
       "deadlines": [
         {
           "id": "d-001",
-          "title": "Research programs and requirements",
-          "date": "2026-04-15",
+          "title": "Priority Deadline (Round 1)",
+          "date": "2025-10-08",
           "status": "pending",
-          "priority": "high"
+          "priority": "critical",
+          "note": "11:59 AM EST - Best chance for scholarships"
         },
         {
           "id": "d-002",
-          "title": "GMAT/GRE test date",
-          "date": "2026-05-30",
+          "title": "Round 2 Deadline",
+          "date": "2026-01-08",
           "status": "pending",
-          "priority": "high"
+          "priority": "high",
+          "note": "11:59 AM EST - Main round for most applicants"
         },
         {
           "id": "d-003",
-          "title": "Request transcripts from undergraduate university",
-          "date": "2026-06-15",
+          "title": "Rolling Admissions Deadline (Round 3)",
+          "date": "2026-03-05",
           "status": "pending",
-          "priority": "medium"
+          "priority": "medium",
+          "note": "11:59 AM EST - Final deadline, limited scholarship availability"
         },
         {
           "id": "d-004",
-          "title": "Round 1 application deadline",
-          "date": "2026-10-01",
+          "title": "GMAT/GRE test date",
+          "date": "2025-09-01",
           "status": "pending",
-          "priority": "critical"
+          "priority": "high",
+          "note": "Take before Round 1 to include scores"
         },
         {
           "id": "d-005",
           "title": "Forté Fellowship application",
-          "date": "2026-09-15",
+          "date": "2025-10-08",
           "status": "pending",
-          "priority": "high"
+          "priority": "high",
+          "note": "Same as priority deadline - automatic consideration"
         },
         {
           "id": "d-006",
-          "title": "Interview window opens",
-          "date": "2026-11-01",
+          "title": "Decision notification (Round 1)",
+          "date": "2025-12-15",
           "status": "pending",
-          "priority": "medium"
+          "priority": "low",
+          "note": "Typical decision release for Round 1"
         },
         {
           "id": "d-007",
-          "title": "Decision notification",
-          "date": "2026-12-15",
+          "title": "Decision notification (Round 2)",
+          "date": "2026-03-20",
           "status": "pending",
-          "priority": "low"
+          "priority": "low",
+          "note": "Typical decision release for Round 2"
+        },
+        {
+          "id": "d-008",
+          "title": "Deposit & enrollment deadline",
+          "date": "2026-06-05",
+          "status": "pending",
+          "priority": "critical",
+          "note": "Must submit deposit to secure spot"
         }
       ],
       
@@ -146,91 +161,175 @@
         {
           "id": "cost-001",
           "category": "Tuition",
-          "description": "2-year MBA/MS program",
-          "amount": 120000
+          "description": "Johnson Cornell Tech MBA (2025-2026, 1 year)",
+          "amount": 135374,
+          "source": "tech.cornell.edu/admissions/tuition-fees/"
         },
         {
           "id": "cost-002",
-          "category": "Living Expenses",
-          "description": "NYC housing, food, transportation (2 years)",
-          "amount": 60000
+          "category": "New Student Fee",
+          "description": "One-time fee (course-packs, swag, programming)",
+          "amount": 1500,
+          "source": "tech.cornell.edu"
         },
         {
           "id": "cost-003",
-          "category": "Books & Materials",
-          "description": "Textbooks, laptop, software",
-          "amount": 5000
+          "category": "Health Insurance",
+          "description": "Cornell Student Health Plan (annual estimate)",
+          "amount": 4000,
+          "source": "tech.cornell.edu",
+          "note": "Can waive if you have qualifying insurance"
         },
         {
           "id": "cost-004",
-          "category": "Application Fee",
-          "description": "Cornell application",
-          "amount": 250
+          "category": "NYC Health Fee",
+          "description": "Mandatory health fee",
+          "amount": 340,
+          "source": "tech.cornell.edu"
         },
         {
           "id": "cost-005",
+          "category": "Student Activity Fee",
+          "description": "Annual student activities",
+          "amount": 110,
+          "source": "tech.cornell.edu"
+        },
+        {
+          "id": "cost-006",
+          "category": "Living Expenses",
+          "description": "Housing, dining, additional expenses (NYC, 1 year)",
+          "amount": 38027,
+          "source": "tech.cornell.edu"
+        },
+        {
+          "id": "cost-007",
+          "category": "Application Fee",
+          "description": "Cornell Tech MBA application",
+          "amount": 250,
+          "source": "tech.cornell.edu",
+          "note": "Fee waivers available for qualified programs (Forte, McNair, etc.)"
+        },
+        {
+          "id": "cost-008",
           "category": "GMAT/GRE",
           "description": "Test fee",
-          "amount": 275
+          "amount": 275,
+          "note": "GMAT Focus Edition: $275 | GRE: $220"
+        },
+        {
+          "id": "cost-009",
+          "category": "Ithaca Stay",
+          "description": "Brief stay in Ithaca for orientation/immersion",
+          "amount": 2000,
+          "note": "Flights, housing, food for ~1 week"
         }
       ],
       
       "scholarships": [
         {
           "id": "sch-001",
-          "name": "Forté Fellowship",
-          "amount": 60000,
+          "name": "Cornell Tech Merit Scholarship",
+          "amount": 50000,
           "status": "researching",
-          "deadline": "2026-09-15",
-          "requirements": "Women in business, leadership potential"
+          "deadline": "2025-10-08",
+          "requirements": "Automatic consideration with application - holistic review of credentials",
+          "note": "Apply by priority deadline for best chance. No separate application needed."
         },
         {
           "id": "sch-002",
-          "name": "Cornell Merit Scholarship",
-          "amount": 30000,
+          "name": "Forté Fellowship",
+          "amount": 40000,
           "status": "researching",
-          "deadline": "2026-10-01",
-          "requirements": "Automatic consideration with application"
+          "deadline": "2025-10-08",
+          "requirements": "Women demonstrating leadership potential in business",
+          "note": "Must apply by priority deadline. Listed in fee waiver programs."
         },
         {
           "id": "sch-003",
-          "name": "NSF Graduate Research Fellowship",
+          "name": "NSF Graduate Research Fellowship (GRFP)",
           "amount": 34000,
           "status": "researching",
-          "deadline": "2026-04-15",
-          "requirements": "STEM focus, research proposal"
+          "deadline": "2025-10-15",
+          "requirements": "STEM focus, research proposal required",
+          "note": "Highly competitive - requires research proposal and 3 references"
         },
         {
           "id": "sch-004",
-          "name": "External Private Scholarships",
-          "amount": 10000,
+          "name": "Application Fee Waiver",
+          "amount": 250,
           "status": "researching",
-          "deadline": "2026-08-01",
-          "requirements": "Various - research needed"
+          "deadline": "2025-10-05",
+          "requirements": "Must be participant in listed programs (Forte, McNair, GEM, SACNAS, etc.)",
+          "note": "Email admissions@tech.cornell.edu 3 days before deadline to request"
+        },
+        {
+          "id": "sch-005",
+          "name": "Federal Student Loans",
+          "amount": 0,
+          "status": "researching",
+          "deadline": "2026-06-01",
+          "requirements": "US citizens/permanent residents - FAFSA required",
+          "note": "Need-based aid not available from Cornell Tech, but federal loans available"
+        },
+        {
+          "id": "sch-006",
+          "name": "External Scholarships",
+          "amount": 15000,
+          "status": "researching",
+          "deadline": "2026-03-01",
+          "requirements": "Various - research needed",
+          "note": "Examples: GEM Fellowship, NSBE, SHPE, SWE - target $10-20K combined"
         }
       ],
       
       "research": [
         {
           "id": "r-001",
-          "title": "Program Overview",
-          "content": "2-year dual degree combining MBA with MS in a tech focus area (CS, ORIE, Health Tech, etc.)",
-          "source": "cornell.edu",
-          "dateAdded": "2026-03-27"
+          "title": "Program Structure",
+          "content": "Johnson Cornell Tech MBA is a 1-year intensive program (NOT 2 years). Located at Cornell Tech campus on Roosevelt Island, NYC. Combines core MBA curriculum with tech-focused studios and projects. Includes brief stay in Ithaca for immersion.",
+          "source": "tech.cornell.edu/admissions/tuition-fees/",
+          "dateAdded": "2026-03-28",
+          "verified": true
         },
         {
           "id": "r-002",
-          "title": "Location",
-          "content": "Roosevelt Island, NYC - new campus with industry partnerships",
-          "source": "cornell.edu",
-          "dateAdded": "2026-03-27"
+          "title": "Tuition & Fees (Official 2025-2026)",
+          "content": "Tuition: $135,374 | New Student Fee: $1,500 (one-time) | Health Insurance: ~$4,000 (can waive) | NYC Health Fee: $340 | Student Activity Fee: $110 | Living Expenses: $38,027/year | TOTAL: ~$179,351",
+          "source": "tech.cornell.edu/admissions/tuition-fees/",
+          "dateAdded": "2026-03-28",
+          "verified": true
         },
         {
           "id": "r-003",
-          "title": "Application Rounds",
-          "content": "Round 1: Oct 1 | Round 2: Jan 5 | Round 3: Mar 15",
-          "source": "cornell.edu",
-          "dateAdded": "2026-03-27"
+          "title": "Application Deadlines (Official)",
+          "content": "Priority Deadline: Oct 8, 2025 (11:59 AM EST) - Best for scholarships | Round 2: Jan 8, 2026 (11:59 AM EST) - Main round | Rolling/ Round 3: Mar 5, 2026 (11:59 AM EST) - Final deadline, limited aid",
+          "source": "tech.cornell.edu/admissions/mba-application/",
+          "dateAdded": "2026-03-28",
+          "verified": true
+        },
+        {
+          "id": "r-004",
+          "title": "Scholarships",
+          "content": "Cornell Tech offers merit-based scholarships (no separate application). Determined by holistic review at admission. Apply by priority deadline (Oct 8) for best chance. Scholarships cover tuition only, not housing. Full-tuition funding NOT available, but significant portions possible. Fee waivers available for Forte, McNair, GEM, SACNAS, NSBE, SHPE, SWE participants.",
+          "source": "tech.cornell.edu/admissions/tuition-fees/",
+          "dateAdded": "2026-03-28",
+          "verified": true
+        },
+        {
+          "id": "r-005",
+          "title": "Housing",
+          "content": "The House at Cornell Tech - steps from campus on Roosevelt Island. Furnished apartments, modern amenities. Also need brief housing in Ithaca for orientation/immersion (~1 week).",
+          "source": "tech.cornell.edu/admissions/tuition-fees/",
+          "dateAdded": "2026-03-28",
+          "verified": true
+        },
+        {
+          "id": "r-006",
+          "title": "Health Insurance",
+          "content": "All students required to have insurance meeting Cornell's minimum. Automatically enrolled in Cornell SHP (~$4,000/year). International students MUST use Cornell SHP. US citizens/permanent residents can waive if they have qualifying insurance.",
+          "source": "tech.cornell.edu/admissions/tuition-fees/",
+          "dateAdded": "2026-03-28",
+          "verified": true
         }
       ]
     }
