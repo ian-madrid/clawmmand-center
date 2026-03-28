@@ -1,9 +1,18 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-03-28T00:45:00Z",
+  "_lastUpdated": "2026-03-28T01:10:00Z",
   
   "developments": [
+    {
+      "id": "dev-029",
+      "section": "life-goals",
+      "title": "Added US LLC Setup project - Delaware registration, EIN, bank account",
+      "description": "New project for AI startup legal structure. 5 deadlines (LLC filing, EIN, visa, travel, bank account). 10 action items (name search, registered agent, Form SS-4, visa application, flights, etc.). 3 contacts (Delaware corp, IRS, US Embassy). Total cost: ~$3,275 ($90 LLC + $100 agent + $300 tax + $185 visa + $1,500 flights + $600 hotel + $500 bank deposit). Key constraint: Must travel to Delaware in-person for bank account (B-1/B-2 visa required).",
+      "status": "Complete",
+      "timestamp": "2026-03-28T01:10:00Z",
+      "expectedImprovement": "Clear roadmap for US entity setup - no more confusion about requirements, costs, or timeline."
+    },
     {
       "id": "dev-028",
       "section": "life-goals",

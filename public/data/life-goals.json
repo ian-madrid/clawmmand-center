@@ -1,7 +1,264 @@
 {
   "_comment": "Life Goals - Research to Action Pipeline",
-  "_lastUpdated": "2026-03-27T17:21:00Z",
+  "_lastUpdated": "2026-03-28T01:10:00Z",
   "projects": [
+    {
+      "id": "us-llc-setup-2026",
+      "title": "US LLC Setup (Delaware)",
+      "category": "business",
+      "status": "planning",
+      "progress": 0,
+      "description": "Register Delaware LLC for AI startup, get EIN from IRS, open US bank account. Requires in-person visit to Delaware for bank account.",
+      
+      "deadlines": [
+        {
+          "id": "d-001",
+          "title": "File Delaware LLC Certificate of Formation",
+          "date": "2026-04-30",
+          "status": "pending",
+          "priority": "high",
+          "note": "$90 filing fee, can be done online"
+        },
+        {
+          "id": "d-002",
+          "title": "Apply for EIN (IRS Form SS-4)",
+          "date": "2026-05-15",
+          "status": "pending",
+          "priority": "high",
+          "note": "4-6 weeks processing for foreign owners, fax or mail"
+        },
+        {
+          "id": "d-003",
+          "title": "Obtain US visa for bank account opening",
+          "date": "2026-06-01",
+          "status": "pending",
+          "priority": "critical",
+          "note": "B-1/B-2 visa required for in-person bank account"
+        },
+        {
+          "id": "d-004",
+          "title": "Travel to Delaware for bank account",
+          "date": "2026-06-15",
+          "status": "pending",
+          "priority": "critical",
+          "note": "Must appear in-person with passport, EIN, LLC docs"
+        },
+        {
+          "id": "d-005",
+          "title": "File Annual Franchise Tax Report",
+          "date": "2026-06-01",
+          "status": "pending",
+          "priority": "medium",
+          "note": "$300 annual franchise tax + $50 registered agent"
+        }
+      ],
+      
+      "actions": [
+        {
+          "id": "a-001",
+          "title": "Choose LLC name and check availability",
+          "status": "pending",
+          "dueDate": "2026-04-15",
+          "template": null
+        },
+        {
+          "id": "a-002",
+          "title": "Hire registered agent service (Delaware)",
+          "status": "pending",
+          "dueDate": "2026-04-20",
+          "template": null,
+          "note": "Required for foreign owners - ~$100/year"
+        },
+        {
+          "id": "a-003",
+          "title": "File Certificate of Formation with Delaware",
+          "status": "pending",
+          "dueDate": "2026-04-30",
+          "template": null,
+          "note": "File at corp.delaware.gov - $90 fee"
+        },
+        {
+          "id": "a-004",
+          "title": "Prepare IRS Form SS-4 for EIN application",
+          "status": "pending",
+          "dueDate": "2026-05-01",
+          "template": "ein-ss4-checklist"
+        },
+        {
+          "id": "a-005",
+          "title": "Submit EIN application (fax or mail to IRS)",
+          "status": "pending",
+          "dueDate": "2026-05-15",
+          "template": null,
+          "note": "Cannot apply online without SSN - fax is fastest (4 weeks)"
+        },
+        {
+          "id": "a-006",
+          "title": "Research banks for foreign-owned LLCs",
+          "status": "pending",
+          "dueDate": "2026-05-20",
+          "template": null,
+          "note": "Chase, BofA, Mercury, Brex - compare requirements"
+        },
+        {
+          "id": "a-007",
+          "title": "Schedule bank appointment in Delaware",
+          "status": "pending",
+          "dueDate": "2026-06-01",
+          "template": null,
+          "note": "Call ahead - not all branches handle foreign LLCs"
+        },
+        {
+          "id": "a-008",
+          "title": "Apply for B-1/B-2 US visa",
+          "status": "pending",
+          "dueDate": "2026-05-01",
+          "template": null,
+          "note": "US Embassy Manila - 2-4 week processing"
+        },
+        {
+          "id": "a-009",
+          "title": "Book flights to Delaware (Philadelphia airport)",
+          "status": "pending",
+          "dueDate": "2026-06-05",
+          "template": null
+        },
+        {
+          "id": "a-010",
+          "title": "Open US bank account in-person",
+          "status": "pending",
+          "dueDate": "2026-06-15",
+          "template": null,
+          "note": "Bring: passport, visa, EIN letter, LLC docs, proof of address"
+        }
+      ],
+      
+      "contacts": [
+        {
+          "id": "c-001",
+          "name": "Delaware Division of Corporations",
+          "role": "LLC Registration",
+          "email": "dos@delaware.gov",
+          "phone": "302-739-3073",
+          "website": "corp.delaware.gov",
+          "lastContact": null,
+          "followUp": null
+        },
+        {
+          "id": "c-002",
+          "name": "IRS International Office",
+          "role": "EIN Applications",
+          "email": null,
+          "phone": "267-941-1099",
+          "website": "irs.gov",
+          "lastContact": null,
+          "followUp": null,
+          "note": "For foreign EIN applicants only"
+        },
+        {
+          "id": "c-003",
+          "name": "US Embassy Manila",
+          "role": "Visa Applications",
+          "email": "support-manila@ustraveldocs.com",
+          "phone": null,
+          "website": "ph.usembassy.gov",
+          "lastContact": null,
+          "followUp": null,
+          "note": "B-1/B-2 visa for business travel"
+        }
+      ],
+      
+      "costs": [
+        {
+          "id": "cost-001",
+          "category": "LLC Formation",
+          "description": "Delaware Certificate of Formation filing fee",
+          "amount": 90
+        },
+        {
+          "id": "cost-002",
+          "category": "Registered Agent",
+          "description": "Annual registered agent service (required)",
+          "amount": 100
+        },
+        {
+          "id": "cost-003",
+          "category": "Franchise Tax",
+          "description": "Delaware annual franchise tax",
+          "amount": 300
+        },
+        {
+          "id": "cost-004",
+          "category": "EIN Application",
+          "description": "IRS Form SS-4 (free if self-file)",
+          "amount": 0,
+          "note": "Services charge $50-200, but you can file free"
+        },
+        {
+          "id": "cost-005",
+          "category": "US Visa",
+          "description": "B-1/B-2 visa application fee",
+          "amount": 185
+        },
+        {
+          "id": "cost-006",
+          "category": "Flights",
+          "description": "Manila → Philadelphia (round trip)",
+          "amount": 1500,
+          "note": "Estimated, book in advance"
+        },
+        {
+          "id": "cost-007",
+          "category": "Delaware Stay",
+          "description": "Hotel 3-4 days for bank account",
+          "amount": 600
+        },
+        {
+          "id": "cost-008",
+          "category": "Bank Account",
+          "description": "Initial deposit (varies by bank)",
+          "amount": 500,
+          "note": "Some banks require minimum opening deposit"
+        }
+      ],
+      
+      "scholarships": [],
+      
+      "research": [
+        {
+          "id": "r-001",
+          "title": "Delaware LLC for Foreign Owners",
+          "content": "Non-US citizens can form Delaware LLC without SSN. Need registered agent in Delaware. $90 filing fee + $300 annual franchise tax.",
+          "source": "corp.delaware.gov",
+          "dateAdded": "2026-03-28",
+          "verified": true
+        },
+        {
+          "id": "r-002",
+          "title": "EIN for Foreign LLC Owners",
+          "content": "Cannot apply online without SSN. Must file Form SS-4 by fax (267-941-1012) or mail. Processing: 4-6 weeks for foreign applicants. Free to apply.",
+          "source": "irs.gov/forms-pubs/about-form-ss-4",
+          "dateAdded": "2026-03-28",
+          "verified": true
+        },
+        {
+          "id": "r-003",
+          "title": "US Bank Account Requirements",
+          "content": "Most banks require in-person appearance for foreign LLC owners. Bring: passport, visa, EIN letter, LLC formation docs, proof of business address. Some banks: Chase, BofA, Mercury (online), Brex (online).",
+          "source": "Multiple bank websites",
+          "dateAdded": "2026-03-28",
+          "verified": true
+        },
+        {
+          "id": "r-004",
+          "title": "US Visa for Business",
+          "content": "B-1/B-2 visa required for in-person bank account opening. Apply at US Embassy Manila. Processing: 2-4 weeks. Fee: $185. Must show ties to Philippines, purpose of travel.",
+          "source": "ph.usembassy.gov",
+          "dateAdded": "2026-03-28",
+          "verified": true
+        }
+      ]
+    },
     {
       "id": "cornell-tech-2026",
       "title": "Cornell Tech MBA/MS",
