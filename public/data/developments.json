@@ -1,9 +1,18 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-03-28T04:15:00Z",
+  "_lastUpdated": "2026-03-30T20:10:00Z",
   
   "developments": [
+    {
+      "id": "dev-033",
+      "section": "life-goals",
+      "title": "Fixed status dropdown crash - moved localStorage save outside map",
+      "description": "Bug fix: Status dropdowns were causing client-side exception. Root cause: localStorage.setItem was called inside the map() loop instead of after, causing state corruption. Fix: Moved localStorage save to after the map completes, ensuring all projects are saved atomically. Page no longer crashes when changing deadline status.",
+      "status": "Complete",
+      "timestamp": "2026-03-30T20:10:00Z",
+      "expectedImprovement": "Status dropdowns work reliably without crashes."
+    },
     {
       "id": "dev-032",
       "section": "life-goals",
