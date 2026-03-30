@@ -76,10 +76,11 @@ export default function LifeGoals() {
           )
         }
         
-        // Save to localStorage
-        localStorage.setItem('life-goals', JSON.stringify(newProjects))
         return newProject
       })
+      
+      // Save ALL projects to localStorage after the map completes
+      localStorage.setItem('life-goals', JSON.stringify(newProjects))
       return newProjects
     })
   }
