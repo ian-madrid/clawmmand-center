@@ -1,7 +1,24 @@
 {
   "_comment": "Transcript Log Data - Real transcripts with screenshots",
-  "_lastUpdated": "2026-03-27T22:54:00Z",
+  "_lastUpdated": "2026-03-31T14:50:00Z",
   "transcripts": [
+    {
+      "id": "t-010",
+      "type": "tiktok",
+      "emoji": "🎵",
+      "title": "The AI Job Market Split: Commodity vs Irreplaceable Work",
+      "source": "@stay_human25",
+      "url": "https://vt.tiktok.com/ZSHY2JsDJ/",
+      "duration": "2:41",
+      "savedAt": "2026-03-31",
+      "status": "ready",
+      "thumbnail": "/thumbnails/t-010.jpg",
+      "transcript": "I'm not going to sugarcoat this one. There are people in creative work who are losing their jobs right now, copywriters, translators, and illustrators, for example. And some of this is short-sighted on the part of the companies doing it, but some of it isn't.\n\nThere's an economics concept that explains what's happening. When the cost of producing something drops to nearly zero, demand doesn't go to infinity, it saturates. There are only so many blog posts you can actually read, only so many product descriptions, only so many social media graphics. At some point, more supply just doesn't matter because nobody wants any more.\n\nSo think about those ads in your feed, like, for example, Oregon drivers delighted by this new insurance change. You know the ones, they used to be stock photography. Someone took those pictures and someone got paid for that. But mostly now they're AI generated. And guess what? Mostly no one cares. No one ever really cared. The image was kind of a filler anyway. It just existed in that, filling in that rectangle. And filling a rectangle is not a job that survives when a machine can fill it for free.\n\nThat's the painful truth. AI didn't devalue that work. It revealed what the market actually valued it at. So some work that felt like creative work was really a commodity all along and AI just made it visible.\n\nBut it's also more complicated because saturation and an explosion are happening at the same time. So yes, the commodity content saturates. That part is real and it's very painful. But vibe coding, for example, is simultaneously blowing open a universe of problems that software never reached before. Problems that were too local, too specific, too contextual for any commercial product to justify building.\n\nSo economists call this **Jevons paradox**. And when a resource gets dramatically cheaper, consumption doesn't top out. It expands into the territory that was always there but never reachable.\n\nSo two things are true at the same time here. There's a simple way to look at it. If your work is in the rectangle, commodity, replicable, indistinguishable from what a machine produces, that market's collapsing and it isn't coming back. But if your work is 20 years of frontline knowledge about a specific hard problem that no one ever built software for, that market is just opening.\n\nSo we're getting this market split. Commodity goes to zero, specific, contextual, irreplaceable goes up and the middle disappears.\n\nSo is your work closer to filling the rectangle or is it the thing that no amount of free output can actually replace?\n\nI'm Helen from the Artificiality Institute. Follow for more on this series and how to think about AI in your job. I've studied this for a decade and I really wanna get some more nuance into this discussion.",
+      "stats": {
+        "likes": "N/A",
+        "comments": "N/A"
+      }
+    },
     {
       "id": "t-009",
       "type": "tiktok",
