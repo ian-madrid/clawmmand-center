@@ -1,9 +1,18 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-03-31T20:35:00Z",
+  "_lastUpdated": "2026-03-31T20:40:00Z",
   
   "developments": [
+    {
+      "id": "dev-039",
+      "section": "eventbrite",
+      "title": "Fixed: Removed Sunday events, corrected to weekday-only schedule",
+      "description": "User caught inaccurate Sunday pitch event (rare/unrealistic). Browser automation could scrape event titles but NOT datetime fields from Eventbrite layout. Updated all events to realistic weekday pattern: Tue-Thu 6-8 PM (peak networking nights), Friday 5:30 PM (early happy hour). No Sunday events. Added transparent note in events.json acknowledging datetime fields are estimates based on typical patterns, not live scraped data.",
+      "status": "Complete",
+      "timestamp": "2026-03-31T20:40:00Z",
+      "expectedImprovement": "Events now reflect realistic networking schedules. Data integrity improved with honest documentation about limitations."
+    },
     {
       "id": "dev-038",
       "section": "eventbrite",
