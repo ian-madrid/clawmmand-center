@@ -1,7 +1,24 @@
 {
   "_comment": "Transcript Log Data - Real transcripts with screenshots",
-  "_lastUpdated": "2026-03-31T15:00:00Z",
+  "_lastUpdated": "2026-03-31T19:00:00Z",
   "transcripts": [
+    {
+      "id": "t-012",
+      "type": "tiktok",
+      "emoji": "🎵",
+      "title": "The #1 Exercise for Growing New Brain Cells",
+      "source": "@vivetalobomd",
+      "url": "https://vt.tiktok.com/ZSHY9TV2r/",
+      "duration": "1:15",
+      "savedAt": "2026-03-31",
+      "status": "ready",
+      "thumbnail": "/thumbnails/t-012.jpg",
+      "transcript": "What's the number one exercise for growing new brain cells? Nope, it's not a crossword puzzle, it's not supplements, it's not brain games, it's not meditation, though all of these can probably help. The answer probably will surprise you.\n\nI'm a board-certified emergency medicine physician, and this will definitely keep you out of my ER. I'm talking about **resistance training**.\n\nYour brain doesn't stop growing because you age. It stops growing because it stops being challenged. And here's the science. Lifting weights stimulates the growth of new brain cells, especially in the **hippocampus**, the part of your brain that's responsible for memory, learning, and focus.\n\nWhen you lift weights, your body releases **BDNF**. Think of BDNF like **fertilizer for your brain**. It helps grow new brain cells and improves memory, attention, and your learning speed. And this can happen at any age. Young adults, midlife, even older adults who have never lifted before.\n\nResistance training doesn't just make your muscles stronger, it makes communication between brain cells faster and more resilient. That's why people who lift regularly show better brain function, slower brain aging, and lower dementia risk.\n\nSo if you want a stronger brain, not just a stronger body, pick up the weights. Your brain will thank you.",
+      "stats": {
+        "likes": "N/A",
+        "comments": "N/A"
+      }
+    },
     {
       "id": "t-011",
       "type": "tiktok",
