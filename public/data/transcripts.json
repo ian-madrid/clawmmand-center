@@ -1,7 +1,24 @@
 {
   "_comment": "Transcript Log Data - Real transcripts with screenshots",
-  "_lastUpdated": "2026-03-31T14:50:00Z",
+  "_lastUpdated": "2026-03-31T15:00:00Z",
   "transcripts": [
+    {
+      "id": "t-011",
+      "type": "tiktok",
+      "emoji": "🎵",
+      "title": "The Highest Paying Job Now: Social Media Customer Acquisition",
+      "source": "@businessblurb",
+      "url": "https://vt.tiktok.com/ZSHY2xxLQ/",
+      "duration": "1:08",
+      "savedAt": "2026-03-31",
+      "status": "ready",
+      "thumbnail": "/thumbnails/t-011.jpg",
+      "transcript": "I think the job that gets you the most money now is if you have talents in social media for customer acquisition. I used to pay those guys 48 grand a year, now they're 250,000. Because you can measure their work based on customer acquisition every week.\n\nSo most of them become contractors, you know, they make half a million dollars a year because they know how to take content, turn it into a 59 second ad on social and acquire 200 customers. That's a very specific.\n\nSo remember, everybody say you have to be an engineer, an engineer, an engineer. Now you want to be an artist, again, write stories, acquire customers, know how the social media platforms work, know how to post on TikTok versus LinkedIn versus Twitter versus Instagram.\n\nThose people in their early 20s are so valuable now. So if you know how to use your phone, somebody wants to hire you. So if you were to go back in time with the specific skill set that you currently possess, is that what you would do?\n\nI would use my editing skills to make 15s, 30s and 59s. And I would basically say, look, pay me, you know, 100 bucks for each customer I acquire for you. I'd make millions.",
+      "stats": {
+        "likes": "N/A",
+        "comments": "N/A"
+      }
+    },
     {
       "id": "t-010",
       "type": "tiktok",
