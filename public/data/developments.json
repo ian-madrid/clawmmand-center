@@ -1,9 +1,18 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-04-01T20:40:00Z",
+  "_lastUpdated": "2026-04-01T20:45:00Z",
   
   "developments": [
+    {
+      "id": "dev-048",
+      "section": "transcript",
+      "title": "Standardized all thumbnails to 180x320 portrait (9:16)",
+      "description": "Regenerated all 9 transcript thumbnails to consistent 180x320 portrait aspect ratio using ffmpeg. Previously mixed: t-005/t-009 were portrait (180x320), t-006/t-007/t-008/t-010/t-011/t-012/t-013 were landscape (320x180). Used scale+pad filter to convert landscape to portrait with padding. Updated CSS to use aspectRatio: 9/16 and objectFit: cover. All thumbnails now display uniformly without stretching.",
+      "status": "Complete",
+      "timestamp": "2026-04-01T20:45:00Z",
+      "expectedImprovement": "All transcript thumbnails identical 9:16 portrait ratio - consistent, clean display, no stretching issues."
+    },
     {
       "id": "dev-047",
       "section": "transcript",

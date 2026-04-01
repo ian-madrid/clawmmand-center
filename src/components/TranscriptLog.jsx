@@ -477,19 +477,18 @@ const styles = {
     justifyContent: 'center',
     backgroundColor: '#0d1117',
     transition: 'all 0.2s ease',
-    // No fixed aspect ratio - let images use their natural dimensions
+    aspectRatio: '9/16', // All thumbnails now 180x320 portrait
   },
   thumbnail: {
     width: '100%',
-    height: 'auto',
-    maxHeight: '180px', // Cap height for landscape images
-    objectFit: 'contain', // Show full image without cropping
+    height: '100%',
+    objectFit: 'cover', // Fill container completely
     display: 'block',
     borderRadius: '4px',
   },
   thumbnailFallback: {
     width: '100%',
-    height: '100px', // Default height for fallbacks
+    height: '100%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
