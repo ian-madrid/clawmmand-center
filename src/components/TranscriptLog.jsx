@@ -10,6 +10,7 @@ export default function TranscriptLog() {
   const [expandedTranscript, setExpandedTranscript] = useState(null)
   const [copiedId, setCopiedId] = useState(null)
   const [showPrevious, setShowPrevious] = useState(false)
+  const [scriptView, setScriptView] = useState({}) // Track which view (transcript/script) is active per item
 
   useEffect(() => {
     fetch('/data/transcripts.json?t=' + Date.now())
@@ -123,12 +124,12 @@ export default function TranscriptLog() {
                           style={styles.transcriptToggle}
                           onClick={() => setExpandedTranscript(expandedTranscript === t.id ? null : t.id)}
                         >
-                          {expandedTranscript === t.id ? '▼ Hide Transcript' : '▶ Show Transcript'}
+                          {expandedTranscript === t.id ? '▼ Hide' : '▶ Show'}
                         </button>
                         
                         <button 
                           style={styles.copyButton}
-                          onClick={() => handleCopy(t.transcript, t.id)}
+                          onClick={() => handleCopy(scriptView[t.id] === 'script' && t.tiktokScript ? t.tiktokScript : t.transcript, t.id)}
                         >
                           {copiedId === t.id ? '✓ Copied!' : '📋 Copy'}
                         </button>
@@ -141,10 +142,28 @@ export default function TranscriptLog() {
                         </button>
                       </div>
                       
+                      {/* View Tabs */}
+                      {expandedTranscript === t.id && t.tiktokScript && (
+                        <div style={styles.viewTabs}>
+                          <button
+                            style={scriptView[t.id] !== 'script' ? styles.viewTabActive : styles.viewTab}
+                            onClick={() => setScriptView(prev => ({ ...prev, [t.id]: 'transcript' }))}
+                          >
+                            📄 Transcript
+                          </button>
+                          <button
+                            style={scriptView[t.id] === 'script' ? styles.viewTabActive : styles.viewTab}
+                            onClick={() => setScriptView(prev => ({ ...prev, [t.id]: 'script' }))}
+                          >
+                            🎬 TikTok Script
+                          </button>
+                        </div>
+                      )}
+                      
                       {expandedTranscript === t.id && (
                         <div style={styles.transcript}>
                           <div style={styles.transcriptScroll}>
-                            {formatTranscript(t.transcript).map((paragraph, idx) => (
+                            {formatTranscript(scriptView[t.id] === 'script' && t.tiktokScript ? t.tiktokScript : t.transcript).map((paragraph, idx) => (
                               <p 
                                 key={idx} 
                                 style={styles.transcriptParagraph}
@@ -209,7 +228,7 @@ export default function TranscriptLog() {
                                 
                                 <button 
                                   style={styles.copyButton}
-                                  onClick={() => handleCopy(t.transcript, t.id)}
+                                  onClick={() => handleCopy(scriptView[t.id] === 'script' && t.tiktokScript ? t.tiktokScript : t.transcript, t.id)}
                                 >
                                   {copiedId === t.id ? '✓ Copied!' : '📋 Copy'}
                                 </button>
@@ -222,10 +241,28 @@ export default function TranscriptLog() {
                                 </button>
                               </div>
                               
+                              {/* View Tabs */}
+                              {expandedTranscript === t.id && t.tiktokScript && (
+                                <div style={styles.viewTabs}>
+                                  <button
+                                    style={scriptView[t.id] !== 'script' ? styles.viewTabActive : styles.viewTab}
+                                    onClick={() => setScriptView(prev => ({ ...prev, [t.id]: 'transcript' }))}
+                                  >
+                                    📄 Transcript
+                                  </button>
+                                  <button
+                                    style={scriptView[t.id] === 'script' ? styles.viewTabActive : styles.viewTab}
+                                    onClick={() => setScriptView(prev => ({ ...prev, [t.id]: 'script' }))}
+                                  >
+                                    🎬 TikTok Script
+                                  </button>
+                                </div>
+                              )}
+                              
                               {expandedTranscript === t.id && (
                                 <div style={styles.transcript}>
                                   <div style={styles.transcriptScroll}>
-                                    {formatTranscript(t.transcript).map((paragraph, idx) => (
+                                    {formatTranscript(scriptView[t.id] === 'script' && t.tiktokScript ? t.tiktokScript : t.transcript).map((paragraph, idx) => (
                                       <p 
                                         key={idx} 
                                         style={styles.transcriptParagraph}
@@ -515,6 +552,33 @@ const styles = {
     display: 'flex',
     gap: '6px',
     flexWrap: 'wrap',
+  },
+  viewTabs: {
+    display: 'flex',
+    gap: '6px',
+    marginBottom: '8px',
+    borderBottom: '1px solid #30363d',
+    paddingBottom: '8px',
+  },
+  viewTab: {
+    backgroundColor: 'transparent',
+    border: '1px solid #30363d',
+    borderRadius: '6px',
+    padding: '6px 12px',
+    color: '#8b949e',
+    fontSize: '12px',
+    cursor: 'pointer',
+    transition: 'all 0.2s',
+  },
+  viewTabActive: {
+    backgroundColor: '#1f6feb',
+    border: '1px solid #1f6feb',
+    borderRadius: '6px',
+    padding: '6px 12px',
+    color: '#ffffff',
+    fontSize: '12px',
+    cursor: 'pointer',
+    fontWeight: '600',
   },
   transcriptToggle: {
     backgroundColor: 'transparent',
