@@ -477,18 +477,19 @@ const styles = {
     justifyContent: 'center',
     backgroundColor: '#0d1117',
     transition: 'all 0.2s ease',
-    aspectRatio: '9/16', // Portrait ratio for TikTok compatibility
+    // No fixed aspect ratio - let images use their natural dimensions
   },
   thumbnail: {
     width: '100%',
-    height: '100%',
-    objectFit: 'cover',
+    height: 'auto',
+    maxHeight: '180px', // Cap height for landscape images
+    objectFit: 'contain', // Show full image without cropping
     display: 'block',
     borderRadius: '4px',
   },
   thumbnailFallback: {
     width: '100%',
-    height: '100%',
+    height: '100px', // Default height for fallbacks
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

@@ -1,9 +1,18 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-04-01T20:35:00Z",
+  "_lastUpdated": "2026-04-01T20:40:00Z",
   
   "developments": [
+    {
+      "id": "dev-047",
+      "section": "transcript",
+      "title": "Fixed thumbnail stretching: natural aspect ratios with object-fit contain",
+      "description": "Fixed thumbnail display to handle mixed aspect ratios properly. Removed fixed aspect-ratio constraint. Now uses: width 100px, height auto, maxHeight 180px, object-fit contain. Portrait thumbnails (180x320 like t-005, t-009) display full height without stretching. Landscape thumbnails (320x180 like t-006, t-007, t-008) display within bounds without distortion. All images show completely without cropping or stretching.",
+      "status": "Complete",
+      "timestamp": "2026-04-01T20:40:00Z",
+      "expectedImprovement": "All transcript thumbnails display in their natural aspect ratio - no stretching, no distortion, no cropping. Portrait and landscape images both look correct."
+    },
     {
       "id": "dev-046",
       "section": "transcript",
