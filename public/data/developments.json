@@ -1,9 +1,18 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-04-01T00:01:00Z",
+  "_lastUpdated": "2026-04-01T05:15:00Z",
   
   "developments": [
+    {
+      "id": "dev-042",
+      "section": "transcript",
+      "title": "Added thumbnails for t-010, t-011, t-012 (AI jobs, social media, brain exercise)",
+      "description": "Generated thumbnail images for 3 recent TikTok transcripts using ffmpeg frame extraction. t-010: AI Job Market Split (Jevons Paradox), t-011: Social Media Customer Acquisition (highest paying job), t-012: Resistance Training for Brain Growth (BDNF, hippocampus). Thumbnails saved to public/thumbnails/ directory (320x180px).",
+      "status": "Complete",
+      "timestamp": "2026-04-01T05:15:00Z",
+      "expectedImprovement": "Transcript section now shows visual thumbnails for all recent TikToks - better UX, easier to scan"
+    },
     {
       "id": "dev-041",
       "section": "eventbrite",
