@@ -1,9 +1,18 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-04-01T13:30:00Z",
+  "_lastUpdated": "2026-04-01T20:30:00Z",
   
   "developments": [
+    {
+      "id": "dev-045",
+      "section": "transcript",
+      "title": "Added TikTok Script Tab: Taglish versions (80% English) with strong hooks",
+      "description": "Built new TikTok Script tab for all transcripts. Each transcript now has a toggle: 📄 Original Transcript | 🎬 TikTok Script. TikTok scripts are Taglish (80% English, 20% Tagalog) with strong hooks, emoji formatting, and TikTok-optimized flow. Scripts include: engagement hooks at start, clear structure with emoji bullets, call-to-action at end (follow/comment/share), relevant hashtags. All 9 transcripts converted: t-013 (Larry Fink/Iran), t-012 (Brain Cells/Resistance Training), t-011 (Social Media Acquisition), t-010 (AI Job Market/Jevons Paradox), t-009 (Bezos/Physical AI), t-005 (Manipulation traps), t-008 (Billionaire advice/Listen more), t-006 (AI skills), t-007 (Trump/Iran diplomacy). Updated TranscriptLog.jsx with tab UI, per-item view state tracking, copy button works for both views.",
+      "status": "Complete",
+      "timestamp": "2026-04-01T20:30:00Z",
+      "expectedImprovement": "Transcript section now has dual-view: original transcript + ready-to-use TikTok scripts in Taglish. Users can copy scripts directly for content creation, no manual conversion needed."
+    },
     {
       "id": "dev-044",
       "section": "eventbrite",
