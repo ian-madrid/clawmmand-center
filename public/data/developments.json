@@ -1,9 +1,18 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-04-01T20:30:00Z",
+  "_lastUpdated": "2026-04-01T20:35:00Z",
   
   "developments": [
+    {
+      "id": "dev-046",
+      "section": "transcript",
+      "title": "Fixed thumbnail aspect ratios - no more stretching portrait videos",
+      "description": "Fixed transcript thumbnails to maintain proper aspect ratio. Changed from fixed 100px height with contain to aspect-ratio 9/16 (portrait) with object-fit cover. Now TikTok vertical thumbnails display correctly without stretching. YouTube landscape thumbnails will crop to fit portrait container instead of distorting. Container uses aspect-ratio: 9/16 CSS property for consistent sizing across all devices.",
+      "status": "Complete",
+      "timestamp": "2026-04-01T20:35:00Z",
+      "expectedImprovement": "All transcript thumbnails maintain proper proportions - no stretching or distortion. Portrait TikTok thumbnails look natural, YouTube thumbnails crop cleanly."
+    },
     {
       "id": "dev-045",
       "section": "transcript",

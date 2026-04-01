@@ -477,18 +477,18 @@ const styles = {
     justifyContent: 'center',
     backgroundColor: '#0d1117',
     transition: 'all 0.2s ease',
+    aspectRatio: '9/16', // Portrait ratio for TikTok compatibility
   },
   thumbnail: {
     width: '100%',
-    height: 'auto',
-    maxHeight: '100px',
-    objectFit: 'contain',
+    height: '100%',
+    objectFit: 'cover',
     display: 'block',
     borderRadius: '4px',
   },
   thumbnailFallback: {
     width: '100%',
-    height: '100px',
+    height: '100%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
