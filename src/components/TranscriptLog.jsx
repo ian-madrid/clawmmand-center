@@ -477,12 +477,10 @@ const styles = {
     justifyContent: 'center',
     backgroundColor: '#0d1117',
     transition: 'all 0.2s ease',
-    aspectRatio: '9/16', // All thumbnails now 180x320 portrait
   },
   thumbnail: {
     width: '100%',
-    height: '100%',
-    objectFit: 'cover', // Fill container completely
+    height: 'auto',
     display: 'block',
     borderRadius: '4px',
   },
