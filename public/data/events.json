@@ -2,7 +2,7 @@
   "_comment": "🎭 Eventbrite Events - LIVE SCRAPED DATA from Eventbrite listing page",
   "_userLocation": "2nd Ave & 50th St, Manhattan, NYC (40.7565, -73.9670)",
   "_autoFilter": "Events with datetime < now are automatically moved to Past Events section",
-  "_lastScraped": "2026-04-01T09:30:00-04:00",
+  "_lastScraped": "2026-04-02T00:45:00-04:00",
   "_scrapingMethod": "Browser automation with accessibility tree snapshot - extracted real dates, times, venues, prices from Eventbrite listing page",
   
   "events": [
@@ -66,18 +66,6 @@
     },
     {
       "id": "evt-006",
-      "emoji": "🧑‍💼",
-      "title": "New York City Entrepreneur Networking Event",
-      "venue": "Little More, New York",
-      "datetime": "2026-04-01T19:00:00-04:00",
-      "price": 9.85,
-      "type": "networking",
-      "description": "Entrepreneurs meetup in NYC - TODAY!",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/",
-      "urgency": "TODAY"
-    },
-    {
-      "id": "evt-007",
       "emoji": "🎨",
       "title": "The Art Meetup: FREE Earth Day Workshops @ Chelsea Piers",
       "venue": "Community Classrooms at Pier 57, New York",
@@ -87,6 +75,17 @@
       "description": "FREE Earth Day art workshops",
       "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/",
       "urgency": "ALMOST_FULL"
+    },
+    {
+      "id": "evt-007",
+      "emoji": "🏥",
+      "title": "LGBTQ Professionals + Allies in Healthcare Networking - NYC",
+      "venue": "Industry Bar, New York",
+      "datetime": "2026-04-30T18:00:00-04:00",
+      "price": 0,
+      "type": "networking",
+      "description": "LGBTQ healthcare professionals networking",
+      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
     },
     {
       "id": "evt-008",
@@ -102,17 +101,6 @@
     },
     {
       "id": "evt-009",
-      "emoji": "🏥",
-      "title": "LGBTQ Professionals + Allies in Healthcare Networking - NYC",
-      "venue": "Industry Bar, New York",
-      "datetime": "2026-04-30T18:00:00-04:00",
-      "price": 0,
-      "type": "networking",
-      "description": "LGBTQ healthcare professionals networking",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
-    },
-    {
-      "id": "evt-010",
       "emoji": "🏦",
       "title": "Analyzing Finance in New York",
       "venue": "336 W 37th St, New York",
@@ -124,7 +112,7 @@
       "urgency": "GOING_FAST"
     },
     {
-      "id": "evt-011",
+      "id": "evt-010",
       "emoji": "🎵",
       "title": "Sip & Solutions: Silent Disco Earth Month Edition",
       "venue": "Threes Brewing, Brooklyn",
@@ -135,7 +123,7 @@
       "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
     },
     {
-      "id": "evt-012",
+      "id": "evt-011",
       "emoji": "💰",
       "title": "Bitcoin/Altcoins & Cryptocurrency Enthusiast Night - Crypto Gathering",
       "venue": "Dawson 39 Restaurant & Bar, New York",
@@ -146,7 +134,7 @@
       "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
     },
     {
-      "id": "evt-013",
+      "id": "evt-012",
       "emoji": "🚀",
       "title": "Space Tech Summit",
       "venue": "Location TBA, New York",
@@ -158,7 +146,7 @@
       "urgency": "ALMOST_FULL"
     },
     {
-      "id": "evt-014",
+      "id": "evt-013",
       "emoji": "🏦",
       "title": "New York Trading, Finance And Banking - Professional Networking Affair",
       "venue": "Elsie Rooftop, New York",
@@ -169,7 +157,7 @@
       "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
     },
     {
-      "id": "evt-015",
+      "id": "evt-014",
       "emoji": "🏠",
       "title": "Deal Exchange - Real Estate Professional Networking Affair",
       "venue": "Dawson 39 Restaurant & Bar, New York",
@@ -180,7 +168,7 @@
       "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
     },
     {
-      "id": "evt-016",
+      "id": "evt-015",
       "emoji": "🚀",
       "title": "Startup Pitch Event NYC Manhattan",
       "venue": "Whiskey Cellar NYC, Manhattan",
@@ -191,7 +179,7 @@
       "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
     },
     {
-      "id": "evt-017",
+      "id": "evt-016",
       "emoji": "🚀",
       "title": "Startups Demos & Networking in NYC Manhattan",
       "venue": "Whiskey Cellar NYC, Manhattan",
@@ -202,7 +190,7 @@
       "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
     },
     {
-      "id": "evt-018",
+      "id": "evt-017",
       "emoji": "🧑‍💼",
       "title": "Entrepreneur Networking Event@MANHATTAN",
       "venue": "VERSA, New York",
@@ -213,7 +201,7 @@
       "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
     },
     {
-      "id": "evt-019",
+      "id": "evt-018",
       "emoji": "💆",
       "title": "2026 New York Spa Alliance Symposium",
       "venue": "The Cornell Club New York",
@@ -224,7 +212,7 @@
       "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
     },
     {
-      "id": "evt-020",
+      "id": "evt-019",
       "emoji": "🥂",
       "title": "Exclusive Business Networking & Social Mixer at Midtown",
       "venue": "VERSA, New York",
@@ -234,6 +222,18 @@
       "description": "Business networking mixer at Midtown",
       "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/",
       "urgency": "SALES_END_SOON"
+    },
+    {
+      "id": "evt-020",
+      "emoji": "🏀",
+      "title": "DCF Final Four Fundraiser",
+      "venue": "1565 Lexington Ave, New York",
+      "datetime": "2026-04-05T18:00:00-04:00",
+      "price": 108.55,
+      "type": "networking",
+      "description": "Final Four fundraiser event",
+      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/",
+      "urgency": "GOING_FAST"
     }
   ]
 }
