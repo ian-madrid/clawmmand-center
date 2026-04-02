@@ -1,9 +1,18 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-04-02T00:45:00Z",
+  "_lastUpdated": "2026-04-02T15:24:19Z",
   
   "developments": [
+    {
+      "id": "dev-050",
+      "section": "transcript",
+      "title": "Fixed: Removed forced aspect ratio - videos maintain original dimensions",
+      "description": "Removed 'fit to container' feature that was stretching videos. Changed thumbnailContainer from fixed aspectRatio: '9/16' to auto height. Changed thumbnail from objectFit: 'cover' with height: '100%' to height: 'auto'. Now TikTok vertical videos and YouTube landscape videos display in their natural aspect ratio without any stretching or distortion.",
+      "status": "Complete",
+      "timestamp": "2026-04-02T15:24:19Z",
+      "expectedImprovement": "All video thumbnails display in their original aspect ratio - no stretching, no distortion. Vertical TikTok videos stay vertical, landscape YouTube videos stay landscape."
+    },
     {
       "id": "dev-049",
       "section": "eventbrite",
