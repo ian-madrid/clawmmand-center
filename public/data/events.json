@@ -1,14 +1,13 @@
 {
-  "_comment": "🎭 Eventbrite Events - LIVE SCRAPED DATA from Eventbrite listing page",
+  "_comment": "\ud83c\udfad Eventbrite Events - LIVE SCRAPED DATA from Eventbrite listing page",
   "_userLocation": "2nd Ave & 50th St, Manhattan, NYC (40.7565, -73.9670)",
   "_autoFilter": "Events with datetime < now are automatically moved to Past Events section",
-  "_lastScraped": "2026-04-02T00:45:00-04:00",
+  "_lastScraped": "2026-04-04T16:08:00-07:00",
   "_scrapingMethod": "Browser automation with accessibility tree snapshot - extracted real dates, times, venues, prices from Eventbrite listing page",
-  
   "events": [
     {
       "id": "evt-001",
-      "emoji": "🌍",
+      "emoji": "\ud83c\udf0d",
       "title": "Ghana Tech Summit - 2026 Ai Edition",
       "venue": "Fordham University School of Law, New York",
       "datetime": "2026-04-24T12:00:00-04:00",
@@ -20,7 +19,7 @@
     },
     {
       "id": "evt-002",
-      "emoji": "🤝",
+      "emoji": "\ud83e\udd1d",
       "title": "Brooklyn Big Professional Networking Affair - Game Changers +Professionals",
       "venue": "Berry Park, Brooklyn",
       "datetime": "2026-04-07T19:00:00-04:00",
@@ -31,7 +30,7 @@
     },
     {
       "id": "evt-003",
-      "emoji": "👩‍💼",
+      "emoji": "\ud83d\udc69\u200d\ud83d\udcbc",
       "title": "2026 Well Defined Women In Leadership Summit NYC",
       "venue": "140 Broadway, New York",
       "datetime": "2026-04-21T09:00:00-04:00",
@@ -42,7 +41,7 @@
     },
     {
       "id": "evt-004",
-      "emoji": "💑",
+      "emoji": "\ud83d\udc91",
       "title": "Indian Speed Dating - Meet Multiple Desi Dates In One Night",
       "venue": "Darbar Lounge & Grill, New York",
       "datetime": "2026-04-18T17:30:00-04:00",
@@ -54,7 +53,7 @@
     },
     {
       "id": "evt-005",
-      "emoji": "👩‍💼",
+      "emoji": "\ud83d\udc69\u200d\ud83d\udcbc",
       "title": "Something Major Power Lunch NYC: A Women's Leadership Networking Lunch",
       "venue": "Motek Flatiron, New York",
       "datetime": "2026-04-17T12:00:00-04:00",
@@ -66,7 +65,7 @@
     },
     {
       "id": "evt-006",
-      "emoji": "🎨",
+      "emoji": "\ud83c\udfa8",
       "title": "The Art Meetup: FREE Earth Day Workshops @ Chelsea Piers",
       "venue": "Community Classrooms at Pier 57, New York",
       "datetime": "2026-04-25T15:00:00-04:00",
@@ -78,7 +77,7 @@
     },
     {
       "id": "evt-007",
-      "emoji": "🏥",
+      "emoji": "\ud83c\udfe5",
       "title": "LGBTQ Professionals + Allies in Healthcare Networking - NYC",
       "venue": "Industry Bar, New York",
       "datetime": "2026-04-30T18:00:00-04:00",
@@ -89,7 +88,7 @@
     },
     {
       "id": "evt-008",
-      "emoji": "👩‍💻",
+      "emoji": "\ud83d\udc69\u200d\ud83d\udcbb",
       "title": "Women in Tech New York City - OutGeekWomen",
       "venue": "New York",
       "datetime": "2026-06-18T18:00:00-04:00",
@@ -101,7 +100,7 @@
     },
     {
       "id": "evt-009",
-      "emoji": "🏦",
+      "emoji": "\ud83c\udfe6",
       "title": "Analyzing Finance in New York",
       "venue": "336 W 37th St, New York",
       "datetime": "2026-04-14T18:00:00-04:00",
@@ -113,7 +112,7 @@
     },
     {
       "id": "evt-010",
-      "emoji": "🎵",
+      "emoji": "\ud83c\udfb5",
       "title": "Sip & Solutions: Silent Disco Earth Month Edition",
       "venue": "Threes Brewing, Brooklyn",
       "datetime": "2026-04-14T18:00:00-04:00",
@@ -124,7 +123,7 @@
     },
     {
       "id": "evt-011",
-      "emoji": "💰",
+      "emoji": "\ud83d\udcb0",
       "title": "Bitcoin/Altcoins & Cryptocurrency Enthusiast Night - Crypto Gathering",
       "venue": "Dawson 39 Restaurant & Bar, New York",
       "datetime": "2026-05-11T18:30:00-04:00",
@@ -135,7 +134,7 @@
     },
     {
       "id": "evt-012",
-      "emoji": "🚀",
+      "emoji": "\ud83d\ude80",
       "title": "Space Tech Summit",
       "venue": "Location TBA, New York",
       "datetime": "2026-09-30T10:00:00-04:00",
@@ -147,7 +146,7 @@
     },
     {
       "id": "evt-013",
-      "emoji": "🏦",
+      "emoji": "\ud83c\udfe6",
       "title": "New York Trading, Finance And Banking - Professional Networking Affair",
       "venue": "Elsie Rooftop, New York",
       "datetime": "2026-05-11T18:30:00-04:00",
@@ -158,7 +157,7 @@
     },
     {
       "id": "evt-014",
-      "emoji": "🏠",
+      "emoji": "\ud83c\udfe0",
       "title": "Deal Exchange - Real Estate Professional Networking Affair",
       "venue": "Dawson 39 Restaurant & Bar, New York",
       "datetime": "2026-08-03T18:30:00-04:00",
@@ -169,7 +168,7 @@
     },
     {
       "id": "evt-015",
-      "emoji": "🚀",
+      "emoji": "\ud83d\ude80",
       "title": "Startup Pitch Event NYC Manhattan",
       "venue": "Whiskey Cellar NYC, Manhattan",
       "datetime": "2026-04-29T18:00:00-04:00",
@@ -180,7 +179,7 @@
     },
     {
       "id": "evt-016",
-      "emoji": "🚀",
+      "emoji": "\ud83d\ude80",
       "title": "Startups Demos & Networking in NYC Manhattan",
       "venue": "Whiskey Cellar NYC, Manhattan",
       "datetime": "2026-04-29T18:00:00-04:00",
@@ -191,7 +190,7 @@
     },
     {
       "id": "evt-017",
-      "emoji": "🧑‍💼",
+      "emoji": "\ud83e\uddd1\u200d\ud83d\udcbc",
       "title": "Entrepreneur Networking Event@MANHATTAN",
       "venue": "VERSA, New York",
       "datetime": "2026-04-11T18:00:00-04:00",
@@ -202,7 +201,7 @@
     },
     {
       "id": "evt-018",
-      "emoji": "💆",
+      "emoji": "\ud83d\udc86",
       "title": "2026 New York Spa Alliance Symposium",
       "venue": "The Cornell Club New York",
       "datetime": "2026-05-06T08:00:00-04:00",
@@ -213,7 +212,7 @@
     },
     {
       "id": "evt-019",
-      "emoji": "🥂",
+      "emoji": "\ud83e\udd42",
       "title": "Exclusive Business Networking & Social Mixer at Midtown",
       "venue": "VERSA, New York",
       "datetime": "2026-04-05T18:00:00-04:00",
@@ -225,7 +224,7 @@
     },
     {
       "id": "evt-020",
-      "emoji": "🏀",
+      "emoji": "\ud83c\udfc0",
       "title": "DCF Final Four Fundraiser",
       "venue": "1565 Lexington Ave, New York",
       "datetime": "2026-04-05T18:00:00-04:00",

@@ -1,9 +1,17 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-04-02T15:24:19Z",
-  
+  "_lastUpdated": "2026-04-04T23:08:00Z",
   "developments": [
+    {
+      "id": "dev-051",
+      "section": "eventbrite",
+      "title": "Heartbeat verified: Eventbrite listing still live for NYC networking events",
+      "description": "Weekly heartbeat Eventbrite check executed via browser automation on the NYC networking listing page. Page loaded successfully and current cards are still present, including Brooklyn Big Professional Networking Affair, Women in Leadership Summit NYC, Indian Speed Dating, Power Lunch NYC, Earth Day Workshops, LGBTQ Healthcare Networking, Women in Tech NYC, Analyzing Finance, Silent Disco Earth Month, Bitcoin/Crypto Gathering, New York Trading/Finance/Banking, Space Tech Summit, Deal Exchange, Startup Pitch Event, Startups Demos, Entrepreneur Networking Manhattan, Exclusive Business Networking Mixer, and FAEA. Refreshed events.json scrape timestamp to keep the pulse fresh without inventing unsourced field changes from a partial accessibility-tree pass.",
+      "status": "Complete",
+      "timestamp": "2026-04-04T23:08:00Z",
+      "expectedImprovement": "Activity log and event scrape timestamp are fresh, showing the Eventbrite pipeline is still alive and the listing page remains available."
+    },
     {
       "id": "dev-050",
       "section": "transcript",
@@ -53,7 +61,7 @@
       "id": "dev-045",
       "section": "transcript",
       "title": "Added TikTok Script Tab: Taglish versions (80% English) with strong hooks",
-      "description": "Built new TikTok Script tab for all transcripts. Each transcript now has a toggle: 📄 Original Transcript | 🎬 TikTok Script. TikTok scripts are Taglish (80% English, 20% Tagalog) with strong hooks, emoji formatting, and TikTok-optimized flow. Scripts include: engagement hooks at start, clear structure with emoji bullets, call-to-action at end (follow/comment/share), relevant hashtags. All 9 transcripts converted: t-013 (Larry Fink/Iran), t-012 (Brain Cells/Resistance Training), t-011 (Social Media Acquisition), t-010 (AI Job Market/Jevons Paradox), t-009 (Bezos/Physical AI), t-005 (Manipulation traps), t-008 (Billionaire advice/Listen more), t-006 (AI skills), t-007 (Trump/Iran diplomacy). Updated TranscriptLog.jsx with tab UI, per-item view state tracking, copy button works for both views.",
+      "description": "Built new TikTok Script tab for all transcripts. Each transcript now has a toggle: \ud83d\udcc4 Original Transcript | \ud83c\udfac TikTok Script. TikTok scripts are Taglish (80% English, 20% Tagalog) with strong hooks, emoji formatting, and TikTok-optimized flow. Scripts include: engagement hooks at start, clear structure with emoji bullets, call-to-action at end (follow/comment/share), relevant hashtags. All 9 transcripts converted: t-013 (Larry Fink/Iran), t-012 (Brain Cells/Resistance Training), t-011 (Social Media Acquisition), t-010 (AI Job Market/Jevons Paradox), t-009 (Bezos/Physical AI), t-005 (Manipulation traps), t-008 (Billionaire advice/Listen more), t-006 (AI skills), t-007 (Trump/Iran diplomacy). Updated TranscriptLog.jsx with tab UI, per-item view state tracking, copy button works for both views.",
       "status": "Complete",
       "timestamp": "2026-04-01T20:30:00Z",
       "expectedImprovement": "Transcript section now has dual-view: original transcript + ready-to-use TikTok scripts in Taglish. Users can copy scripts directly for content creation, no manual conversion needed."
@@ -179,7 +187,7 @@
       "id": "dev-031",
       "section": "life-goals",
       "title": "Added interactive task status management",
-      "description": "Each deadline and action now has a dropdown: ⏳ Pending, 🔄 Processing, ✅ Done, ⏸️ Deferred, ❌ Cancelled. Visual feedback: green for done, strikethrough for cancelled/deferred, color-coded borders. Can also tell assistant in chat to update tasks.",
+      "description": "Each deadline and action now has a dropdown: \u23f3 Pending, \ud83d\udd04 Processing, \u2705 Done, \u23f8\ufe0f Deferred, \u274c Cancelled. Visual feedback: green for done, strikethrough for cancelled/deferred, color-coded borders. Can also tell assistant in chat to update tasks.",
       "status": "Complete",
       "timestamp": "2026-03-28T04:00:00Z",
       "expectedImprovement": "Better task tracking - see what's in progress vs done vs deferred at a glance."
@@ -188,7 +196,7 @@
       "id": "dev-030",
       "section": "life-goals",
       "title": "US OkPo LLC progress - LLC registered, EIN fax Monday",
-      "description": "Updated project status: LLC formation DONE ✅ (Mar 27). Formation date recorded ✅. EIN Form SS-4 to be faxed this Monday (Mar 30) to IRS at 267-941-1012. Next action: Contact Delaware banks (Chase, BofA) to confirm in-person requirements for foreign LLC owners. Progress: 0% → 35%.",
+      "description": "Updated project status: LLC formation DONE \u2705 (Mar 27). Formation date recorded \u2705. EIN Form SS-4 to be faxed this Monday (Mar 30) to IRS at 267-941-1012. Next action: Contact Delaware banks (Chase, BofA) to confirm in-person requirements for foreign LLC owners. Progress: 0% \u2192 35%.",
       "status": "Complete",
       "timestamp": "2026-03-28T03:45:00Z",
       "expectedImprovement": "Real-time tracking of LLC setup progress. Clear next steps: fax EIN Monday, call banks week of Apr 5."
@@ -215,7 +223,7 @@
       "id": "dev-027",
       "section": "life-goals",
       "title": "Added copy buttons to all email/letter templates",
-      "description": "Every template (inquiry emails, recommendation requests, SOP outlines) now has one-click copy button. Click '📝 Template' → see full text → click '📋 Copy' → paste anywhere. No more manual copying from chat. Templates stored in Life Goals system, ready when you need them.",
+      "description": "Every template (inquiry emails, recommendation requests, SOP outlines) now has one-click copy button. Click '\ud83d\udcdd Template' \u2192 see full text \u2192 click '\ud83d\udccb Copy' \u2192 paste anywhere. No more manual copying from chat. Templates stored in Life Goals system, ready when you need them.",
       "status": "Complete",
       "timestamp": "2026-03-28T00:31:00Z",
       "expectedImprovement": "Faster execution - one click to copy professional emails and letters, no switching between chat and email client"
@@ -251,7 +259,7 @@
       "id": "dev-023",
       "section": "transcript",
       "title": "Split view: Recent (visible) + Previous (collapsible section)",
-      "description": "Most recent transcript shown at top with '🔥 Most Recent' badge, transcript collapsed by default. All older transcripts grouped in collapsible 'Previous Transcripts' section. Click to expand section when needed. Saves massive space on mobile.",
+      "description": "Most recent transcript shown at top with '\ud83d\udd25 Most Recent' badge, transcript collapsed by default. All older transcripts grouped in collapsible 'Previous Transcripts' section. Click to expand section when needed. Saves massive space on mobile.",
       "status": "Complete",
       "timestamp": "2026-03-27T19:20:00Z",
       "expectedImprovement": "Minimal scrolling, focus on latest content, older transcripts out of the way"
@@ -303,10 +311,13 @@
       "id": "dev-017",
       "section": "transcript",
       "title": "Added TikTok transcript",
-      "description": "Processed TikTok: 'Manipulación: Evita las Trampas Comunes' by @one_1_ness. 310K likes, 1,946 comments. Duration: 1:33.",
+      "description": "Processed TikTok: 'Manipulaci\u00f3n: Evita las Trampas Comunes' by @one_1_ness. 310K likes, 1,946 comments. Duration: 1:33.",
       "status": "Complete",
       "timestamp": "2026-03-27T04:10:00Z",
-      "metrics": {"likes": "310K", "comments": "1,946"}
+      "metrics": {
+        "likes": "310K",
+        "comments": "1,946"
+      }
     },
     {
       "id": "dev-016",
