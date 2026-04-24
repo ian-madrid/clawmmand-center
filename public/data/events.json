@@ -1,213 +1,98 @@
 {
-  "_comment": "🎭 Eventbrite Events - LIVE SCRAPED DATA from Eventbrite listing page",
-  "_userLocation": "2nd Ave & 50th St, Manhattan, NYC (40.7565, -73.9670)",
-  "_autoFilter": "Events with datetime < now are automatically moved to Past Events section",
-  "_lastScraped": "2026-04-14T07:27:00-07:00",
-  "_scrapingMethod": "Browser automation with accessibility tree snapshot - extracted real dates, times, venues, prices from Eventbrite listing page",
+  "last_updated": "2026-04-24T15:30:00-07:00",
+  "location": "New York, NY",
   "events": [
     {
-      "id": "evt-001",
-      "emoji": "🌏",
-      "title": "Ghana Tech Summit - 2026 Ai Edition",
-      "venue": "Fordham University School of Law, New York",
-      "datetime": "2026-04-24T12:00:00-04:00",
-      "price": 0,
-      "type": "tech",
-      "description": "AI and tech summit focused on Ghana",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/",
-      "urgency": "GOING_FAST"
+      "name": "LGBTQ Professionals + Allies in Healthcare Networking - NYC",
+      "date": "Apr 30",
+      "time": "6:00 PM",
+      "location": "New York · Industry Bar",
+      "details": "Event for LGBTQ+ professionals in the healthcare networking space. Free admission."
     },
     {
-      "id": "evt-002",
-      "emoji": "👩‍💼",
-      "title": "2026 Well Defined Women In Leadership Summit NYC",
-      "venue": "140 Broadway, New York",
-      "datetime": "2026-04-21T09:00:00-04:00",
-      "price": 375,
-      "type": "conference",
-      "description": "Women's leadership summit",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
+      "name": "Women in Tech New York City - OutGeekWomen",
+      "date": "Jun 18",
+      "time": "6:00 PM",
+      "location": "New York · New York",
+      "details": "Networking event for women in technology. Free admission."
     },
     {
-      "id": "evt-003",
-      "emoji": "👩‍💼",
-      "title": "Something Major Power Lunch NYC: A Women's Leadership Networking Lunch",
-      "venue": "Motek Flatiron, New York",
-      "datetime": "2026-04-17T12:00:00-04:00",
-      "price": 275,
-      "type": "networking",
-      "description": "Women's leadership networking lunch",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/",
-      "urgency": "SALES_END_SOON"
+      "name": "The Art Meetup: Earth Day Workshops @ Chelsea Piers",
+      "date": "Tomorrow",
+      "time": "3:00 PM",
+      "location": "New York · Community Classrooms at Pier 57",
+      "details": "Earth Day workshops focusing on art and community. Free admission."
     },
     {
-      "id": "evt-004",
-      "emoji": "🏥",
-      "title": "LGBTQ Professionals + Allies in Healthcare Networking - NYC",
-      "venue": "Industry Bar, New York",
-      "datetime": "2026-04-30T18:00:00-04:00",
-      "price": 0,
-      "type": "networking",
-      "description": "LGBTQ healthcare professionals networking",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
+      "name": "Bitcoin/Altcoins & Cryptocurrency Enthusiast Night - Crypto Gathering",
+      "date": "May 11",
+      "time": "6:30 PM",
+      "location": "New York · Dawson 39 Restaurant & Bar",
+      "details": "Crypto networking event. Free admission."
     },
     {
-      "id": "evt-005",
-      "emoji": "🎨",
-      "title": "The Art Meetup: FREE Earth Day Workshops @ Chelsea Piers",
-      "venue": "Community Classrooms at Pier 57, New York",
-      "datetime": "2026-04-25T15:00:00-04:00",
-      "price": 0,
-      "type": "workshop",
-      "description": "FREE Earth Day art workshops",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
+      "name": "New York Trading, Finance And Banking - Professional Networking Affair",
+      "date": "May 11",
+      "time": "6:30 PM",
+      "location": "New York · Elsie Rooftop",
+      "details": "Finance and professional networking event. Free admission."
     },
     {
-      "id": "evt-006",
-      "emoji": "👩‍💻",
-      "title": "Women in Tech New York City - OutGeekWomen",
-      "venue": "New York",
-      "datetime": "2026-06-18T18:00:00-04:00",
-      "price": 0,
-      "type": "tech",
-      "description": "Women in tech networking - FREE",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/",
-      "urgency": "ALMOST_FULL"
+      "name": "Deal Exchange - Real Estate Professional Networking Affair",
+      "date": "Aug 3",
+      "time": "6:30 PM",
+      "location": "New York · Dawson 39 Restaurant & Bar",
+      "details": "Real estate professional networking event. Free admission."
     },
     {
-      "id": "evt-007",
-      "emoji": "💰",
-      "title": "Analyzing Finance in New York",
-      "venue": "336 W 37th St, New York",
-      "datetime": "2026-04-14T18:00:00-04:00",
-      "price": 29,
-      "type": "finance",
-      "description": "Finance professionals networking",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/",
-      "urgency": "TODAY"
+      "name": "2026 New York Spa Alliance Symposium",
+      "date": "May 6",
+      "time": "8:00 AM",
+      "location": "New York · The Cornell Club New York",
+      "details": "Spa industry symposium. Ticket price: $335.00."
     },
     {
-      "id": "evt-008",
-      "emoji": "🎧",
-      "title": "Sip & Solutions: Silent Disco Earth Month Edition",
-      "venue": "Threes Brewing, Brooklyn",
-      "datetime": "2026-04-14T18:00:00-04:00",
-      "price": 10,
-      "type": "networking",
-      "description": "Silent disco networking event",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/",
-      "urgency": "TODAY"
+      "name": "Space Tech Summit",
+      "date": "Sep 30",
+      "time": "10:00 AM",
+      "location": "New York · Location TBA",
+      "details": "Space technology focused summit. Free admission."
     },
     {
-      "id": "evt-009",
-      "emoji": "₿",
-      "title": "Bitcoin/Altcoins & Cryptocurrency Enthusiast Night - Crypto Gathering",
-      "venue": "Dawson 39 Restaurant & Bar, New York",
-      "datetime": "2026-05-11T18:30:00-04:00",
-      "price": 0,
-      "type": "crypto",
-      "description": "Crypto enthusiasts meetup",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
+      "name": "THE 17th FRENCH AMERICAN ENTREPRENEURSHIP AWARD (FAEA)",
+      "date": "Jun 2",
+      "time": "6:00 PM",
+      "location": "New York · Consulate General of France",
+      "details": "French American entrepreneurship award. Free admission."
     },
     {
-      "id": "evt-010",
-      "emoji": "🚀",
-      "title": "Space Tech Summit",
-      "venue": "Location TBA, New York",
-      "datetime": "2026-09-30T10:00:00-04:00",
-      "price": 0,
-      "type": "tech",
-      "description": "Space technology summit",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/",
-      "urgency": "ALMOST_FULL"
+      "name": "Ghana Tech Summit - 2026 Ai Edition",
+      "date": "Nov 19",
+      "time": "12:00 PM",
+      "location": "New York · Fordham University School of Law",
+      "details": "Tech summit focused on AI. Free admission."
     },
     {
-      "id": "evt-011",
-      "emoji": "🏦",
-      "title": "New York Trading, Finance And Banking - Professional Networking Affair",
-      "venue": "Elsie Rooftop, New York",
-      "datetime": "2026-05-11T18:30:00-04:00",
-      "price": 0,
-      "type": "finance",
-      "description": "Finance and banking professionals networking",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
+      "name": "Startup Pitch Event NYC Manhattan",
+      "date": "TBD",
+      "time": "6:00 PM",
+      "location": "New York · Whiskey Cellar NYC",
+      "details": "Startup pitching and networking. Ticket price: $10.00."
     },
     {
-      "id": "evt-012",
-      "emoji": "🏠",
-      "title": "Deal Exchange - Real Estate Professional Networking Affair",
-      "venue": "Dawson 39 Restaurant & Bar, New York",
-      "datetime": "2026-08-03T18:30:00-04:00",
-      "price": 0,
-      "type": "realestate",
-      "description": "Real estate professionals networking",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
+      "name": "Startups Demos & Networking in NYC Manhattan",
+      "date": "TBD",
+      "time": "6:00 PM",
+      "location": "New York · Whiskey Cellar NYC",
+      "details": "Startup demos and networking. Ticket price: $10.00."
     },
     {
-      "id": "evt-013",
-      "emoji": "🚀",
-      "title": "Startup Pitch Event NYC Manhattan",
-      "venue": "Whiskey Cellar NYC, Manhattan",
-      "datetime": "2026-04-29T18:00:00-04:00",
-      "price": 10,
-      "type": "startup",
-      "description": "Pitch your startup to investors",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
-    },
-    {
-      "id": "evt-014",
-      "emoji": "🚀",
-      "title": "Startups Demos & Networking in NYC Manhattan",
-      "venue": "Whiskey Cellar NYC, Manhattan",
-      "datetime": "2026-04-29T18:00:00-04:00",
-      "price": 10,
-      "type": "startup",
-      "description": "Startup demos and networking",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
-    },
-    {
-      "id": "evt-015",
-      "emoji": "💼",
-      "title": "THE 17th FRENCH AMERICAN ENTREPRENEURSHIP AWARD (FAEA)",
-      "venue": "Consulate General of France, New York",
-      "datetime": "2026-06-02T18:00:00-04:00",
-      "price": 0,
-      "type": "entrepreneurship",
-      "description": "French American entrepreneurship award ceremony",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
-    },
-    {
-      "id": "evt-016",
-      "emoji": "🏳️‍🌈",
-      "title": "Bisexual & Pansexual Speed Dating in NYC | All-Gender Dating | LGBTQ+",
-      "venue": "Bananas, New York",
-      "datetime": "2026-04-23T19:30:00-04:00",
-      "price": 30.65,
-      "type": "networking",
-      "description": "LGBTQ+ speed dating event",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
-    },
-    {
-      "id": "evt-017",
-      "emoji": "⚖️",
-      "title": "Where Business Law & Tech Intersect - New York Edition",
-      "venue": "Midtown Biohack, New York",
-      "datetime": "2026-04-23T18:00:00-04:00",
-      "price": 39.19,
-      "type": "tech",
-      "description": "Business law and tech intersection discussion",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
-    },
-    {
-      "id": "evt-018",
-      "emoji": "🧘",
-      "title": "AI x Wellness x Tech Mixer: Tools, Habits & Human Connection",
-      "venue": "The Lobby Bar & Garden, New York",
-      "datetime": "2026-04-23T18:00:00-04:00",
-      "price": 17.85,
-      "type": "tech",
-      "description": "AI, wellness, and tech mixer event",
-      "eventbriteUrl": "https://www.eventbrite.com/d/ny--new-york/networking/"
+      "name": "Indian Speed Dating - Meet Multiple Desi Dates In One Night",
+      "date": "Jul 25",
+      "time": "5:30 PM",
+      "location": "New York · Darbar Lounge & Grill",
+      "details": "Speed dating for Desi community. Ticket price: $23.18."
     }
-  ]
+  ],
+  "scraped_timestamp": "2026-04-24T15:30:00Z"
 }
