@@ -1,27 +1,13 @@
 {
-  "last_updated": "2026-04-24T15:30:00-07:00",
+  "last_updated": "2026-05-01T06:39:00-07:00",
   "location": "New York, NY",
   "events": [
-    {
-      "name": "LGBTQ Professionals + Allies in Healthcare Networking - NYC",
-      "date": "Apr 30",
-      "time": "6:00 PM",
-      "location": "New York · Industry Bar",
-      "details": "Event for LGBTQ+ professionals in the healthcare networking space. Free admission."
-    },
     {
       "name": "Women in Tech New York City - OutGeekWomen",
       "date": "Jun 18",
       "time": "6:00 PM",
       "location": "New York · New York",
       "details": "Networking event for women in technology. Free admission."
-    },
-    {
-      "name": "The Art Meetup: Earth Day Workshops @ Chelsea Piers",
-      "date": "Tomorrow",
-      "time": "3:00 PM",
-      "location": "New York · Community Classrooms at Pier 57",
-      "details": "Earth Day workshops focusing on art and community. Free admission."
     },
     {
       "name": "Bitcoin/Altcoins & Cryptocurrency Enthusiast Night - Crypto Gathering",
@@ -45,18 +31,18 @@
       "details": "Real estate professional networking event. Free admission."
     },
     {
-      "name": "2026 New York Spa Alliance Symposium",
-      "date": "May 6",
-      "time": "8:00 AM",
-      "location": "New York · The Cornell Club New York",
-      "details": "Spa industry symposium. Ticket price: $335.00."
-    },
-    {
       "name": "Space Tech Summit",
       "date": "Sep 30",
       "time": "10:00 AM",
       "location": "New York · Location TBA",
       "details": "Space technology focused summit. Free admission."
+    },
+    {
+      "name": "2026 New York Spa Alliance Symposium",
+      "date": "May 6",
+      "time": "8:00 AM",
+      "location": "New York · The Cornell Club New York",
+      "details": "Spa industry symposium. Ticket price: $335.00."
     },
     {
       "name": "THE 17th FRENCH AMERICAN ENTREPRENEURSHIP AWARD (FAEA)",
@@ -66,25 +52,18 @@
       "details": "French American entrepreneurship award. Free admission."
     },
     {
-      "name": "Ghana Tech Summit - 2026 Ai Edition",
+      "name": "Ghana Tech Summit - 2026 Ai Edition Edition",
       "date": "Nov 19",
       "time": "12:00 PM",
       "location": "New York · Fordham University School of Law",
       "details": "Tech summit focused on AI. Free admission."
     },
     {
-      "name": "Startup Pitch Event NYC Manhattan",
-      "date": "TBD",
+      "name": "General Business Networking | Elevating Your Potential - FiDi",
+      "date": "May 20",
       "time": "6:00 PM",
-      "location": "New York · Whiskey Cellar NYC",
-      "details": "Startup pitching and networking. Ticket price: $10.00."
-    },
-    {
-      "name": "Startups Demos & Networking in NYC Manhattan",
-      "date": "TBD",
-      "time": "6:00 PM",
-      "location": "New York · Whiskey Cellar NYC",
-      "details": "Startup demos and networking. Ticket price: $10.00."
+      "location": "New York · Continental Sports Lounge",
+      "details": "General business networking event. Free admission."
     },
     {
       "name": "Indian Speed Dating - Meet Multiple Desi Dates In One Night",
@@ -92,7 +71,70 @@
       "time": "5:30 PM",
       "location": "New York · Darbar Lounge & Grill",
       "details": "Speed dating for Desi community. Ticket price: $23.18."
+    },
+    {
+      "name": "Startup Pitch Event NYC Manhattan",
+      "date": "May 13",
+      "time": "6:00 PM",
+      "location": "New York · Whiskey Cellar NYC",
+      "details": "Startup pitching and networking. Ticket price: $10.00."
+    },
+    {
+      "name": "Startups Demos & Networking in NYC Manhattan",
+      "date": "May 13",
+      "time": "6:00 PM",
+      "location": "New York · Whiskey Cellar NYC",
+      "details": "Startup demos and networking. Ticket price: $10.00."
+    },
+    {
+      "name": "Finance and Business Networking | Elevating Your Potential - FiDi",
+      "date": "May 20",
+      "time": "6:00 PM",
+      "location": "New York · Continental Sports Lounge",
+      "details": "Finance and business networking. Free admission."
+    },
+    {
+      "name": "Healthcare and Business Networking | Elevating Your Potential - NYC",
+      "date": "May 6",
+      "time": "6:00 PM",
+      "location": "New York · 5th&Mad",
+      "details": "Healthcare and business networking. Free admission."
+    },
+    {
+      "name": "Caribbean Future Summit (5th Annual)",
+      "date": "Oct 14",
+      "time": "11:00 AM",
+      "location": "New York · New York",
+      "details": "Caribbean future summit. Free admission."
+    },
+    {
+      "name": "Politics and Business Networking | Elevating Your Potential - NYC",
+      "date": "May 6",
+      "time": "6:00 PM",
+      "location": "New York · 5th&Mad",
+      "details": "Politics and business networking. Free admission."
+    },
+    {
+      "name": "Foodies + New Friends: NYC (Entrepreneurs Giving Back Edition)",
+      "date": "May 7",
+      "time": "7:00 PM",
+      "location": "New York · Restaurant of the Week",
+      "details": "Food networking event for entrepreneurs. Ticket price: $43.27."
+    },
+    {
+      "name": "Tech and Business Networking | Elevating Your Potential - FiDi",
+      "date": "May 20",
+      "time": "6:00 PM",
+      "location": "New York · Continental Sports Lounge",
+      "details": "Tech and business networking. Free admission."
+    },
+    {
+      "name": "Hospitality and Business Networking | Elevating Your Potential - Brooklyn",
+      "date": "May 13",
+      "time": "6:00 PM",
+      "location": "Brooklyn · Black Forest Brooklyn - Fort Greene",
+      "details": "Hospitality and business networking. Free admission."
     }
   ],
-  "scraped_timestamp": "2026-04-24T15:30:00Z"
+  "scraped_timestamp": "2026-05-01T06:39:00Z"
 }

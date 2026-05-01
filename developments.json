@@ -1,2 +1,8 @@
-Heartbeat: Eventbrite Network Scrape completed. Data written to clawmmand-center/public/data/events.json. Section: eventbrite.
-Heartbeat: Eventbrite Network Scrape completed. Data written to clawmmand-center/public/data/events.json. Section: eventbrite.
+[
+  {
+    "section": "eventbrite",
+    "title": "Eventbrite Network Scrape",
+    "description": "Scraped 18 NYC networking events from Eventbrite via browser automation",
+    "timestamp": "2026-05-01T06:39:00-07:00"
+  }
+]
