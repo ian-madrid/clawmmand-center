@@ -1,14 +1,7 @@
 {
-  "last_updated": "2026-05-01T06:39:00-07:00",
+  "last_updated": "2026-05-02T08:09:00-07:00",
   "location": "New York, NY",
   "events": [
-    {
-      "name": "Women in Tech New York City - OutGeekWomen",
-      "date": "Jun 18",
-      "time": "6:00 PM",
-      "location": "New York · New York",
-      "details": "Networking event for women in technology. Free admission."
-    },
     {
       "name": "Bitcoin/Altcoins & Cryptocurrency Enthusiast Night - Crypto Gathering",
       "date": "May 11",
@@ -22,55 +15,6 @@
       "time": "6:30 PM",
       "location": "New York · Elsie Rooftop",
       "details": "Finance and professional networking event. Free admission."
-    },
-    {
-      "name": "Deal Exchange - Real Estate Professional Networking Affair",
-      "date": "Aug 3",
-      "time": "6:30 PM",
-      "location": "New York · Dawson 39 Restaurant & Bar",
-      "details": "Real estate professional networking event. Free admission."
-    },
-    {
-      "name": "Space Tech Summit",
-      "date": "Sep 30",
-      "time": "10:00 AM",
-      "location": "New York · Location TBA",
-      "details": "Space technology focused summit. Free admission."
-    },
-    {
-      "name": "2026 New York Spa Alliance Symposium",
-      "date": "May 6",
-      "time": "8:00 AM",
-      "location": "New York · The Cornell Club New York",
-      "details": "Spa industry symposium. Ticket price: $335.00."
-    },
-    {
-      "name": "THE 17th FRENCH AMERICAN ENTREPRENEURSHIP AWARD (FAEA)",
-      "date": "Jun 2",
-      "time": "6:00 PM",
-      "location": "New York · Consulate General of France",
-      "details": "French American entrepreneurship award. Free admission."
-    },
-    {
-      "name": "Ghana Tech Summit - 2026 Ai Edition Edition",
-      "date": "Nov 19",
-      "time": "12:00 PM",
-      "location": "New York · Fordham University School of Law",
-      "details": "Tech summit focused on AI. Free admission."
-    },
-    {
-      "name": "General Business Networking | Elevating Your Potential - FiDi",
-      "date": "May 20",
-      "time": "6:00 PM",
-      "location": "New York · Continental Sports Lounge",
-      "details": "General business networking event. Free admission."
-    },
-    {
-      "name": "Indian Speed Dating - Meet Multiple Desi Dates In One Night",
-      "date": "Jul 25",
-      "time": "5:30 PM",
-      "location": "New York · Darbar Lounge & Grill",
-      "details": "Speed dating for Desi community. Ticket price: $23.18."
     },
     {
       "name": "Startup Pitch Event NYC Manhattan",
@@ -87,39 +31,25 @@
       "details": "Startup demos and networking. Ticket price: $10.00."
     },
     {
+      "name": "The Gold Networking Event",
+      "date": "May 13",
+      "time": "6:00 PM",
+      "location": "New York · The Skylark - Rooftop Bar",
+      "details": "Professional networking event. Free admission."
+    },
+    {
+      "name": "General Business Networking | Elevating Your Potential - FiDi",
+      "date": "May 20",
+      "time": "6:00 PM",
+      "location": "New York · Continental Sports Lounge",
+      "details": "General business networking event. Free admission."
+    },
+    {
       "name": "Finance and Business Networking | Elevating Your Potential - FiDi",
       "date": "May 20",
       "time": "6:00 PM",
       "location": "New York · Continental Sports Lounge",
       "details": "Finance and business networking. Free admission."
-    },
-    {
-      "name": "Healthcare and Business Networking | Elevating Your Potential - NYC",
-      "date": "May 6",
-      "time": "6:00 PM",
-      "location": "New York · 5th&Mad",
-      "details": "Healthcare and business networking. Free admission."
-    },
-    {
-      "name": "Caribbean Future Summit (5th Annual)",
-      "date": "Oct 14",
-      "time": "11:00 AM",
-      "location": "New York · New York",
-      "details": "Caribbean future summit. Free admission."
-    },
-    {
-      "name": "Politics and Business Networking | Elevating Your Potential - NYC",
-      "date": "May 6",
-      "time": "6:00 PM",
-      "location": "New York · 5th&Mad",
-      "details": "Politics and business networking. Free admission."
-    },
-    {
-      "name": "Foodies + New Friends: NYC (Entrepreneurs Giving Back Edition)",
-      "date": "May 7",
-      "time": "7:00 PM",
-      "location": "New York · Restaurant of the Week",
-      "details": "Food networking event for entrepreneurs. Ticket price: $43.27."
     },
     {
       "name": "Tech and Business Networking | Elevating Your Potential - FiDi",
@@ -129,12 +59,61 @@
       "details": "Tech and business networking. Free admission."
     },
     {
-      "name": "Hospitality and Business Networking | Elevating Your Potential - Brooklyn",
-      "date": "May 13",
+      "name": "Foodies + New Friends: NYC (Entrepreneurs Giving Back Edition)",
+      "date": "May 8",
+      "time": "7:00 PM",
+      "location": "New York · Restaurant of the Week",
+      "details": "Food networking event for entrepreneurs. Ticket price: $43.27."
+    },
+    {
+      "name": "THE 17th FRENCH AMERICAN ENTREPRENEURSHIP AWARD (FAEA)",
+      "date": "Jun 2",
       "time": "6:00 PM",
-      "location": "Brooklyn · Black Forest Brooklyn - Fort Greene",
-      "details": "Hospitality and business networking. Free admission."
+      "location": "New York · Consulate General of France",
+      "details": "French American entrepreneurship award. Free admission."
+    },
+    {
+      "name": "Women in Tech New York City - OutGeekWomen",
+      "date": "Jun 18",
+      "time": "6:00 PM",
+      "location": "New York · New York",
+      "details": "Networking event for women in technology. Free admission."
+    },
+    {
+      "name": "Indian Speed Dating - Meet Multiple Desi Dates In One Night",
+      "date": "Jul 25",
+      "time": "5:30 PM",
+      "location": "New York · Darbar Lounge & Grill",
+      "details": "Speed dating for Desi community. Ticket price: $23.18."
+    },
+    {
+      "name": "Deal Exchange - Real Estate Professional Networking Affair",
+      "date": "Aug 3",
+      "time": "6:30 PM",
+      "location": "New York · Dawson 39 Restaurant & Bar",
+      "details": "Real estate professional networking event. Free admission."
+    },
+    {
+      "name": "Space Tech Summit",
+      "date": "Sep 30",
+      "time": "10:00 AM",
+      "location": "New York · Location TBA",
+      "details": "Space technology focused summit. Free admission."
+    },
+    {
+      "name": "Caribbean Future Summit (5th Annual)",
+      "date": "Oct 14",
+      "time": "11:00 AM",
+      "location": "New York · New York",
+      "details": "Caribbean future summit. Free admission."
+    },
+    {
+      "name": "Ghana Tech Summit - 2026 Ai Edition",
+      "date": "Nov 19",
+      "time": "12:00 PM",
+      "location": "New York · Fordham University School of Law",
+      "details": "Tech summit focused on AI. Free admission."
     }
   ],
-  "scraped_timestamp": "2026-05-01T06:39:00Z"
+  "scraped_timestamp": "2026-05-02T15:09:00Z"
 }
