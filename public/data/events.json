@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-02T08:09:00-07:00",
+  "last_updated": "2026-05-03T13:12:00-07:00",
   "location": "New York, NY",
   "events": [
     {
@@ -21,14 +21,14 @@
       "date": "May 13",
       "time": "6:00 PM",
       "location": "New York · Whiskey Cellar NYC",
-      "details": "Startup pitching and networking. Ticket price: $10.00."
+      "details": "Startup pitching and networking. Free admission."
     },
     {
       "name": "Startups Demos & Networking in NYC Manhattan",
       "date": "May 13",
       "time": "6:00 PM",
       "location": "New York · Whiskey Cellar NYC",
-      "details": "Startup demos and networking. Ticket price: $10.00."
+      "details": "Startup demos and networking. Free admission."
     },
     {
       "name": "The Gold Networking Event",
@@ -63,7 +63,7 @@
       "date": "May 8",
       "time": "7:00 PM",
       "location": "New York · Restaurant of the Week",
-      "details": "Food networking event for entrepreneurs. Ticket price: $43.27."
+      "details": "Food networking event for entrepreneurs. Fee may apply."
     },
     {
       "name": "THE 17th FRENCH AMERICAN ENTREPRENEURSHIP AWARD (FAEA)",
@@ -84,7 +84,7 @@
       "date": "Jul 25",
       "time": "5:30 PM",
       "location": "New York · Darbar Lounge & Grill",
-      "details": "Speed dating for Desi community. Ticket price: $23.18."
+      "details": "Speed dating for Desi community. Fee may apply."
     },
     {
       "name": "Deal Exchange - Real Estate Professional Networking Affair",
@@ -115,5 +115,5 @@
       "details": "Tech summit focused on AI. Free admission."
     }
   ],
-  "scraped_timestamp": "2026-05-02T15:09:00Z"
+  "scraped_timestamp": "2026-05-03T20:12:45Z"
 }
