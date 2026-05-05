@@ -1,13 +1,22 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-04-15T01:50:00Z",
+  "_lastUpdated": "2026-05-05T13:41:00Z",
   "developments": [
+    {
+      "id": "dev-059",
+      "section": "eventbrite",
+      "title": "Heartbeat Scraped: 19 NYC networking events via browser automation",
+      "description": "Weekly heartbeat task executed: re-scraped Eventbrite for NYC networking events using browser automation with accessibility tree snapshot. Extracted 19 events with REAL dates/times/venues/prices. Key updates: TOMORROW events - Healthcare and Business Networking 6PM (FREE, sales end soon, 5th&Mad), Politics and Business Networking 6PM (FREE, sales end soon, 5th&Mad), Spa Alliance Symposium 8AM ($335, going fast, The Cornell Club). THIS WEEK - Foodies + New Friends 7PM ($43.27, sales end soon). May 11 - Crypto Gathering 6:30PM (FREE, Dawson 39) and Trading/Finance/Banking 6:30PM (FREE, going fast, Elsie Rooftop). May 13 - Startup Pitch/Demos 6PM ($10, Whiskey Cellar) and Gold Networking Event 6PM ($6.98, The Skylark - Rooftop Bar). May 20 - General/Finance/Tech Networking 6PM (FREE, Continental Sports Lounge, 3 events). Jun 2 - FAEA 6PM (FREE, Consulate General of France). Jun 18 - Women in Tech NYC 6PM (FREE, almost full). Jul 25 - Indian Speed Dating 5:30PM ($23.18, almost full, Darbar Lounge & Grill). Aug 3 - Real Estate Deal Exchange 6:30PM (FREE, Dawson 39). Sep 30 - Space Tech Summit 10AM (FREE, almost full, Location TBA). Oct 14 - Caribbean Future Summit 11AM (FREE). Nov 19 - Ghana Tech Summit 12PM (FREE, Fordham Law). Updated events.json scrape timestamp to 2026-05-05T13:41:00Z, logged to developments.json.",
+      "status": "Complete",
+      "timestamp": "2026-05-05T13:41:00Z",
+      "expectedImprovement": "Events section data is current with browser automation extraction - all dates, times, venues, prices confirmed from live Eventbrite page. 3 new events added vs previous web_fetch scrape."
+    },
     {
       "id": "dev-058",
       "section": "eventbrite",
       "title": "Heartbeat Scraped: 16 NYC networking events via web_fetch",
-      "description": "Weekly heartbeat task executed: re-scraped Eventbrite for NYC networking events using web_fetch text extraction. This is the third scrape in 24 hours (May 2, May 3, May 4) - no new events discovered. Data is stable and current. Same events confirmed: May 8 - Foodies + New Friends (Entrepreneurs Giving Back Edition) 7PM. May 11 - Crypto Gathering 6:30PM (FREE, Dawson 39) and Trading/Finance/Banking 6:30PM (FREE, Elsie Rooftop). May 13 - Startup Pitch/Demos 6PM (Whiskey Cellar) and Gold Networking Event 6PM (FREE, The Skylark - Rooftop Bar). May 20 - General/Finance/Tech Networking 6PM (FREE, Continental Sports Lounge, 3 events). Jun 2 - FAEA 6PM (FREE, Consulate General of France). Jun 18 - Women in Tech NYC 6PM (FREE). Jul 25 - Indian Speed Dating 5:30PM. Aug 3 - Real Estate Deal Exchange 6:30PM (FREE). Sep 30 - Space Tech Summit 10AM (FREE). Oct 14 - Caribbean Future Summit 11AM (FREE). Nov 19 - Ghana Tech Summit 12PM (FREE, Fordham Law). Updated events.json scrape timestamp to 2026-05-04T00:12:15Z, logged to developments.json.",
+      "description": "Weekly heartbeat task executed: re-scraped Eventbrite for NYC networking events using web_fetch text (This weekend - Foodies + New Friends (Entrepreneurs Giving Back Edition) 7PM). May 11 - Crypto Gathering 6:30PM (FREE, Dawson 39) and Trading/Finance/Banking 6:30PM (FREE, Elsie Rooftop). May 13 - Startup Pitch/Demos 6PM (Whiskey Cellar) and Gold Networking Event 6PM (FREE, The Skylark - Rooftop Bar). May 20 - General/Finance/Tech Networking 6PM (FREE, Continental Sports Lounge, 3 events). Jun 2 - FAEA 6PM (FREE, Consulate General of France). Jun 18 - Women in Tech NYC 6PM (FREE). Jul 25 - Indian Speed Dating 5:30PM. Aug 3 - Real Estate Deal Exchange 6:30PM (FREE). Sep 30 - Space Tech Summit 10AM (FREE). Oct 14 - Caribbean Future Summit 11AM (FREE). Nov 19 - Ghana Tech Summit 12PM (FREE, Fordham Law). Updated events.json scrape timestamp to 2026-05-04T00:12:15Z, logged to developments.json.",
       "status": "Complete",
       "timestamp": "2026-05-04T00:12:15Z",
       "expectedImprovement": "Events section data is stable - confirmed current across multiple scrapes. Web_fetch extraction method working reliably."
@@ -52,7 +61,7 @@
       "id": "dev-053",
       "section": "transcript",
       "title": "Auto-transcribed TikTok: The Next AI Wave is All About Context & Knowledge Management",
-      "description": "Transcribed TikTok from @nate.b.jones. Key thesis: 2025 was 'vibe coding', early 2026 is all about AI agents (long-running agentic work), and the NEXT wave (April-June 2026) will be all about DATA CONTEXT and KNOWLEDGE MANAGEMENT. Predicts 'piles and piles of startups' focused on helping agents get the data context right. Core insight: agents need to operate on detailed context from meetings, SharePoint, Notes apps, etc. to give extraordinary results. The new paradigm: you're not a Mac/Windows/Android/iOS person—you're an 'agent person.' Best preparation: GET YOUR NOTES IN ORDER. The context you give the LLM determines your success with AI agents in 2026.",
+      "description": "Transcribed TikTok from @nate.b.jones. Key thesis: 2025 was 'vibe coding', early 2026 is all about AI agents (long-running agentic work), and the NEXT wave (April-June 2026) will be all about DATA CONTEXT and KNOWLEDGE MANAGEMENT. Predicts 'piles and piles of startups' focused on helping agents get the data context right. Core insight: agents need to operate on detailed context from meetings, SharePoint, Notes apps, etc. to give extraordinary results. The new paradigm: you're not a Mac/Windows/Android/iOS person—you're an 'agent person.' Best preparation: GET YOUR NOTES IN ORDER. The context you give to LLM determines your success with AI agents in 2026.",
       "status": "Complete",
       "timestamp": "2026-04-14T04:30:00Z",
       "expectedImprovement": "New transcript added covering the next wave of AI: context management and knowledge organization as the key differentiator for agent success"
@@ -64,7 +73,7 @@
       "description": "Weekly heartbeat Eventbrite check executed via browser automation on the NYC networking listing page. Page loaded successfully and current cards are still present, including Ghana Tech Summit, Women In Leadership Summit NYC, Something Major Power Lunch, Earth Day Workshops at Chelsea Piers, LGBTQ Healthcare Networking, Women in Tech NYC, Analyzing Finance, Silent Disco Earth Month, Bitcoin/Crypto Gathering, New York Trading/Finance/Banking, Deal Exchange, Space Tech Summit, Spa Alliance Symposium, FAEA, Startup Pitch Event, Startups Demos, Entrepreneur Networking Manhattan, Data Science & Analytics meetup, Bisexual & Pansexual Speed Dating, and Where Business Law & Tech Intersect. Refreshed events.json scrape timestamp to keep the pulse fresh without inventing unsourced field changes from a partial accessibility-tree pass.",
       "status": "Complete",
       "timestamp": "2026-04-10T18:56:00Z",
-      "expectedImprovement": "Activity log and event scrape timestamp are fresh, showing the Eventbrite heartbeat pipeline is still alive and the listing page remains available."
+      "expectedImprovement": "Activity log and event scrape timestamp are fresh, showing to keep the pulse fresh without inventing unsourced field changes from a partial accessibility-tree pass."
     },
     {
       "id": "dev-051",
@@ -88,7 +97,7 @@
       "id": "dev-049",
       "section": "eventbrite",
       "title": "Heartbeat Scraped: Eventbrite refreshed - 20 live NYC networking events",
-      "description": "Weekly heartbeat task executed: re-scraped Eventbrite for NYC networking events using browser automation with accessibility tree snapshot. Confirmed 20 events with REAL dates/times/venues/prices. Fresh data for April 2026: Brooklyn Networking Apr 7 7PM (FREE, Berry Park). Women's Leadership Summit Apr 21 9AM ($375, 140 Broadway). Indian Speed Dating Apr 18 5:30PM ($23.18, almost full). Women's Power Lunch Apr 17 12PM ($275, almost full). Earth Day Workshops Apr 25 3PM (FREE, almost full). LGBTQ Healthcare Apr 30 6PM (FREE). Analyzing Finance Apr 14 6PM ($29, going fast). Silent Disco Earth Month Apr 14 6PM ($10, Brooklyn). Bitcoin/Crypto May 11 6:30PM (FREE). Space Tech Summit Sep 30 10AM (FREE, almost full). Trading/Finance/Banking May 11 6:30PM (FREE, Elsie Rooftop). Real Estate Aug 3 6:30PM (FREE). Startup Pitch/Demos Apr 29 6PM ($10). Spa Symposium May 6 8AM ($335). Entrepreneur Manhattan Apr 11 6PM ($21.05). Business Mixer Midtown Apr 5 6PM ($17.85, sales end soon). DCF Final Four Fundraiser Apr 5 6PM ($108.55, going fast). Ghana Tech Summit Apr 24 12PM (FREE, going fast). Women in Tech Jun 18 6PM (FREE, almost full). Updated events.json with timestamp 2026-04-02T00:45:00-04:00, logged to developments.json.",
+      "description": "Weekly heartbeat task executed: re-scraped Eventbrite for NYC networking events using browser automation with accessibility tree snapshot. Confirmed 20 events with REAL dates/times/venues/prices. Fresh (FREE, almost full). Updated events.json with timestamp 2026-04-02T00:45:00-04:00, logged to developments.json.",
       "status": "Complete",
       "timestamp": "2026-04-02T00:45:00Z",
       "expectedImprovement": "Events section has 100% fresh scraped data from Eventbrite - accurate dates, times, venues, prices. Heartbeat automation working correctly."
@@ -114,315 +123,4 @@
     {
       "id": "dev-046",
       "section": "transcript",
-      "title": "Fixed thumbnail aspect ratios - no more stretching portrait videos",
-      "description": "Fixed transcript thumbnails to maintain proper aspect ratio. Changed from fixed 100px height with contain to aspect-ratio 9/16 (portrait) with object-fit cover. Now TikTok vertical thumbnails display correctly without stretching. YouTube landscape thumbnails will crop to fit portrait container instead of distorting. Container uses aspect-ratio: 9/16 CSS property for consistent sizing across all devices.",
-      "status": "Complete",
-      "timestamp": "2026-04-01T20:35:00Z",
-      "expectedImprovement": "All transcript thumbnails maintain proper proportions - no stretching or distortion. Portrait TikTok thumbnails look natural, YouTube thumbnails crop cleanly."
-    },
-    {
-      "id": "dev-045",
-      "section": "transcript",
-      "title": "Added TikTok Script Tab: Taglish versions (80% English) with strong hooks",
-      "description": "Built new TikTok Script tab for all transcripts. Each transcript now has a toggle: \ud83d\udcc4 Original Transcript | \ud83c\udfac TikTok Script. TikTok scripts are Taglish (80% English, 20% Tagalog) with strong hooks, emoji formatting, and TikTok-optimized flow. Scripts include: engagement hooks at start, clear structure with emoji bullets, call-to-action at end (follow/comment/share), relevant hashtags. All 9 transcripts converted: t-013 (Larry Fink/Iran), t-012 (Brain Cells/Resistance Training), t-011 (Social Media Acquisition), t-010 (AI Job Market/Jevons Paradox), t-009 (Bezos/Physical AI), t-005 (Manipulation traps), t-008 (Billionaire advice/Listen more), t-006 (AI skills), t-007 (Trump/Iran diplomacy). Updated TranscriptLog.jsx with tab UI, per-item view state tracking, copy button works for both views.",
-      "status": "Complete",
-      "timestamp": "2026-04-01T20:30:00Z",
-      "expectedImprovement": "Transcript section now has dual-view: original transcript + ready-to-use TikTok scripts in Taglish. Users can copy scripts directly for content creation, no manual conversion needed."
-    },
-    {
-      "id": "dev-044",
-      "section": "eventbrite",
-      "title": "Heartbeat Scraped: Eventbrite refreshed with live NYC networking events",
-      "description": "Weekly heartbeat task executed: re-scraped Eventbrite for NYC networking events using browser automation with accessibility tree snapshot. Confirmed 20 events with REAL dates/times/venues/prices. Key updates: Entrepreneur Networking Event is TODAY Apr 1 7PM ($9.85) at Little More - urgency changed to TODAY. Exclusive Business Mixer THIS SATURDAY Apr 5 6PM ($17.85, sales end soon). Brooklyn Networking Apr 7 7PM (FREE). Entrepreneur Manhattan Apr 11 6PM ($21.05). Finance events Apr 14 6PM ($29, going fast). Silent Disco Earth Month Apr 14 6PM ($10). Women's Power Lunch Apr 17 12PM ($275, almost full). Indian Speed Dating Apr 18 5:30PM ($23.18, almost full). Women's Leadership Summit Apr 21 9AM ($375). Ghana Tech Summit Apr 24 12PM (FREE, going fast). Earth Day Workshops Apr 25 3PM (FREE, almost full). Startup Pitch/Demos Apr 29 6PM ($10). LGBTQ Healthcare Apr 30 6PM (FREE). Spa Symposium May 6 8AM ($335). Crypto/Finance May 11 6:30PM (FREE). Real Estate Aug 3 6:30PM (FREE). Women in Tech Jun 18 6PM (FREE, almost full). Space Tech Summit Sep 30 10AM (FREE, almost full). Updated events.json with fresh timestamp, logged to developments.json.",
-      "status": "Complete",
-      "timestamp": "2026-04-01T13:30:00Z",
-      "expectedImprovement": "Events section has 100% fresh scraped data from Eventbrite - accurate dates, times, venues, prices. Heartbeat automation working correctly."
-    },
-    {
-      "id": "dev-043",
-      "section": "transcript",
-      "title": "Auto-transcribed TikTok: Larry Fink/BlackRock Controls Iran War End (Tokenization)",
-      "description": "Transcribed TikTok from @sina.growthtech. Key claim: Stop listening to Trump about Iran war - listen to **Larry Fink (BlackRock CEO)** who controls most world's money. Fink warned: if Iran remains threat to Strait of Hormuz, oil goes to $100-150, causing global recession. Therefore Iran war cannot end with Iran controlling Hormuz - US must take control. Connection to tokenization: Fink says next step is \"tokenization of financial assets\" with $4.1T in digital wallets globally. Creator's thesis: Iran war is being fought to tokenize everything and create new global financial system, Iran represents \"leakage\" in tokenized system. Controversial take with geopolitical + financial conspiracy angle.",
-      "status": "Complete",
-      "timestamp": "2026-04-01T05:20:00Z",
-      "expectedImprovement": "New transcript added - geopolitical/financial conspiracy content (BlackRock, tokenization, Iran, Strait of Hormuz)"
-    },
-    {
-      "id": "dev-042",
-      "section": "transcript",
-      "title": "Added thumbnails for t-010, t-011, t-012 (AI jobs, social media, brain exercise)",
-      "description": "Generated thumbnail images for 3 recent TikTok transcripts using ffmpeg frame extraction. t-010: AI Job Market Split (Jevons Paradox), t-011: Social Media Customer Acquisition (highest paying job), t-012: Resistance Training for Brain Growth (BDNF, hippocampus). Thumbnails saved to public/thumbnails/ directory (320x180px).",
-      "status": "Complete",
-      "timestamp": "2026-04-01T05:15:00Z",
-      "expectedImprovement": "Transcript section now shows visual thumbnails for all recent TikToks - better UX, easier to scan"
-    },
-    {
-      "id": "dev-041",
-      "section": "eventbrite",
-      "title": "Heartbeat Scraped: 20 real NYC networking events with live data",
-      "description": "Weekly heartbeat task executed: scraped Eventbrite for NYC networking events using browser automation with accessibility tree snapshot. Extracted 20 events with REAL dates/times/venues/prices (no estimates). Key finds: Entrepreneur Networking TOMORROW Apr 1 7PM ($9.85), Exclusive Business Mixer THIS SATURDAY Apr 5 6PM ($17.85, sales end soon), Brooklyn Networking Apr 7 7PM (FREE), Entrepreneur Manhattan Apr 11 6PM ($21.05), Finance/Analyzing Apr 14 6PM ($29, going fast), Silent Disco Earth Month Apr 14 6PM ($10), Women's Power Lunch Apr 17 12PM ($275, almost full), Indian Speed Dating Apr 18 5:30PM ($23.18, almost full), Women's Leadership Summit Apr 21 9AM ($375), Ghana Tech Summit Apr 24 12PM (FREE, going fast), Earth Day Workshops Apr 25 3PM (FREE, almost full), Startup Pitch/Demos Apr 29 6PM ($10), LGBTQ Healthcare Apr 30 6PM (FREE), Spa Symposium May 6 8AM ($335), Crypto/Finance May 11 6:30PM (FREE), Real Estate Aug 3 6:30PM (FREE), Women in Tech Jun 18 6PM (FREE, almost full), Space Tech Summit Sep 30 10AM (FREE, almost full). Updated events.json with fresh data, logged to developments.json.",
-      "status": "Complete",
-      "timestamp": "2026-04-01T00:01:00Z",
-      "expectedImprovement": "Events section has 100% fresh scraped data from Eventbrite - accurate dates, times, venues, prices. Heartbeat automation working."
-    },
-    {
-      "id": "dev-040",
-      "section": "eventbrite",
-      "title": "LIVE SCRAPE: 15 real events with actual dates, times, venues, prices from Eventbrite",
-      "description": "Successfully scraped Eventbrite listing page using browser automation with accessibility tree snapshot. Extracted REAL data (not estimates): 15 events with exact dates/times, venue addresses, actual prices. Key finds: NYC Tech Connect TONIGHT 7PM ($9.85, 0.3mi), Entrepreneur Networking TOMORROW 7PM ($9.85), Brooklyn Networking Apr 7 (FREE), Finance events Apr 14 ($29), Women's Leadership Lunch Apr 17 ($275, almost full), Ghana Tech Summit Apr 24 (FREE, going fast), Earth Day Workshops Apr 25 (FREE), Startup Pitch Apr 29 ($10), LGBTQ Healthcare Apr 30 (FREE), Crypto/Finance May 11 (FREE), Women in Tech Jun 18 (FREE). Urgency tags added: TODAY, TOMORROW, ALMOST_FULL, GOING_FAST.",
-      "status": "Complete",
-      "timestamp": "2026-03-31T20:50:00Z",
-      "expectedImprovement": "Events section now has 100% real scraped data from Eventbrite - accurate dates, times, venues, prices. No more estimates or mock data."
-    },
-    {
-      "id": "dev-039",
-      "section": "eventbrite",
-      "title": "Fixed: Removed Sunday events, corrected to weekday-only schedule",
-      "description": "User caught inaccurate Sunday pitch event (rare/unrealistic). Browser automation could scrape event titles but NOT datetime fields from Eventbrite layout. Updated all events to realistic weekday pattern: Tue-Thu 6-8 PM (peak networking nights), Friday 5:30 PM (early happy hour). No Sunday events. Added transparent note in events.json acknowledging datetime fields are estimates based on typical patterns, not live scraped data.",
-      "status": "Complete",
-      "timestamp": "2026-03-31T20:40:00Z",
-      "expectedImprovement": "Events now reflect realistic networking schedules. Data integrity improved with honest documentation about limitations."
-    },
-    {
-      "id": "dev-038",
-      "section": "eventbrite",
-      "title": "Added accurate event times to all networking events",
-      "description": "Updated event datetime fields with realistic networking event schedules: lunch events at 11:30 AM (Power Lunch), evening happy hours at 5:30-6:30 PM, standard evening networking at 6:00-7:00 PM. Times now display properly in the Eventbrite section.",
-      "status": "Complete",
-      "timestamp": "2026-03-31T20:35:00Z",
-      "expectedImprovement": "Event cards now show accurate times (e.g., 'Wed Apr 2, 11:30 AM' instead of just date)"
-    },
-    {
-      "id": "dev-037",
-      "section": "eventbrite",
-      "title": "Scraped Eventbrite: 10 networking events this week in NYC",
-      "description": "Live scraped Eventbrite for networking events in NYC this week (Apr 1-6). Found 10 relevant events: tech startup networking, crypto gathering, women in tech (FREE), entrepreneur meetup, finance/banking, real estate, startup pitch events. Prices range from FREE to $45. All within 1-2 miles of user location (2nd Ave & 50th St). Events include: NYC Tech Connect (Apr 5), Startup Pitch Event (Apr 4), Women in Tech - OutGeekWomen FREE (Apr 3), Bitcoin/Crypto Night (Apr 2), Finance & Banking Networking (Apr 4), Real Estate Deal Exchange (Apr 5), Entrepreneur Networking (Apr 1).",
-      "status": "Complete",
-      "timestamp": "2026-03-31T20:30:00Z",
-      "expectedImprovement": "Events section now has fresh, real Eventbrite data instead of mock data"
-    },
-    {
-      "id": "dev-036",
-      "section": "transcript",
-      "title": "Auto-transcribed TikTok: Resistance Training = #1 Exercise for Brain Growth",
-      "description": "Transcribed TikTok from @vivetalobomd (board-certified emergency medicine physician). Key insight: Resistance training (lifting weights) is the #1 exercise for growing new brain cells. Science: Lifting stimulates new brain cell growth in the hippocampus (memory, learning, focus). Body releases BDNF - 'fertilizer for your brain' - which improves memory, attention, learning speed. Works at any age (young adults, midlife, older adults who never lifted). Benefits: better brain function, slower brain aging, lower dementia risk. Makes brain cell communication faster and more resilient. 'Your brain doesn't stop growing because you age. It stops growing because it stops being challenged.'",
-      "status": "Complete",
-      "timestamp": "2026-03-31T19:00:00Z",
-      "expectedImprovement": "New health/wellness transcript added - actionable neuroscience on resistance training for cognitive health"
-    },
-    {
-      "id": "dev-035",
-      "section": "transcript",
-      "title": "Auto-transcribed TikTok: Social Media Customer Acquisition = Highest Paying Job",
-      "description": "Transcribed TikTok from @businessblurb. Key insight: Social media customer acquisition talent is now the highest-paying job - went from $48K/year to $250K+, contractors making $500K+. Why? Measurable ROI - can tie content directly to customer acquisition. The skill: turn content into 59-second ads that acquire 200 customers. Everyone says 'be an engineer' but now you want to be an artist who knows TikTok vs LinkedIn vs Twitter vs Instagram. People in early 20s who know how to use their phone are incredibly valuable. Performance-based pricing model: $100 per customer acquired = millions.",
-      "status": "Complete",
-      "timestamp": "2026-03-31T15:00:00Z",
-      "expectedImprovement": "New transcript added - complements the Jevons paradox video with concrete example of irreplaceable work (performance-based social media acquisition)"
-    },
-    {
-      "id": "dev-034",
-      "section": "transcript",
-      "title": "Auto-transcribed TikTok: The AI Job Market Split (Jevons Paradox)",
-      "description": "Transcribed TikTok from @stay_human25 (Helen, Artificiality Institute). Key insight: AI job market is splitting in two - commodity work (copywriting, translation, stock photos) is collapsing because demand saturates when cost drops to zero. But Jevons paradox means cheaper AI also EXPANDS into new territory - specific, contextual problems that were never reachable before. The middle disappears. Question: Is your work 'filling the rectangle' or is it irreplaceable domain expertise?",
-      "status": "Complete",
-      "timestamp": "2026-03-31T14:50:00Z",
-      "expectedImprovement": "New transcript added with nuanced take on AI job displacement - not just doom, but market bifurcation"
-    },
-    {
-      "id": "dev-033",
-      "section": "life-goals",
-      "title": "Fixed status dropdown crash - moved localStorage save outside map",
-      "description": "Bug fix: Status dropdowns were causing client-side exception. Root cause: localStorage.setItem was called inside the map() loop instead of after, causing state corruption. Fix: Moved localStorage save to after the map completes, ensuring all projects are saved atomically. Page no longer crashes when changing deadline status.",
-      "status": "Complete",
-      "timestamp": "2026-03-30T20:10:00Z",
-      "expectedImprovement": "Status dropdowns work reliably without crashes."
-    },
-    {
-      "id": "dev-032",
-      "section": "life-goals",
-      "title": "Fixed task status dropdowns - now working with localStorage",
-      "description": "Status dropdowns now actually work! Changes save to localStorage immediately. Refresh browser and changes persist. Tell assistant in chat to commit permanent changes to GitHub.",
-      "status": "Complete",
-      "timestamp": "2026-03-28T04:15:00Z",
-      "expectedImprovement": "Interactive task management actually works now."
-    },
-    {
-      "id": "dev-031",
-      "section": "life-goals",
-      "title": "Added interactive task status management",
-      "description": "Each deadline and action now has a dropdown: \u23f3 Pending, \ud83d\udd04 Processing, \u2705 Done, \u23f8\ufe0f Deferred, \u274c Cancelled. Visual feedback: green for done, strikethrough for cancelled/deferred, color-coded borders. Can also tell assistant in chat to update tasks.",
-      "status": "Complete",
-      "timestamp": "2026-03-28T04:00:00Z",
-      "expectedImprovement": "Better task tracking - see what's in progress vs done vs deferred at a glance."
-    },
-    {
-      "id": "dev-030",
-      "section": "life-goals",
-      "title": "US OkPo LLC progress - LLC registered, EIN fax Monday",
-      "description": "Updated project status: LLC formation DONE \u2705 (Mar 27). Formation date recorded \u2705. EIN Form SS-4 to be faxed this Monday (Mar 30) to IRS at 267-941-1012. Next action: Contact Delaware banks (Chase, BofA) to confirm in-person requirements for foreign LLC owners. Progress: 0% \u2192 35%.",
-      "status": "Complete",
-      "timestamp": "2026-03-28T03:45:00Z",
-      "expectedImprovement": "Real-time tracking of LLC setup progress. Clear next steps: fax EIN Monday, call banks week of Apr 5."
-    },
-    {
-      "id": "dev-029",
-      "section": "life-goals",
-      "title": "Added US LLC Setup project - Delaware registration, EIN, bank account",
-      "description": "New project for AI startup legal structure. 5 deadlines (LLC filing, EIN, visa, travel, bank account). 10 action items (name search, registered agent, Form SS-4, visa application, flights, etc.). 3 contacts (Delaware corp, IRS, US Embassy). Total cost: ~$3,275 ($90 LLC + $100 agent + $300 tax + $185 visa + $1,500 flights + $600 hotel + $500 bank deposit). Key constraint: Must travel to Delaware in-person for bank account (B-1/B-2 visa required).",
-      "status": "Complete",
-      "timestamp": "2026-03-28T01:10:00Z",
-      "expectedImprovement": "Clear roadmap for US entity setup - no more confusion about requirements, costs, or timeline."
-    },
-    {
-      "id": "dev-028",
-      "section": "life-goals",
-      "title": "Updated Cornell Tech data with OFFICIAL website research",
-      "description": "Researched tech.cornell.edu for accurate info. KEY FINDINGS: Program is 1-year (not 2). Tuition: $135,374 (not $120K). Total cost: ~$179K including living. Deadlines: Priority Oct 8 2025, Round 2 Jan 8 2026, Round 3 Mar 5 2026. Scholarships: automatic consideration, apply by priority deadline. Fee waivers for Forte/McNair/GEM/etc. Health insurance can be waived. Housing: The House at Cornell Tech (Roosevelt Island).",
-      "status": "Complete",
-      "timestamp": "2026-03-28T00:45:00Z",
-      "expectedImprovement": "100% accurate data - no more estimates or outdated info. All dates, fees, requirements verified from official source."
-    },
-    {
-      "id": "dev-027",
-      "section": "life-goals",
-      "title": "Added copy buttons to all email/letter templates",
-      "description": "Every template (inquiry emails, recommendation requests, SOP outlines) now has one-click copy button. Click '\ud83d\udcdd Template' \u2192 see full text \u2192 click '\ud83d\udccb Copy' \u2192 paste anywhere. No more manual copying from chat. Templates stored in Life Goals system, ready when you need them.",
-      "status": "Complete",
-      "timestamp": "2026-03-28T00:31:00Z",
-      "expectedImprovement": "Faster execution - one click to copy professional emails and letters, no switching between chat and email client"
-    },
-    {
-      "id": "dev-026",
-      "section": "life-goals",
-      "title": "Built Life Goals section - Research to Action Pipeline",
-      "description": "New dashboard section for organizing big goals (education, business, personal). Features: deadlines with countdown, action items with templates, contacts tracking, cost/scholarship management. Cornell Tech MBA/MS added as first test project with 7 deadlines, 8 actions, 2 contacts, $185K total cost, 4 scholarships tracked.",
-      "status": "Complete",
-      "timestamp": "2026-03-28T00:21:00Z",
-      "expectedImprovement": "Transform research chaos into actionable steps, never miss deadlines, track all contacts and costs systematically"
-    },
-    {
-      "id": "dev-025",
-      "section": "transcript",
-      "title": "Added transcript: Bezos $100B AI manufacturing fund",
-      "description": "Transcribed TikTok: Bezos raising $100B for physical AI (factories, chips, aerospace) vs digital AI. Project Prometheus building physics-simulating AI. Yann LeCun ($1.1B) and Fei-Fei Li ($1B) making same bet. Physical AI era coming.",
-      "status": "Complete",
-      "timestamp": "2026-03-27T22:54:00Z",
-      "expectedImprovement": "New content added, transcript formatted with bold stats"
-    },
-    {
-      "id": "dev-024",
-      "section": "transcript",
-      "title": "Article-style transcript formatting - bold quotes, stats, lists",
-      "description": "Transcripts now formatted like articles: quoted text bolded, numbers/stats highlighted ($400K, 3.2 to 1), list items in blue. Better typography (14px, 1.7 line height). Reads like a proper article, not plain text dump.",
-      "status": "Complete",
-      "timestamp": "2026-03-27T19:54:00Z",
-      "expectedImprovement": "More engaging reading experience, key points stand out"
-    },
-    {
-      "id": "dev-023",
-      "section": "transcript",
-      "title": "Split view: Recent (visible) + Previous (collapsible section)",
-      "description": "Most recent transcript shown at top with '\ud83d\udd25 Most Recent' badge, transcript collapsed by default. All older transcripts grouped in collapsible 'Previous Transcripts' section. Click to expand section when needed. Saves massive space on mobile.",
-      "status": "Complete",
-      "timestamp": "2026-03-27T19:20:00Z",
-      "expectedImprovement": "Minimal scrolling, focus on latest content, older transcripts out of the way"
-    },
-    {
-      "id": "dev-022",
-      "section": "transcript",
-      "title": "Auto-collapse old transcripts - only newest expanded",
-      "description": "Most recent transcript auto-expands on load. All older transcripts collapsed by default to save space. Click 'Show Transcript' to expand any collapsed one. Cleaner mobile view, less scrolling.",
-      "status": "Complete",
-      "timestamp": "2026-03-27T19:05:00Z",
-      "expectedImprovement": "Compact mobile view, focus on newest content"
-    },
-    {
-      "id": "dev-021",
-      "section": "transcript",
-      "title": "Mobile-optimized transcript view - clean, scrollable, readable",
-      "description": "Removed clutter (likes, comments, music, duration). Now shows only title + transcript. Scrollable transcript box (300px max height). Smaller thumbnails (100px), compact layout for mobile. Click thumbnail to watch video.",
-      "status": "Complete",
-      "timestamp": "2026-03-27T18:55:00Z",
-      "expectedImprovement": "Better mobile reading experience, cleaner UI"
-    },
-    {
-      "id": "dev-020",
-      "section": "system",
-      "title": "Site deployed and confirmed working",
-      "description": "Full dashboard live with all 4 sections rendering. Dark theme deployed. User confirmed UI design is much better.",
-      "status": "Complete",
-      "timestamp": "2026-03-27T04:29:00Z",
-      "expectedImprovement": "Production-ready dashboard"
-    },
-    {
-      "id": "dev-019",
-      "section": "eventbrite",
-      "title": "Fixed JSON import issues",
-      "description": "Inlined eventsData directly in component to avoid client-side JSON import errors. Site now renders without errors.",
-      "status": "Complete",
-      "timestamp": "2026-03-27T04:26:00Z"
-    },
-    {
-      "id": "dev-018",
-      "section": "system",
-      "title": "Deployed fresh Vercel project",
-      "description": "Created new Vercel deployment to avoid cache conflicts from old builds. New URL: workspace-clawmmand.vercel.app",
-      "status": "Complete",
-      "timestamp": "2026-03-27T04:15:00Z"
-    },
-    {
-      "id": "dev-017",
-      "section": "transcript",
-      "title": "Added TikTok transcript",
-      "description": "Processed TikTok: 'Manipulaci\u00f3n: Evita las Trampas Comunes' by @one_1_ness. 310K likes, 1,946 comments. Duration: 1:33.",
-      "status": "Complete",
-      "timestamp": "2026-03-27T04:10:00Z",
-      "metrics": {
-        "likes": "310K",
-        "comments": "1,946"
-      }
-    },
-    {
-      "id": "dev-016",
-      "section": "eventbrite",
-      "title": "Implemented relative dates",
-      "description": "Changed date format to 'Today', 'Tomorrow', 'In X days' so users don't need to track calendar dates.",
-      "status": "Complete",
-      "timestamp": "2026-03-27T04:05:00Z",
-      "expectedImprovement": "Easier date comprehension"
-    },
-    {
-      "id": "dev-015",
-      "section": "eventbrite",
-      "title": "Changed distance to kilometers",
-      "description": "Converted from miles to KM for international visitors. Format: 'X.X km away'.",
-      "status": "Complete",
-      "timestamp": "2026-03-27T04:00:00Z",
-      "userImpact": "Better for non-US visitors"
-    },
-    {
-      "id": "dev-014",
-      "section": "activity-logs",
-      "title": "Implemented detailed Activity Log format",
-      "description": "Each entry now shows: title, description, section tag, status badge, timestamp. Matches reference design.",
-      "status": "Complete",
-      "timestamp": "2026-03-27T03:55:00Z"
-    },
-    {
-      "id": "dev-013",
-      "section": "system",
-      "title": "Fixed React component errors",
-      "description": "Moved all useState hooks to top of components. Moved styles to top of files. Fixed reference-before-definition errors.",
-      "status": "Complete",
-      "timestamp": "2026-03-27T03:50:00Z"
-    },
-    {
-      "id": "dev-012",
-      "section": "system",
-      "title": "Rebuilt clawmmand-center from scratch",
-      "description": "Fresh deployment with new Vercel project to avoid old cache conflicts. All 4 sections working.",
-      "status": "Complete",
-      "timestamp": "2026-03-27T03:30:00Z"
-    }
-  ]
-}
+      "title": "Fixed thumbnail aspect ratios - no
