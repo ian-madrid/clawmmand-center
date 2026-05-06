@@ -1,107 +1,157 @@
 {
-  "last_updated": "2026-05-06T06:13:00-07:00",
-  "location": "New York, NY",
+  "lastUpdated": "2026-05-06T16:18:00Z",
   "events": [
     {
-      "name": "2026 New York Spa Alliance Symposium",
-      "date": "May 6",
-      "time": "8:00 AM",
-      "location": "New York · The Cornell Club New York",
-      "details": "Spa industry symposium. Price TBD."
-    },
-    {
-      "name": "Healthcare and Business Networking | Elevating Your Potential - NYC",
-      "date": "May 6",
+      "name": "Women in Tech New York City - OutGeekWomen",
+      "date": "Thu, Jun 18",
       "time": "6:00 PM",
-      "location": "New York · 5th&Mad",
-      "details": "Healthcare business networking. Free admission."
-    },
-    {
-      "name": "Bitcoin/Altcoins & Cryptocurrency Enthusiast Night - Crypto Gathering",
-      "date": "May 11",
-      "time": "6:30 PM",
-      "location": "New York · Dawson 39 Restaurant & Bar",
-      "details": "Crypto networking event. Free admission."
+      "venue": "New York · New York",
+      "price": "From $0.00",
+      "status": "Almost full"
     },
     {
       "name": "New York Trading, Finance And Banking - Professional Networking Affair",
-      "date": "May 11",
+      "date": "Monday",
       "time": "6:30 PM",
-      "location": "New York · Dawson 39 Restaurant & Bar",
-      "details": "Finance and professional networking. Free admission."
-    },
-    {
-      "name": "Startup Pitch Event NYC Manhattan",
-      "date": "May 13",
-      "time": "6:00 PM",
-      "location": "New York · Whiskey Cellar NYC",
-      "details": "Startup pitching and networking. Free admission."
-    },
-    {
-      "name": "Startups Demos & Networking in NYC Manhattan",
-      "date": "May 13",
-      "time": "6:00 PM",
-      "location": "New York · Whiskey Cellar NYC",
-      "details": "Startup demos and networking. Free admission."
-    },
-    {
-      "name": "General Business Networking | | Elevating Your Potential - FiDi",
-      "date": "May 20",
-      "time": "6:00 PM",
-      "location": "New York · Continental Sports Lounge",
-      "details": "General business networking. Free admission."
-    },
-    {
-      "name": "Finance and Business Networking | Elevating Your Potential - FiDi",
-      "date": "May 20",
-      "time": "6:00 PM",
-      "location": "New York · Continental Sports Lounge",
-      "details": "Finance and business networking. Free admission."
-    },
-    {
-      "name": "THE 17th FRENCH AMERICAN ENTREPRENEURSHIP AWARD (FAEA)",
-      "date": "Jun 2",
-      "time": "6:00 PM",
-      "location": "New York · Consulate General of France",
-      "details": "French American entrepreneurship award. Free admission."
-    },
-    {
-      "name": "Women in Tech New York City - OutGeekWomen",
-      "date": "Jun 18",
-      "time": "6:00 PM",
-      "location": "New York · New York",
-      "details": "Networking for women in tech. Free admission."
-    },
-    {
-      "name": "Indian Speed Dating - Meet Multiple Desi Dates In One Night",
-      "date": "Jul 25",
-      "time": "5:30 PM",
-      "location": "New York · Darbar Lounge & Grill",
-      "details": "Speed dating for Desi community. Price TBD."
+      "venue": "New York · Dawson 39 Restaurant & Bar",
+      "price": "From $0.00",
+      "status": "Going fast"
     },
     {
       "name": "Deal Exchange - Real Estate Professional Networking Affair",
-      "date": "Aug 3",
+      "date": "Mon, Aug 3",
       "time": "6:30 PM",
-      "location": "New York · Dawson 39 Restaurant & Bar",
-      "details": "Real estate professional networking. Free admission."
+      "venue": "New York · Dawson 39 Restaurant & Bar",
+      "price": "From $0.00",
+      "status": null
+    },
+    {
+      "name": "THE 17th FRENCH AMERICAN ENTREPRENEURSHIP AWARD (FAEA)",
+      "date": "Tue, Jun 2",
+      "time": "6:00 PM",
+      "venue": "New York · Consulate General of France",
+      "price": "From $0.00",
+      "status": null
     },
     {
       "name": "Space Tech Summit",
-      "date": "Sep 30",
+      "date": "Wed, Sep 30",
       "time": "10:00 AM",
-      "location": "New York · Location TBA",
-      "details": "Space technology summit. Price TBD."
+      "venue": "New York · Location TBA",
+      "price": "From $0.00",
+      "status": "Almost full"
+    },
+    {
+      "name": "2026 New York Spa Alliance Symposium",
+      "date": "Today",
+      "time": "8:00 AM",
+      "venue": "New York · The Cornell Club New York",
+      "price": "From $335.00",
+      "status": "Going fast"
     },
     {
       "name": "Ghana Tech Summit - 2026 Ai Edition",
-      "date": "Nov 19",
+      "date": "Thu, Nov 19",
       "time": "12:00 PM",
-      "location": "New York · Fordham University School of Law",
-      "details": "Ghana tech summit with AI focus. Free admission."
+      "venue": "New York · Fordham University School of Law",
+      "price": "From $0.00",
+      "status": null
+    },
+    {
+      "name": "General Business Networking | Elevating Your Potential - FiDi",
+      "date": "Wed, May 20",
+      "time": "6:00 PM",
+      "venue": "New York · Continental Sports Lounge",
+      "price": "From $0.00",
+      "status": null
+    },
+    {
+      "name": "Finance and Business Networking | Elevating Your Potential - FiDi",
+      "date": "Wed, May 20",
+      "time": "6:00 PM",
+      "venue": "New York · Continental Sports Lounge",
+      "price": "From $0.00",
+      "status": null
+    },
+    {
+      "name": "Indian Speed Dating - Meet Multiple Desi Dates In One Night",
+      "date": "Sat, Jul 25",
+      "time": "5:30 PM",
+      "venue": "New York · Darbar Lounge & Grill",
+      "price": "From $23.18",
+      "status": "Almost full"
+    },
+    {
+      "name": "Startup Pitch Event NYC Manhattan",
+      "date": "Wed, May 13",
+      "time": "6:00 PM",
+      "venue": "New York · Whiskey Cellar NYC",
+      "price": "From $10.00",
+      "status": null
+    },
+    {
+      "name": "Startups Demos & Networking in NYC Manhattan",
+      "date": "Wed, May 13",
+      "time": "6:00 PM",
+      "venue": "New York · Whiskey Cellar NYC",
+      "price": "From $10.00",
+      "status": null
+    },
+    {
+      "name": "Healthcare and Business Networking | Elevating Your Potential - NYC",
+      "date": "Today",
+      "time": "6:00 PM",
+      "venue": "New York · 5th&Mad",
+      "price": "From $0.00",
+      "status": "Sales end soon"
+    },
+    {
+      "name": "Caribbean Future Summit (5th Annual)",
+      "date": "Wed, Oct 14",
+      "time": "11:00 AM",
+      "venue": "New York · New York",
+      "price": "From $0.00",
+      "status": null
+    },
+    {
+      "name": "Tech and Business Networking | Elevating Your Potential - FiDi",
+      "date": "Wed, May 20",
+      "time": "6:00 PM",
+      "venue": "New York · Continental Sports Lounge",
+      "price": "From $0.00",
+      "status": null
+    },
+    {
+      "name": "Politics and Business Networking | Elevating Your Potential - NYC",
+      "date": "Today",
+      "time": "6:00 PM",
+      "venue": "New York · 5th&Mad",
+      "price": "From $0.00",
+      "status": "Sales end soon"
+    },
+    {
+      "name": "Foodies + New Friends: NYC (Entrepreneurs Giving Back Edition)",
+      "date": "Tomorrow",
+      "time": "7:00 PM",
+      "venue": "New York · Restaurant of the Week",
+      "price": "From $43.27",
+      "status": "Sales end soon"
+    },
+    {
+      "name": "The Gold Networking Event",
+      "date": "Wed, May 13",
+      "time": "6:00 PM",
+      "venue": "New York · The Skylark - Rooftop Bar",
+      "price": "From $6.98",
+      "status": null
+    },
+    {
+      "name": "Speed Networking And Business Matchmaking : Fast Way to Expand Your Network",
+      "date": "Mon, Jul 20",
+      "time": "6:30 PM",
+      "venue": "New York · Dawson 39 Restaurant & Bar",
+      "price": "From $23.18",
+      "status": null
     }
-  ],
-  "scraped_timestamp": "2026-05-06T13:13:00Z",
-  "source": "Eventbrite web fetch",
-  "event_count": 14
+  ]
 }
