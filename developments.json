@@ -10,5 +10,11 @@
     "title": "Eventbrite Events Update",
     "description": "Scraped 19 NYC networking events from Eventbrite via browser automation (May 6, 2026)",
     "timestamp": "2026-05-06T16:18:00Z"
+  },
+  {
+    "section": "eventbrite",
+    "title": "Eventbrite Events Update",
+    "description": "Scraped 19 NYC networking events from Eventbrite via browser automation (May 6, 2026)",
+    "timestamp": "2026-05-06T16:52:00Z"
   }
 ]
