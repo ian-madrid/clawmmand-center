@@ -1,8 +1,17 @@
 {
   "_comment": "Activity Log - THE PULSE of clawmmand-center",
   "_philosophy": "Every action logged with DETAIL. Fresh timestamps = living system.",
-  "_lastUpdated": "2026-05-06T13:13:00Z",
+  "_lastUpdated": "2026-05-07T18:24:00Z",
   "developments": [
+    {
+      "id": "dev-061",
+      "section": "eventbrite",
+      "title": "Heartbeat Scraped: 19 fresh NYC networking events via browser automation",
+      "description": "Weekly heartbeat task executed: re-scraped Eventbrite for NYC networking events using browser automation with accessibility tree snapshot. Extracted 19 events with REAL dates/times/venues/prices. TODAY event - Foodies + New Friends 7PM ($43.27, Restaurant of the Week, sales end soon). May 11 - New York Trading/Finance/Banking 6:30PM (FREE, Dawson 39, going fast). May 13 - Startup Pitch Event 6PM ($10, Whiskey Cellar NYC), Startups Demos & Networking 6PM ($10, Whiskey Cellar NYC), and The Gold Networking Event 6PM ($6.98, The Skylark - Rooftop Bar). May 20 - 4 networking events at Continental Sports Lounge (General Business, Finance, Tech, and Healthcare - all FREE 6PM). Jun 2 - FAEA 6PM (FREE, Consulate General of France). Jun 18 - Women in Tech NYC 6PM (FREE, almost full). Jul 20 - Speed Networking And Business Matchmaking 6:30PM ($23.18, Dawson 39). Jul 25 - Indian Speed Dating 5:30PM ($23.18, Darbar Lounge & Grill, almost full). Aug 3 - Real Estate Deal Exchange 6:30PM (FREE, Dawson 39). Sep 30 - Space Tech Summit 10AM (FREE, almost full, Location TBA). Oct 14 - Caribbean Future Summit 11AM (FREE). Nov 19 - Ghana Tech Summit 12PM (FREE, Fordham Law). Updated events.json scrape timestamp to 2026-05-07T18:24:00Z, logged to developments.json.",
+      "status": "Complete",
+      "timestamp": "2026-05-07T18:24:00Z",
+      "expectedImprovement": "Events section data is current with browser automation extraction - all dates, times, venues, prices confirmed from live Eventbrite page. TODAY event (Foodies + New Friends) updated to current date."
+    },
     {
       "id": "dev-060",
       "section": "eventbrite",
@@ -34,7 +43,7 @@
       "id": "dev-057",
       "section": "eventbrite",
       "title": "Heartbeat Scraped: 16 NYC networking events via web_fetch",
-      "description": "Weekly heartbeat task executed: re-scraped Eventbrite for NYC networking events using web_fetch text extraction. Extracted 16 events with real dates/times/venues. This is an incremental update from the May 2 scrape - no new major events discovered, confirming the existing data is current. Key upcoming: May 8 - Foodies + New Friends (Entrepreneurs Giving Back Edition) 7PM. May 11 - Crypto Gathering 6:30PM (FREE, Dawson 39) and Trading/Finance/Banking 6:30PM (FREE, Elsie Rooftop). May 13 - Startup Pitch/Demos 6PM (Whiskey Cellar) and Gold Networking Event 6PM (FREE, The Skylark - Rooftop Bar). May 20 - General/Finance/Tech Networking 6PM (FREE, Continental Sports Lounge). Jun 2 - FAEA 6PM (FREE, Consulate General of France). Jun 18 - Women in Tech NYC 6PM (FREE). Aug 3 - Real Estate Deal Exchange 6:30PM (FREE). Sep 30 - Space Tech Summit 10AM (FREE). Oct 14 - Caribbean Future Summit 11AM (FREE). Nov 19 - Ghana Tech Summit 12PM (FREE, Fordham Law). Updated events.json scrape timestamp to 2026-05-03T20:12:45Z, logged to developments.json.",
+      "description": "Weekly heartbeat task executed: re-scraped Eventbrite for NYC networking events using web_fetch text extraction. Extracted 16 events with real dates/times/venues. This is an incremental update from the May 2 scrape - no new major events discovered, confirming. existing data is current. Key upcoming: May 8 - Foodies + New Friends (Entrepreneurs Giving Back Edition) 7PM. May 11 - Crypto Gathering 6:30PM (FREE, Dawson 39) and Trading/Finance/Banking 6:30PM (FREE, Elsie Rooftop). May 13 - Startup Pitch/Demos 6PM (Whiskey Cellar) and Gold Networking Event 6PM (FREE, The Skylark - Rooftop Bar). May 20 - General/Finance/Tech Networking 6PM (FREE, Continental Sports Lounge). Jun 2 - FAEA 6PM (FREE, Consulate General of France). Jun 18 - Women in Tech NYC 6PM (FREE). Aug 3 - Real Estate Deal Exchange 6:30PM (FREE). Sep 30 - Space Tech Summit 10AM (FREE). Oct 14 - Caribbean Future Summit 11AM (FREE). Nov 19 - Ghana Tech Summit 12PM (FREE, Fordham Law). Updated events.json scrape timestamp to 2026-05-03T20:12:45Z, logged to developments.json.",
       "status": "Complete",
       "timestamp": "2026-05-03T20:12:45Z",
       "expectedImprovement": "Events section data is current as of May 3, 2026. Heartbeat automation working correctly with web_fetch text extraction method."
@@ -90,46 +99,4 @@
       "title": "Heartbeat verified: Eventbrite listing still live for NYC networking events",
       "description": "Weekly heartbeat Eventbrite check executed via browser automation on the NYC networking listing page. Page loaded successfully and current cards are still present, including Brooklyn Big Professional Networking Affair, Women in Leadership Summit NYC, Indian Speed Dating, Power Lunch NYC, Earth Day Workshops, LGBTQ Healthcare Networking, Women in Tech NYC, Analyzing Finance, Silent Disco Earth Month, Bitcoin/Crypto Gathering, New York Trading/Finance/Banking, Space Tech Summit, Deal Exchange, Startup Pitch Event, Startups Demos, Entrepreneur Networking Manhattan, Exclusive Business Networking Mixer, and FAEA. Refreshed events.json scrape timestamp to keep the pulse fresh without inventing unsourced field changes from a partial accessibility-tree pass.",
       "status": "Complete",
-      "timestamp": "2026-04-04T23:08:00Z",
-      "expectedImprovement": "Activity log and event scrape timestamp are fresh, showing the Eventbrite pipeline is still alive and the listing page remains available."
-    },
-    {
-      "id": "dev-050",
-      "section": "transcript",
-      "title": "Fixed: Removed forced aspect ratio - videos maintain original dimensions",
-      "description": "Removed 'fit to container' feature that was stretching videos. Changed thumbnailContainer from fixed aspectRatio: '9/16' to auto height. Changed thumbnail from objectFit: 'cover' with height: '100%' to height: 'auto'. Now TikTok vertical videos and YouTube landscape videos display in their natural aspect ratio without any stretching or distortion.",
-      "status": "Complete",
-      "timestamp": "2026-04-02T15:24:19Z",
-      "expectedImprovement": "All video thumbnails display in their original aspect ratio - no stretching, no distortion. Vertical TikTok videos stay vertical, landscape YouTube videos stay landscape."
-    },
-    {
-      "id": "dev-049",
-      "section": "eventbrite",
-      "title": "Heartbeat Scraped: Eventbrite refreshed - 20 live NYC networking events",
-      "description": "Weekly heartbeat task executed: re-scraped Eventbrite for NYC networking events using browser automation with accessibility tree snapshot. Confirmed 20 events with REAL dates/times/venues/prices. Fresh (FREE, almost full). Updated events.json with timestamp 2026-04-02T00:45:00-04:00, logged to developments.json.",
-      "status": "Complete",
-      "timestamp": "2026-04-02T00:45:00Z",
-      "expectedImprovement": "Events section has 100% fresh scraped data from Eventbrite - accurate dates, times, venues, prices. Heartbeat automation working correctly."
-    },
-    {
-      "id": "dev-048",
-      "section": "transcript",
-      "title": "Standardized all thumbnails to 180x320 portrait (9:16)",
-      "description": "Regenerated all 9 transcript thumbnails to consistent 180x320 portrait aspect ratio using ffmpeg. Previously mixed: t-005/t-009 were portrait (180x320), t-006/t-007/t-008/t-010/t-011/t-012/t-013 were landscape (320x180). Used scale+pad filter to convert landscape to portrait with padding. Updated CSS to use aspectRatio: 9/16 and objectFit: cover. All thumbnails now display uniformly without stretching.",
-      "status": "Complete",
-      "timestamp": "2026-04-01T20:45:00Z",
-      "expectedImprovement": "All transcript thumbnails identical 9:16 portrait ratio - consistent, clean display, no stretching issues."
-    },
-    {
-      "id": "dev-047",
-      "section": "transcript",
-      "title": "Fixed thumbnail stretching: natural aspect ratios with object-fit contain",
-      "description": "Fixed thumbnail display to handle mixed aspect ratios properly. Removed fixed aspect-ratio constraint. Now uses: width 100px, height auto, maxHeight 180px, object-fit contain. Portrait thumbnails (180x320 like t-005, t-009) display full height without stretching. Landscape thumbnails (320x180 like t-006, t-007, t-008) display within bounds without distortion. All images show completely without cropping or stretching.",
-      "status": "Complete",
-      "timestamp": "2026-04-01T20:40:00Z",
-      "expectedImprovement": "All transcript thumbnails display in their natural aspect ratio - no stretching, no distortion, no cropping. Portrait and landscape images both look correct."
-    },
-    {
-      "id": "dev-046",
-      "section": "transcript",
-      "title": "Fixed thumbnail aspect ratios - no
+      "timestamp": "2026-04-04T

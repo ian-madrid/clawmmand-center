@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-07T05:52:00Z",
+  "lastUpdated": "2026-05-07T18:24:00Z",
   "events": [
     {
       "name": "Women in Tech New York City - OutGeekWomen",
@@ -22,11 +22,11 @@
       "date": "Mon, Aug 3",
       "time": "6:30 PM",
       "venue": "New York · Dawson 39 Restaurant & Bar",
-      "price": "From $0.00",
+      "price": "From $0.00",  
       "status": null
     },
     {
-      "name": "THE 17th FRENCH AMERICANERICAN ENTREPRENEURSHIP AWARD (FAEA)",
+      "name": "THE 17th FRENCH AMERICAN ENTREPRENEURSHIP AWARD (FAEA)",
       "date": "Tue, Jun 2",
       "time": "6:00 PM",
       "venue": "New York · Consulate General of France",
@@ -107,7 +107,7 @@
     },
     {
       "name": "Foodies + New Friends: NYC (Entrepreneurs Giving Back Edition)",
-      "date": "Tomorrow",
+      "date": "Today",
       "time": "7:00 PM",
       "venue": "New York · Restaurant of the Week",
       "price": "From $43.27",
