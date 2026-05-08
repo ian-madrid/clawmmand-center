@@ -1,157 +1,126 @@
 {
-  "lastUpdated": "2026-05-08T14:57:00Z",
+  "_lastScraped": "2026-05-08T11:58:08.302898",
+  "_scrapingMethod": "Browser automation with accessibility tree snapshot",
   "events": [
     {
-      "name": "Women in Tech New York City - OutGeekWomen",
-      "date": "Thu, Jun 18",
-      "time": "6:00 PM",
+      "id": "evt-37",
+      "emoji": "\ud83e\udd1d",
+      "title": "Women in Tech New York City - OutGeekWomen",
       "venue": "New York \u00b7 New York",
-      "price": "From $0.00",
-      "status": "Almost full"
+      "datetime": "2026-06-18T18:00:00",
+      "price": 0.0,
+      "type": "networking",
+      "description": "",
+      "eventbriteUrl": "",
+      "urgency": "ALMOST_FULL"
     },
     {
-      "name": "New York Trading, Finance And Banking - Professional Networking Affair",
-      "date": "Mon",
-      "time": "6:30 PM",
+      "id": "evt-39",
+      "emoji": "\ud83e\udd1d",
+      "title": "Deal Exchange - Real Estate Professional Networking Affair",
       "venue": "New York \u00b7 Dawson 39 Restaurant & Bar",
-      "price": "From $0.00",
-      "status": "Going fast"
+      "datetime": "2026-08-03T18:30:00",
+      "price": 0.0,
+      "type": "networking",
+      "description": "",
+      "eventbriteUrl": "",
+      "urgency": ""
     },
     {
-      "name": "Deal Exchange - Real Estate Professional Networking Affair",
-      "date": "Mon, Aug 3",
-      "time": "6:30 PM",
-      "venue": "New York \u00b7 Dawson 39 Restaurant & Bar",
-      "price": "From $0.00",
-      "status": null
-    },
-    {
-      "name": "THE 17th FRENCH AMERICAN ENTREPRENEURSHIP AWARD (FAEA)",
-      "date": "Tue, Jun 2",
-      "time": "6:00 PM",
+      "id": "evt-40",
+      "emoji": "\ud83e\udd1d",
+      "title": "THE 17th FRENCH AMERICAN ENTREPRENEURSHIP AWARD (FAEA)",
       "venue": "New York \u00b7 Consulate General of France",
-      "price": "From $0.00",
-      "status": null
+      "datetime": "2026-06-02T18:00:00",
+      "price": 0.0,
+      "type": "networking",
+      "description": "",
+      "eventbriteUrl": "",
+      "urgency": ""
     },
     {
-      "name": "Space Tech Summit",
-      "date": "Wed, Sep 30",
-      "time": "10:00 AM",
+      "id": "evt-41",
+      "emoji": "\ud83e\udd1d",
+      "title": "Space Tech Summit",
       "venue": "New York \u00b7 Location TBA",
-      "price": "From $0.00",
-      "status": "Almost full"
+      "datetime": "2026-09-30T10:00:00",
+      "price": 0.0,
+      "type": "networking",
+      "description": "",
+      "eventbriteUrl": "",
+      "urgency": "ALMOST_FULL"
     },
     {
-      "name": "Ghana Tech Summit - 2026 Ai Edition",
-      "date": "Thu, Nov 19",
-      "time": "12:00 PM",
+      "id": "evt-42",
+      "emoji": "\ud83e\udd1d",
+      "title": "Ghana Tech Summit - 2026 Ai Edition",
       "venue": "New York \u00b7 Fordham University School of Law",
-      "price": "From $0.00",
-      "status": null
+      "datetime": "2026-11-19T12:00:00",
+      "price": 0.0,
+      "type": "networking",
+      "description": "",
+      "eventbriteUrl": "",
+      "urgency": ""
     },
     {
-      "name": "General Business Networking | Elevating Your Potential - FiDi",
-      "date": "Wed, May 20",
-      "time": "6:00 PM",
+      "id": "evt-43",
+      "emoji": "\ud83e\udd1d",
+      "title": "General Business Networking | Elevating Your Potential - FiDi",
       "venue": "New York \u00b7 Continental Sports Lounge",
-      "price": "From $0.00",
-      "status": null
+      "datetime": "2026-05-20T18:00:00",
+      "price": 0.0,
+      "type": "networking",
+      "description": "",
+      "eventbriteUrl": "",
+      "urgency": ""
     },
     {
-      "name": "Indian Speed Dating - Meet Multiple Desi Dates In One Night",
-      "date": "Sat, Jul 25",
-      "time": "5:30 PM",
+      "id": "evt-44",
+      "emoji": "\ud83e\udd1d",
+      "title": "Indian Speed Dating - Meet Multiple Desi Dates In One Night",
       "venue": "New York \u00b7 Darbar Lounge & Grill",
-      "price": "From $23.18",
-      "status": "Almost full"
+      "datetime": "2026-07-25T17:30:00",
+      "price": 23.18,
+      "type": "networking",
+      "description": "",
+      "eventbriteUrl": "",
+      "urgency": "ALMOST_FULL"
     },
     {
-      "name": "Finance and Business Networking | Elevating Your Potential - FiDi",
-      "date": "Wed, May 20",
-      "time": "6:00 PM",
+      "id": "evt-45",
+      "emoji": "\ud83e\udd1d",
+      "title": "Finance and Business Networking | Elevating Your Potential - FiDi",
       "venue": "New York \u00b7 Continental Sports Lounge",
-      "price": "From $0.00",
-      "status": null
+      "datetime": "2026-05-20T18:00:00",
+      "price": 0.0,
+      "type": "networking",
+      "description": "",
+      "eventbriteUrl": "",
+      "urgency": ""
     },
     {
-      "name": "Startup Pitch Event NYC Manhattan",
-      "date": "Wed",
-      "time": "6:00 PM",
+      "id": "evt-46",
+      "emoji": "\ud83e\udd1d",
+      "title": "Startup Pitch Event NYC Manhattan",
       "venue": "New York \u00b7 Whiskey Cellar NYC",
-      "price": "From $10.00",
-      "status": null
+      "datetime": "2026-05-20T18:00:00",
+      "price": 10.0,
+      "type": "networking",
+      "description": "",
+      "eventbriteUrl": "",
+      "urgency": ""
     },
     {
-      "name": "Startups Demos & Networking in NYC Manhattan",
-      "date": "Wed",
-      "time": "6:00 PM",
+      "id": "evt-47",
+      "emoji": "\ud83e\udd1d",
+      "title": "Startups Demos & Networking in NYC Manhattan",
       "venue": "New York \u00b7 Whiskey Cellar NYC",
-      "price": "From $10.00",
-      "status": null
-    },
-    {
-      "name": "Caribbean Future Summit (5th Annual)",
-      "date": "Wed, Oct 14",
-      "time": "11:00 AM",
-      "venue": "New York \u00b7 New York",
-      "price": "From $0.00",
-      "status": null
-    },
-    {
-      "name": "Tech and Business Networking | Elevating Your Potential - FiDi",
-      "date": "Wed, May 20",
-      "time": "6:00 PM",
-      "venue": "New York \u00b7 Continental Sports Lounge",
-      "price": "From $0.00",
-      "status": null
-    },
-    {
-      "name": "Foodies + New Friends: NYC (Entrepreneurs Giving Back Edition)",
-      "date": "Thu, May 14",
-      "time": "7:00 PM",
-      "venue": "New York \u00b7 Restaurant of the Week",
-      "price": "From $43.27",
-      "status": null
-    },
-    {
-      "name": "Healthcare and Business Networking | Elevating Your Potential - FiDi",
-      "date": "Wed, May 20",
-      "time": "6:00 PM",
-      "venue": "New York \u00b7 Continental Sports Lounge",
-      "price": "From $0.00",
-      "status": null
-    },
-    {
-      "name": "The Gold Networking Event",
-      "date": "Wed",
-      "time": "6:00 PM",
-      "venue": "New York \u00b7 The Skylark - Rooftop Bar",
-      "price": "From $6.98",
-      "status": null
-    },
-    {
-      "name": "Speed Networking And Business Matchmaking : Fast Way to Expand Your Network",
-      "date": "Mon, Jul 20",
-      "time": "6:30 PM",
-      "venue": "New York \u00b7 Dawson:39 Restaurant & Bar",
-      "price": "From $23.18",
-      "status": null
-    },
-    {
-      "name": "Hospitality and Business Networking | Elevating Your Potential - FiDi",
-      "date": "Wed, May 20",
-      "time": "6:00 PM",
-      "venue": "New York \u00b7 Continental Sports Lounge",
-      "price": "From $0.00",
-      "status": null
-    },
-    {
-      "name": "Multi-Vertical Business Networking | Elevating Your Potential - FiDi",
-      "date": "Wed, May 20",
-      "time": "6:00 PM",
-      "venue": "New York \u00b7 Continental Sports Lounge",
-      "price": "From $0.00",
-      "status": null
+      "datetime": "2026-05-20T18:00:00",
+      "price": 10.0,
+      "type": "networking",
+      "description": "",
+      "eventbriteUrl": "",
+      "urgency": ""
     }
   ]
 }
