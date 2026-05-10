@@ -1,5 +1,5 @@
 {
-  "_lastScraped": "2026-05-09T15:28:32.605Z",
+  "_lastScraped": "2026-05-10T06:35:00.000Z",
   "_scrapingMethod": "Browser automation with accessibility tree snapshot",
   "events": [
     {
@@ -39,7 +39,7 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": "GOING_FAST",
-      "eventbriteUrl": "https://www.eventbrite.com"
+      "eventbriteUrl": "https://www.eventbrite.com/e/new-york-trading-finance-and-banking-professional-networking-affair-tickets-1983816779390?aff=ebdssbdestsearch"
     },
     {
       "id": "evt-013",
@@ -52,7 +52,7 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": "SALES_END_SOON",
-      "eventbriteUrl": "https://www.eventbrite.com"
+      "eventbriteUrl": "https://www.eventbrite.com/e/its-legal-new-york-networking-for-attorneys-tickets-1984467424487?aff=ebdssbdestsearch"
     },
     {
       "id": "evt-009",
@@ -65,7 +65,7 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": "GOING_FAST",
-      "eventbriteUrl": "https://www.eventbrite.com"
+      "eventbriteUrl": "https://www.eventbrite.com/e/may-chapter-meeting-milan-experience-recap-tickets-1987852860417?aff=ebdssbdestsearch"
     },
     {
       "id": "evt-019",
@@ -78,12 +78,12 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": "SALES_END_SOON",
-      "eventbriteUrl": "https://www.eventbrite.com"
+      "eventbriteUrl": "https://www.eventbrite.com/e/the-human-side-of-product-leadership-with-nbcuniversal-cpo-james-denney-tickets-1987632699911?aff=ebdssbdestsearch"
     },
     {
       "id": "evt-008",
       "emoji": "🤝",
-      "title": "SHpE NYC Spring Networking Event",
+      "title": "SHPE NYC Spring Networking Event",
       "venue": "New York · Tara Rose| NYC, NY",
       "datetime": "2026-05-15T18:00:00-04:00",
       "distance": 0,
@@ -91,7 +91,7 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": null,
-      "eventbriteUrl": "https://www.eventbrite.com"
+      "eventbriteUrl": "https://www.eventbrite.com/e/shpe-nyc-spring-networking-event-tickets-1988207168161?aff=ebdssbdestsearch"
     },
     {
       "id": "evt-007",
@@ -104,7 +104,7 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": "GOING_FAST",
-      "eventbriteUrl": "https://www.eventbrite.com"
+      "eventbriteUrl": "https://www.eventbrite.com/e/may-happy-hour-energy-commercialization-tickets-1988212329599?aff=ebdssbdestsearch"
     },
     {
       "id": "evt-020",
@@ -117,7 +117,7 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": "SALES_END_SOON",
-      "eventbriteUrl": "https://www.eventbrite.com"
+      "eventbriteUrl": "https://www.eventbrite.com/e/66th-assembly-district-business-community-candidates-forum-tickets-1986927604953?aff=ebdssbdestsearch"
     },
     {
       "id": "evt-015",
@@ -130,7 +130,7 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": null,
-      "eventbriteUrl": "https://www.eventbrite.com"
+      "eventbriteUrl": "https://www.eventbrite.com/e/hit-me-up-open-house-tickets-1988011676440?aff=ebdssbdestsearch"
     },
     {
       "id": "evt-012",
@@ -143,7 +143,7 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": null,
-      "eventbriteUrl": "https://www.eventbrite.com"
+      "eventbriteUrl": "https://www.eventbrite.com/e/i-am-her-the-symposium-equipping-the-women-to-lead-boldly-and-live-fully-tickets-1987288442227?aff=ebdssbdestsearch"
     },
     {
       "id": "evt-014",
@@ -156,7 +156,7 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": "GOING_FAST",
-      "eventbriteUrl": "https://www.eventbrite.com"
+      "eventbriteUrl": "https://www.eventbrite.com/e/sake-con-nyc-2026-spring-registration-1985987598368?aff=ebdssbdestsearch"
     },
     {
       "id": "evt-006",
@@ -169,7 +169,7 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": "ALMOST_FULL",
-      "eventbriteUrl": "https://www.eventbrite.com"
+      "eventbriteUrl": "https://www.eventbrite.com/e/freelance-isnt-free-day-tickets-1987840819402?aff=ebdssbdestsearch"
     },
     {
       "id": "evt-005",
@@ -182,7 +182,33 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": null,
-      "eventbriteUrl": "https://www.eventbrite.com"
+    "eventbriteUrl": "https://www.eventbrite.com/e/better-together-meaningful-lgbtq-networking-nyc-tickets-1571583280899?aff=ebdssbdestsearch"
+    },
+    {
+      "id": "evt-016",
+      "emoji": "💼",
+      "title": "Networking Mixer | Private Equity | Venture Capital | Law | Fintech",
+      "venue": "New York · TBA, NY",
+      "datetime": "2026-05-21T18:00:00-04:00",
+      "distance": 0,
+      "price": null,
+      "type": "networking",
+      "description": "Networking event",
+      "urgency": null,
+      "eventbriteUrl": "https://www.eventbrite.com/e/networking-mixer-private-equity-venture-capital-law-fintech-tickets-1986255857739?aff=ebdssbdestsearch"
+    },
+    {
+      "id": "evt-017",
+      "emoji": "👩‍💻",
+      "title": "Women in Tech New York City - OutGeekWomen",
+      "venue": "New York · TBA, NY",
+      "datetime": "2026-05-21T18:00:00-04:00",
+      "distance": 0,
+      "price": null,
+      "type": "networking",
+      "description": "Networking event",
+      "urgency": null,
+      "eventbriteUrl": "https://www.eventbrite.com/e/women-in-tech-new-york-city-outgeekwomen-tickets-1224235995819?aff=ebdssbdestsearch"
     },
     {
       "id": "evt-001",
@@ -195,7 +221,20 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": null,
-      "eventbriteUrl": "https://www.eventbrite.com"
+      "eventbriteUrl": "https://www.eventbrite.com/e/masala-mingle-south-asian-market-meet-up-may-23-2026-tickets-1986731070112?aff=ebdssbdestsearch"
+    },
+    {
+      "id": "evt-021",
+      "emoji": "🤖",
+      "title": "AI Founders Connect Hosted at New York University - Round 19",
+      "venue": "New York · New York University, NY",
+      "datetime": "2026-05-27T18:00:00-04:00",
+      "distance": 0,
+      "price": null,
+      "type": "networking",
+      "description": "Networking event",
+      "urgency": null,
+      "eventbriteUrl": "https://www.eventbrite.com/e/ai-founders-connect-hosted-at-new-york-university-round-19-registration-1988358017355?aff=ebdssbdestsearch"
     },
     {
       "id": "evt-002",
@@ -208,7 +247,7 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": null,
-      "eventbriteUrl": "https://www.eventbrite.com"
+      "eventbriteUrl": "https://www.eventbrite.com/e/arlo-soho-hotel-new-york-real-estate-mixer-may-tickets-1987569900075?aff=ebdssbdestsearch"
     },
     {
       "id": "evt-003",
@@ -221,7 +260,7 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": "GOING_FAST",
-      "eventbriteUrl": "https://www.eventbrite.com"
+      "eventbriteUrl": "https://www.eventbrite.com/e/black-professionals-in-nyc-the-summer-prelude-may-mixer-registration-1988139800663?aff=ebdssbdestsearch"
     },
     {
       "id": "evt-011",
@@ -234,7 +273,20 @@
       "type": "networking",
       "description": "Networking event",
       "urgency": null,
-      "eventbriteUrl": "https://www.eventbrite.com"
+      "eventbriteUrl": "https://www.eventbrite.com/e/nyc-tech-mixer-2026-tickets-1988572047525?aff=ebdssbdestsearch"
+    },
+    {
+      "id": "evt-022",
+      "emoji": "📚",
+      "title": "Book Club² - \"Rental House\" by Weike Wang",
+      "venue": "New York · TBA, NY",
+      "datetime": "2026-05-28T18:00:00-04:00",
+      "distance": 0,
+      "price": null,
+      "type": "networking",
+      "description": "Networking event",
+      "urgency": null,
+      "eventbriteUrl": "https://www.eventbrite.com/e/book-club2-rental-house-by-weike-wang-tickets-1986370849683?aff=ebdssbdestsearch"
     }
   ]
 }

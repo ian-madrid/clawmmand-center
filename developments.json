@@ -1,5 +1,14 @@
 [
   {
+    "id": "dev-063",
+    "section": "eventbrite",
+    "title": "Heartbeat Scraped: 21 fresh NYC networking events with full Eventbrite URLs",
+    "description": "Weekly heartbeat task executed: re-scraped Eventbrite for NYC networking events using browser automation with accessibility tree snapshot. Extracted 21 events with REAL dates/times/venues/prices and full Eventbrite URLs. All eventbriteUrl fields now contain direct links to event pages (not just homepage). Key updates: May 12 - Finance/Banking Networking 6:30PM (FREE, Dawson 39). May 13 - Legal Networking 5PM ($54.13) and Chapter Meeting 6PM (FREE). May 15 - Product Leadership 5:30PM ($15), SHPE NYC 6PM (FREE), Energy Commercialization 6:30PM ($12.51), Assembly District Forum 6:30PM (FREE), Hit Me Up Open House 7PM. May 16 - I AM HER Symposium 11AM (FREE) and SAKE-CON 12PM ($71.21). May 20 - Freelance Day 12PM (FREE, almost full) and LGBTQ+ Networking 6PM (FREE). May 21 - PE/VC/Law/Fintech Mixer 6PM and Women in Tech NYC 6PM. May 23 - Masala Mingle 6PM (FREE, Brooklyn, Hana House). May 27 - AI Founders Connect 6PM (NYU). May 28 - Real Estate Mixer 6PM (FREE, Arlo SoHo), Black Professionals Mixer 6PM (FREE, Lagos TSQ), NYC Tech Mixer 6PM (FREE, Brooklyn, Arlo Williamsburg), and Book Club² 6PM. Updated events.json with fresh timestamp 2026-05-10T06:35:00Z, logged to developments.json.",
+    "status": "Complete",
+    "timestamp": "2026-05-10T06:35:00Z",
+    "expectedImprovement": "Events section data is current with browser automation extraction - all dates, times, venues, prices, and full Eventbrite URLs confirmed from live Eventbrite page. 21 events with direct event links now available."
+  },
+  {
     "id": "dev-062",
     "section": "eventbrite",
     "title": "Heartbeat Scraped: 18 fresh NYC networking events via browser automation",
