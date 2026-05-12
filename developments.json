@@ -1,5 +1,14 @@
 [
   {
+    "id": "dev-064",
+    "section": "eventbrite",
+    "title": "Browser Automation Scraped: 20 fresh NYC networking events for this week",
+    "description": "Eventbrite scrape executed via browser automation with accessibility tree snapshot. Extracted 20 live networking events from the first page of results. Events include real dates, times, venues, prices, and urgency tags. Key events this week: May 12 (TODAY) - May Chapter Meeting 6PM (FREE, almost full, Rimadesio), Legal Networking 5PM ($54.13, sales ended), Book Club² 8PM ($16.74, sales ending soon). May 13 - Freelance Isn't Free Day 12PM (FREE, Civic Hall), Better Together LGBTQ+ Networking 6PM (FREE, Hotel Chantelle Rooftop). May 14 - Product Leadership with NBCUniversal CPO 5:30PM ($15, sales ending soon), SHPE NYC Networking 6PM (FREE, sales ending soon), Energy Commercialization Happy Hour 6:30PM ($12.51, going fast), Assembly District Forum 6:30PM (FREE, sales ending soon), Hit Me Up Open House 7PM. May 15 - I AM HER Women's Symposium 11AM (FREE), SAKE-CON 12PM ($75, going fast). May 23 - Masala Mingle South Asian Market 6PM (FREE, Brooklyn Hana House). May 28 - Arlo Soho Real Estate Mixer 6PM (FREE), Black Professionals Summer Mixer 6PM (FREE, almost full, Lagos TSQ), NYC Tech Mixer 6PM (FREE, Brooklyn Arlo Williamsburg). Jun 15 - PE/VC/Law/Fintech Mixer 6PM (FREE). Jun 18 - Women in Tech NYC 6PM (FREE, almost full), Black Health Connect 5PM ($17.85). Updated events.json with timestamp 2026-05-12T09:09:00Z.",
+    "status": "Complete",
+    "timestamp": "2026-05-12T09:09:00Z",
+    "expectedImprovement": "Events section now has 20 fresh events scraped directly from Eventbrite via browser automation. All dates, times, venues, prices, and urgency tags reflect live data. 3 TODAY events extracted, multiple 'going fast' and 'sales ending soon' events highlighted for user attention."
+  },
+  {
     "id": "dev-063",
     "section": "eventbrite",
     "title": "Heartbeat Scraped: 21 fresh NYC networking events with full Eventbrite URLs",
